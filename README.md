@@ -10,4 +10,4 @@ In eurem Fork arbeitet ihr an eurem Projekt. Benutzt ruhig die README, das Wiki,
 | Datum  | Themen |
 | ------------- | ------------- |
 | 25.04.17  | - KickOff, Einleitung und Organisatorisches <br /> - Demo `Card` |
-| 02.04.17  | - MVC, Delegate, DataSource und Target-Action Patterns <br /> - Demo `MatchingCardGame` |
+| 02.05.17  | - MVC, Delegate, DataSource und Target-Action Patterns <br /> - Demo `MatchingCardGame` |
