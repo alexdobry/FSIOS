@@ -8,10 +8,10 @@
 
 import Foundation
 
-extension Sequence {
+extension Array {
     
-    func groupBy<K : Hashable>(key: (Self.Iterator.Element) -> K) -> [K: [Self.Iterator.Element]] {
-        var dict: [K: [Self.Iterator.Element]] = [:]
+    func groupBy<K : Hashable>(key: (Element) -> K) -> [K: [Element]] {
+        var dict: [K: [Element]] = [:]
         
         forEach { elem in
             let k = key(elem)
@@ -19,6 +19,12 @@ extension Sequence {
         }
         
         return dict
+    }
+}
+
+extension Card: Equatable {
+    static func ==(lhs: Card, rhs: Card) -> Bool {
+        return lhs.description == rhs.description
     }
 }
 
@@ -97,7 +103,7 @@ struct MatchingCardGame {
     
     var pendingCards: [Card] {
         return deck.cards.filter { card in
-            !matchedCards.contains(where: { $0.description == card.description })
+            !matchedCards.contains(card)
         }
     }
     
