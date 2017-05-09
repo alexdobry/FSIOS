@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA06FF191EC1BEB40075BC72 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FF181EC1BEB40075BC72 /* CardView.swift */; };
+		FA2846FE1EC1E44900DB49BF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2846FD1EC1E44900DB49BF /* Extension.swift */; };
 		FA5B98871EB8C100000BAB96 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B98861EB8C100000BAB96 /* Card.swift */; };
 		FA5B98891EB8CF4A000BAB96 /* MatchingCardgame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B98881EB8CF4A000BAB96 /* MatchingCardgame.swift */; };
 		FAE803F71EAF8CD800795A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE803F61EAF8CD800795A13 /* AppDelegate.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		FA06FF181EC1BEB40075BC72 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FA2846FD1EC1E44900DB49BF /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		FA5B98861EB8C100000BAB96 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		FA5B98881EB8CF4A000BAB96 /* MatchingCardgame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingCardgame.swift; sourceTree = "<group>"; };
 		FAE803F31EAF8CD800795A13 /* Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Card.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +103,7 @@
 				FAE803F61EAF8CD800795A13 /* AppDelegate.swift */,
 				FAE803FA1EAF8CD800795A13 /* Main.storyboard */,
 				FA5B98831EB8C0B8000BAB96 /* supporting files */,
+				FA2846FD1EC1E44900DB49BF /* Extension.swift */,
 			);
 			path = Card;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			files = (
 				FA5B98891EB8CF4A000BAB96 /* MatchingCardgame.swift in Sources */,
 				FAE803F91EAF8CD800795A13 /* ViewController.swift in Sources */,
+				FA2846FE1EC1E44900DB49BF /* Extension.swift in Sources */,
 				FA5B98871EB8C100000BAB96 /* Card.swift in Sources */,
 				FAE803F71EAF8CD800795A13 /* AppDelegate.swift in Sources */,
 				FA06FF191EC1BEB40075BC72 /* CardView.swift in Sources */,

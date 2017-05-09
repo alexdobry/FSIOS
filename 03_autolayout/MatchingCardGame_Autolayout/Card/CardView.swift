@@ -12,9 +12,9 @@ import UIKit
 class CardView: UIButton {
     
     @IBInspectable
-    var disable: Bool = false {
+    var disabled: Bool = false {
         didSet {
-            if disable {
+            if disabled {
                 isUserInteractionEnabled = false
                 alpha = 0.5
             }

@@ -13,24 +13,58 @@ class ViewController: UIViewController {
     // MARK: outlets
     
     @IBOutlet var cardButtons: [CardView]!
+    @IBOutlet var landscapeCardButtons: [CardView]!
+    @IBOutlet var portraitCardButtons: [CardView]!
+    
     @IBOutlet weak var flipCountLabel: UILabel!
+    
+    private var allCardButtons: [CardView] {
+        let sizeClassDependentCardViews: [CardView] = {
+            switch UIScreen.main.traitCollection.verticalSizeClass {
+            case .compact:
+                return landscapeCardButtons
+            case .regular:
+                return portraitCardButtons
+            case .unspecified:
+                return []
+            }
+        }()
+        
+        return cardButtons + sizeClassDependentCardViews
+    }
     
     // MARK: model
     
     var game: MatchingCardGame?
     
+    // MARK: viewcontroller lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        game = MatchingCardGame(numberOfCards: self.cardButtons.count)
+        game = MatchingCardGame(numberOfCards: self.allCardButtons.count)
         game?.delegate = self
+    }
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        
+        zip(landscapeCardButtons, portraitCardButtons).forEach { (land, port) in
+            if size.height > size.width {
+                // portrait
+                land --> port
+            } else {
+                // landscape
+                port --> land
+            }
+        }
     }
     
     // MARK: target-action
     
     @IBAction func cardButtonTapped(_ sender: CardView) {
         guard game != nil else { return }
-        guard let index = cardButtons.index(of: sender) else { return }
+        guard let index = allCardButtons.index(of: sender) else { return }
         guard !sender.facedUp else { return }
         
         let result = game!.revealCard(at: index)
@@ -49,7 +83,7 @@ class ViewController: UIViewController {
             
             matchedCards.forEach { card in
                 card.matched = true
-                card.disable = true
+                card.disabled = true
             }
             
         case .noMatch(let first, let second):
@@ -65,14 +99,14 @@ class ViewController: UIViewController {
         case .gameOver(let cards):
             print(cards)
             
-            cardButtons.forEach { card in card.disable = true }
+            allCardButtons.forEach { card in card.disabled = true }
         }
     }
     
     // MARK: view helpers
     
     private func cardButtonMatching(card: Card) -> CardView {
-        return cardButtons.first(where: { $0.currentTitle == card.description })!
+        return allCardButtons.first(where: { $0.currentTitle == card.description })!
     }
 }
 
