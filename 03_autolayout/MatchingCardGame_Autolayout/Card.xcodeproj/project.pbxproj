@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA06FF191EC1BEB40075BC72 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FF181EC1BEB40075BC72 /* CardView.swift */; };
 		FA5B98871EB8C100000BAB96 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B98861EB8C100000BAB96 /* Card.swift */; };
 		FA5B98891EB8CF4A000BAB96 /* MatchingCardgame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B98881EB8CF4A000BAB96 /* MatchingCardgame.swift */; };
 		FAE803F71EAF8CD800795A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE803F61EAF8CD800795A13 /* AppDelegate.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA06FF181EC1BEB40075BC72 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		FA5B98861EB8C100000BAB96 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		FA5B98881EB8CF4A000BAB96 /* MatchingCardgame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingCardgame.swift; sourceTree = "<group>"; };
 		FAE803F31EAF8CD800795A13 /* Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Card.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA06FF1A1EC1BEBA0075BC72 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FA06FF181EC1BEB40075BC72 /* CardView.swift */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
 		FA5B98831EB8C0B8000BAB96 /* supporting files */ = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +95,7 @@
 		FAE803F51EAF8CD800795A13 /* Card */ = {
 			isa = PBXGroup;
 			children = (
+				FA06FF1A1EC1BEBA0075BC72 /* view */,
 				FA5B98851EB8C0CA000BAB96 /* model */,
 				FA5B98841EB8C0C1000BAB96 /* controller */,
 				FAE803F61EAF8CD800795A13 /* AppDelegate.swift */,
@@ -171,6 +182,7 @@
 				FAE803F91EAF8CD800795A13 /* ViewController.swift in Sources */,
 				FA5B98871EB8C100000BAB96 /* Card.swift in Sources */,
 				FAE803F71EAF8CD800795A13 /* AppDelegate.swift in Sources */,
+				FA06FF191EC1BEB40075BC72 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
