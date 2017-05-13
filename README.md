@@ -9,5 +9,6 @@ In eurem Fork arbeitet ihr an eurem Projekt. Benutzt ruhig die README, das Wiki,
 ## Inhaltsverzeichnis
 | Datum  | Themen |
 | ------------- | ------------- |
-| 25.04.17  | - KickOff, Einleitung und Organisatorisches <br /> - Demo `Card` |
-| 02.05.17  | - MVC, Delegate, DataSource und Target-Action Patterns <br /> - Demo `MatchingCardGame` |
+| 25.04.17 um 15 Uhr  | - KickOff, Einleitung und Organisatorisches <br /> - Demo `Card` |
+| 02.05.17 um 15 Uhr | - MVC, Delegate, DataSource und Target-Action Patterns <br /> - Demo `MatchingCardGame` |
+| 09.05.17 um 16 Uhr | - Autolayout, Size-Classes und Custom-Views <br /> - Demo `MatchingCardGame_Autolayout` |
