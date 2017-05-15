@@ -47,6 +47,9 @@ struct MatchingCardGame {
     private var previousCard: Card?
     private var matchedCards: [Card] = []
     
+    var incrementScore: Int = 5
+    var decrementScore: Int = 3
+    
     private var totalScore: Int = 0 {
         didSet {
             delegate?.matchingCardGameScoreDidChange(to: totalScore)
@@ -86,16 +89,16 @@ struct MatchingCardGame {
         var score = 0
         
         if previous.suit == other.suit {
-            score += 5
+            score += incrementScore
             matched = true
         }
         
         if previous.rank == other.rank {
-            score += 5 * 2
+            score += incrementScore * 2
             matched = true
         }
         
-        totalScore += score == 0 ? -3 : score
+        totalScore += score == 0 ? -decrementScore : score
         
         
         return matched

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MatchingCardGameViewController.swift
 //  Card
 //
 //  Created by Alex on 25.04.17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MatchingCardGameViewController: UIViewController {
     
     // MARK: outlets
     
@@ -112,7 +112,7 @@ class ViewController: UIViewController {
 
 
 // MARK: MatchingCardGameDelegate - sync ui with score
-extension ViewController: MatchingCardGameDelegate {
+extension MatchingCardGameViewController: MatchingCardGameDelegate {
     
     func matchingCardGameScoreDidChange(to score: Int) {
         flipCountLabel.text = "Score: \(score)"

@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 infix operator -->
 
@@ -21,5 +22,16 @@ extension CardView {
         rhs.card = lhs.card
         rhs.disabled = lhs.disabled
         rhs.matched = lhs.matched
+    }
+}
+
+extension UIStoryboardSegue {
+    
+    var contentViewController: UIViewController? {
+        if let nav = destination as? UINavigationController {
+            return nav.topViewController
+        } else {
+            return destination
+        }
     }
 }

@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		FA06FF191EC1BEB40075BC72 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA06FF181EC1BEB40075BC72 /* CardView.swift */; };
+		FA272EC91EC9D8D40036A7B6 /* GameSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA272EC81EC9D8D40036A7B6 /* GameSelectionViewController.swift */; };
+		FA272ECB1EC9DB7B0036A7B6 /* GamePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA272ECA1EC9DB7B0036A7B6 /* GamePageViewController.swift */; };
+		FA272ECD1EC9DE860036A7B6 /* FlipCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA272ECC1EC9DE860036A7B6 /* FlipCardViewController.swift */; };
+		FA272ECF1EC9EA7F0036A7B6 /* ScoreSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA272ECE1EC9EA7F0036A7B6 /* ScoreSettingViewController.swift */; };
 		FA2846FE1EC1E44900DB49BF /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2846FD1EC1E44900DB49BF /* Extension.swift */; };
 		FA5B98871EB8C100000BAB96 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B98861EB8C100000BAB96 /* Card.swift */; };
 		FA5B98891EB8CF4A000BAB96 /* MatchingCardgame.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA5B98881EB8CF4A000BAB96 /* MatchingCardgame.swift */; };
 		FAE803F71EAF8CD800795A13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE803F61EAF8CD800795A13 /* AppDelegate.swift */; };
-		FAE803F91EAF8CD800795A13 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE803F81EAF8CD800795A13 /* ViewController.swift */; };
+		FAE803F91EAF8CD800795A13 /* MatchingCardGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE803F81EAF8CD800795A13 /* MatchingCardGameViewController.swift */; };
 		FAE803FC1EAF8CD800795A13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE803FA1EAF8CD800795A13 /* Main.storyboard */; };
 		FAE803FE1EAF8CD800795A13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE803FD1EAF8CD800795A13 /* Assets.xcassets */; };
 		FAE804011EAF8CD800795A13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE803FF1EAF8CD800795A13 /* LaunchScreen.storyboard */; };
@@ -20,12 +24,16 @@
 
 /* Begin PBXFileReference section */
 		FA06FF181EC1BEB40075BC72 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		FA272EC81EC9D8D40036A7B6 /* GameSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectionViewController.swift; sourceTree = "<group>"; };
+		FA272ECA1EC9DB7B0036A7B6 /* GamePageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePageViewController.swift; sourceTree = "<group>"; };
+		FA272ECC1EC9DE860036A7B6 /* FlipCardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlipCardViewController.swift; sourceTree = "<group>"; };
+		FA272ECE1EC9EA7F0036A7B6 /* ScoreSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScoreSettingViewController.swift; sourceTree = "<group>"; };
 		FA2846FD1EC1E44900DB49BF /* Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		FA5B98861EB8C100000BAB96 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		FA5B98881EB8CF4A000BAB96 /* MatchingCardgame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchingCardgame.swift; sourceTree = "<group>"; };
 		FAE803F31EAF8CD800795A13 /* Card.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Card.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE803F61EAF8CD800795A13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FAE803F81EAF8CD800795A13 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAE803F81EAF8CD800795A13 /* MatchingCardGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingCardGameViewController.swift; sourceTree = "<group>"; };
 		FAE803FB1EAF8CD800795A13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FAE803FD1EAF8CD800795A13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAE804001EAF8CD800795A13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,7 +72,11 @@
 		FA5B98841EB8C0C1000BAB96 /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				FAE803F81EAF8CD800795A13 /* ViewController.swift */,
+				FAE803F81EAF8CD800795A13 /* MatchingCardGameViewController.swift */,
+				FA272EC81EC9D8D40036A7B6 /* GameSelectionViewController.swift */,
+				FA272ECA1EC9DB7B0036A7B6 /* GamePageViewController.swift */,
+				FA272ECC1EC9DE860036A7B6 /* FlipCardViewController.swift */,
+				FA272ECE1EC9EA7F0036A7B6 /* ScoreSettingViewController.swift */,
 			);
 			name = controller;
 			sourceTree = "<group>";
@@ -182,9 +194,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA5B98891EB8CF4A000BAB96 /* MatchingCardgame.swift in Sources */,
-				FAE803F91EAF8CD800795A13 /* ViewController.swift in Sources */,
+				FA272EC91EC9D8D40036A7B6 /* GameSelectionViewController.swift in Sources */,
+				FA272ECF1EC9EA7F0036A7B6 /* ScoreSettingViewController.swift in Sources */,
+				FAE803F91EAF8CD800795A13 /* MatchingCardGameViewController.swift in Sources */,
 				FA2846FE1EC1E44900DB49BF /* Extension.swift in Sources */,
+				FA272ECD1EC9DE860036A7B6 /* FlipCardViewController.swift in Sources */,
 				FA5B98871EB8C100000BAB96 /* Card.swift in Sources */,
+				FA272ECB1EC9DB7B0036A7B6 /* GamePageViewController.swift in Sources */,
 				FAE803F71EAF8CD800795A13 /* AppDelegate.swift in Sources */,
 				FA06FF191EC1BEB40075BC72 /* CardView.swift in Sources */,
 			);
