@@ -1,0 +1,569 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C3EA212F1ECAFD1D00D1B62D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EA212E1ECAFD1D00D1B62D /* AppDelegate.swift */; };
+		C3EA21311ECAFD1D00D1B62D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EA21301ECAFD1D00D1B62D /* ViewController.swift */; };
+		C3EA21341ECAFD1D00D1B62D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EA21321ECAFD1D00D1B62D /* Main.storyboard */; };
+		C3EA21361ECAFD1D00D1B62D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C3EA21351ECAFD1D00D1B62D /* Assets.xcassets */; };
+		C3EA21391ECAFD1D00D1B62D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3EA21371ECAFD1D00D1B62D /* LaunchScreen.storyboard */; };
+		C3EA21441ECAFD1D00D1B62D /* watCHiliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EA21431ECAFD1D00D1B62D /* watCHiliTests.swift */; };
+		C3EA214F1ECAFD1D00D1B62D /* watCHiliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EA214E1ECAFD1D00D1B62D /* watCHiliUITests.swift */; };
+		C3EA21621ECB8BF000D1B62D /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3EA21611ECB8BF000D1B62D /* MainTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C3EA21401ECAFD1D00D1B62D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3EA21231ECAFD1D00D1B62D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3EA212A1ECAFD1D00D1B62D;
+			remoteInfo = watCHili;
+		};
+		C3EA214B1ECAFD1D00D1B62D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C3EA21231ECAFD1D00D1B62D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C3EA212A1ECAFD1D00D1B62D;
+			remoteInfo = watCHili;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C3EA212B1ECAFD1D00D1B62D /* watCHili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = watCHili.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3EA212E1ECAFD1D00D1B62D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C3EA21301ECAFD1D00D1B62D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C3EA21331ECAFD1D00D1B62D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3EA21351ECAFD1D00D1B62D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C3EA21381ECAFD1D00D1B62D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3EA213A1ECAFD1D00D1B62D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3EA213F1ECAFD1D00D1B62D /* watCHiliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = watCHiliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3EA21431ECAFD1D00D1B62D /* watCHiliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watCHiliTests.swift; sourceTree = "<group>"; };
+		C3EA21451ECAFD1D00D1B62D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3EA214A1ECAFD1D00D1B62D /* watCHiliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = watCHiliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3EA214E1ECAFD1D00D1B62D /* watCHiliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = watCHiliUITests.swift; sourceTree = "<group>"; };
+		C3EA21501ECAFD1D00D1B62D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C3EA21611ECB8BF000D1B62D /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainTableViewController.swift; path = ../MainTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3EA21281ECAFD1D00D1B62D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EA213C1ECAFD1D00D1B62D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EA21471ECAFD1D00D1B62D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C3EA21221ECAFD1D00D1B62D = {
+			isa = PBXGroup;
+			children = (
+				C3EA212D1ECAFD1D00D1B62D /* watCHili */,
+				C3EA21421ECAFD1D00D1B62D /* watCHiliTests */,
+				C3EA214D1ECAFD1D00D1B62D /* watCHiliUITests */,
+				C3EA212C1ECAFD1D00D1B62D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C3EA212C1ECAFD1D00D1B62D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C3EA212B1ECAFD1D00D1B62D /* watCHili.app */,
+				C3EA213F1ECAFD1D00D1B62D /* watCHiliTests.xctest */,
+				C3EA214A1ECAFD1D00D1B62D /* watCHiliUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C3EA212D1ECAFD1D00D1B62D /* watCHili */ = {
+			isa = PBXGroup;
+			children = (
+				C3EA215E1ECAFD7300D1B62D /* controller */,
+				C3EA215D1ECAFD6D00D1B62D /* model */,
+				C3EA212E1ECAFD1D00D1B62D /* AppDelegate.swift */,
+				C3EA21321ECAFD1D00D1B62D /* Main.storyboard */,
+				C3EA215C1ECAFD5B00D1B62D /* supporting files */,
+			);
+			path = watCHili;
+			sourceTree = "<group>";
+		};
+		C3EA21421ECAFD1D00D1B62D /* watCHiliTests */ = {
+			isa = PBXGroup;
+			children = (
+				C3EA21431ECAFD1D00D1B62D /* watCHiliTests.swift */,
+				C3EA21451ECAFD1D00D1B62D /* Info.plist */,
+			);
+			path = watCHiliTests;
+			sourceTree = "<group>";
+		};
+		C3EA214D1ECAFD1D00D1B62D /* watCHiliUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C3EA214E1ECAFD1D00D1B62D /* watCHiliUITests.swift */,
+				C3EA21501ECAFD1D00D1B62D /* Info.plist */,
+			);
+			path = watCHiliUITests;
+			sourceTree = "<group>";
+		};
+		C3EA215C1ECAFD5B00D1B62D /* supporting files */ = {
+			isa = PBXGroup;
+			children = (
+				C3EA21351ECAFD1D00D1B62D /* Assets.xcassets */,
+				C3EA21371ECAFD1D00D1B62D /* LaunchScreen.storyboard */,
+				C3EA213A1ECAFD1D00D1B62D /* Info.plist */,
+			);
+			name = "supporting files";
+			sourceTree = "<group>";
+		};
+		C3EA215D1ECAFD6D00D1B62D /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		C3EA215E1ECAFD7300D1B62D /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				C3EA21611ECB8BF000D1B62D /* MainTableViewController.swift */,
+				C3EA21301ECAFD1D00D1B62D /* ViewController.swift */,
+			);
+			name = controller;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C3EA212A1ECAFD1D00D1B62D /* watCHili */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3EA21531ECAFD1D00D1B62D /* Build configuration list for PBXNativeTarget "watCHili" */;
+			buildPhases = (
+				C3EA21271ECAFD1D00D1B62D /* Sources */,
+				C3EA21281ECAFD1D00D1B62D /* Frameworks */,
+				C3EA21291ECAFD1D00D1B62D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = watCHili;
+			productName = watCHili;
+			productReference = C3EA212B1ECAFD1D00D1B62D /* watCHili.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C3EA213E1ECAFD1D00D1B62D /* watCHiliTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3EA21561ECAFD1D00D1B62D /* Build configuration list for PBXNativeTarget "watCHiliTests" */;
+			buildPhases = (
+				C3EA213B1ECAFD1D00D1B62D /* Sources */,
+				C3EA213C1ECAFD1D00D1B62D /* Frameworks */,
+				C3EA213D1ECAFD1D00D1B62D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3EA21411ECAFD1D00D1B62D /* PBXTargetDependency */,
+			);
+			name = watCHiliTests;
+			productName = watCHiliTests;
+			productReference = C3EA213F1ECAFD1D00D1B62D /* watCHiliTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C3EA21491ECAFD1D00D1B62D /* watCHiliUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3EA21591ECAFD1D00D1B62D /* Build configuration list for PBXNativeTarget "watCHiliUITests" */;
+			buildPhases = (
+				C3EA21461ECAFD1D00D1B62D /* Sources */,
+				C3EA21471ECAFD1D00D1B62D /* Frameworks */,
+				C3EA21481ECAFD1D00D1B62D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C3EA214C1ECAFD1D00D1B62D /* PBXTargetDependency */,
+			);
+			name = watCHiliUITests;
+			productName = watCHiliUITests;
+			productReference = C3EA214A1ECAFD1D00D1B62D /* watCHiliUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C3EA21231ECAFD1D00D1B62D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = watchili;
+				TargetAttributes = {
+					C3EA212A1ECAFD1D00D1B62D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = S2GN98K7WQ;
+						ProvisioningStyle = Automatic;
+					};
+					C3EA213E1ECAFD1D00D1B62D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = S2GN98K7WQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C3EA212A1ECAFD1D00D1B62D;
+					};
+					C3EA21491ECAFD1D00D1B62D = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = S2GN98K7WQ;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C3EA212A1ECAFD1D00D1B62D;
+					};
+				};
+			};
+			buildConfigurationList = C3EA21261ECAFD1D00D1B62D /* Build configuration list for PBXProject "watCHili" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C3EA21221ECAFD1D00D1B62D;
+			productRefGroup = C3EA212C1ECAFD1D00D1B62D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C3EA212A1ECAFD1D00D1B62D /* watCHili */,
+				C3EA213E1ECAFD1D00D1B62D /* watCHiliTests */,
+				C3EA21491ECAFD1D00D1B62D /* watCHiliUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C3EA21291ECAFD1D00D1B62D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3EA21391ECAFD1D00D1B62D /* LaunchScreen.storyboard in Resources */,
+				C3EA21361ECAFD1D00D1B62D /* Assets.xcassets in Resources */,
+				C3EA21341ECAFD1D00D1B62D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EA213D1ECAFD1D00D1B62D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EA21481ECAFD1D00D1B62D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C3EA21271ECAFD1D00D1B62D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3EA21311ECAFD1D00D1B62D /* ViewController.swift in Sources */,
+				C3EA21621ECB8BF000D1B62D /* MainTableViewController.swift in Sources */,
+				C3EA212F1ECAFD1D00D1B62D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EA213B1ECAFD1D00D1B62D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3EA21441ECAFD1D00D1B62D /* watCHiliTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C3EA21461ECAFD1D00D1B62D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3EA214F1ECAFD1D00D1B62D /* watCHiliUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C3EA21411ECAFD1D00D1B62D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3EA212A1ECAFD1D00D1B62D /* watCHili */;
+			targetProxy = C3EA21401ECAFD1D00D1B62D /* PBXContainerItemProxy */;
+		};
+		C3EA214C1ECAFD1D00D1B62D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C3EA212A1ECAFD1D00D1B62D /* watCHili */;
+			targetProxy = C3EA214B1ECAFD1D00D1B62D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C3EA21321ECAFD1D00D1B62D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3EA21331ECAFD1D00D1B62D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C3EA21371ECAFD1D00D1B62D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3EA21381ECAFD1D00D1B62D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C3EA21511ECAFD1D00D1B62D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C3EA21521ECAFD1D00D1B62D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C3EA21541ECAFD1D00D1B62D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S2GN98K7WQ;
+				INFOPLIST_FILE = watCHili/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.watchili.watCHili;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C3EA21551ECAFD1D00D1B62D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S2GN98K7WQ;
+				INFOPLIST_FILE = watCHili/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.watchili.watCHili;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C3EA21571ECAFD1D00D1B62D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S2GN98K7WQ;
+				INFOPLIST_FILE = watCHiliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.watchili.watCHiliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/watCHili.app/watCHili";
+			};
+			name = Debug;
+		};
+		C3EA21581ECAFD1D00D1B62D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = S2GN98K7WQ;
+				INFOPLIST_FILE = watCHiliTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.watchili.watCHiliTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/watCHili.app/watCHili";
+			};
+			name = Release;
+		};
+		C3EA215A1ECAFD1D00D1B62D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = S2GN98K7WQ;
+				INFOPLIST_FILE = watCHiliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.watchili.watCHiliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = watCHili;
+			};
+			name = Debug;
+		};
+		C3EA215B1ECAFD1D00D1B62D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = S2GN98K7WQ;
+				INFOPLIST_FILE = watCHiliUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.watchili.watCHiliUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = watCHili;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C3EA21261ECAFD1D00D1B62D /* Build configuration list for PBXProject "watCHili" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3EA21511ECAFD1D00D1B62D /* Debug */,
+				C3EA21521ECAFD1D00D1B62D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C3EA21531ECAFD1D00D1B62D /* Build configuration list for PBXNativeTarget "watCHili" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3EA21541ECAFD1D00D1B62D /* Debug */,
+				C3EA21551ECAFD1D00D1B62D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3EA21561ECAFD1D00D1B62D /* Build configuration list for PBXNativeTarget "watCHiliTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3EA21571ECAFD1D00D1B62D /* Debug */,
+				C3EA21581ECAFD1D00D1B62D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C3EA21591ECAFD1D00D1B62D /* Build configuration list for PBXNativeTarget "watCHiliUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C3EA215A1ECAFD1D00D1B62D /* Debug */,
+				C3EA215B1ECAFD1D00D1B62D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C3EA21231ECAFD1D00D1B62D /* Project object */;
+}
