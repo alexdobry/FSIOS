@@ -56,7 +56,7 @@ struct MatchingCardGame {
     init(numberOfCards: Int) {
         self.deck = Deck()
         
-        let cards = (0..<numberOfCards).map { _ in deck.drawRandomCard()! }
+        let cards = (0 ..< numberOfCards).map { _ in deck.drawRandomCard()! }
         
         deck.cards = cards
     }
@@ -102,11 +102,13 @@ struct MatchingCardGame {
     }
     
     var pendingCards: [Card] {
-        return deck.cards.filter { card in
-            !matchedCards.contains(card)
+        get{
+            return deck.cards.filter { card in
+                !matchedCards.contains(card)
+            }
         }
     }
-    
+        
     var isMatchPossible: Bool {
         let pending = pendingCards
         
