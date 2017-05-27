@@ -104,7 +104,7 @@
 				TargetAttributes = {
 					FBBF94ED1ED0794600FDE764 = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = JQY7EZ27YQ;
+						DevelopmentTeam = 479XAN3PCG;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -271,7 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JQY7EZ27YQ;
+				DEVELOPMENT_TEAM = 479XAN3PCG;
 				INFOPLIST_FILE = Swiperia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "DDUBBERT-EGELLERT.Swiperia";
@@ -284,7 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = JQY7EZ27YQ;
+				DEVELOPMENT_TEAM = 479XAN3PCG;
 				INFOPLIST_FILE = Swiperia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "DDUBBERT-EGELLERT.Swiperia";
@@ -312,6 +312,7 @@
 				FBBF95021ED0794600FDE764 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
