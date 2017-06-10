@@ -2,8 +2,8 @@
 //  ViewController.swift
 //  Swiperia
 //
-//  Created by Dennis Dubbert on 20.05.17.
-//  Copyright © 2017 Dennis Dubbert. All rights reserved.
+//  Created by Dennis Dubbert on 10.06.17.
+//  Copyright © 2017 Dedy Gubbert. All rights reserved.
 //
 
 import UIKit

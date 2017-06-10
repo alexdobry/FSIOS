@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FBBF94F21ED0794600FDE764 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBF94F11ED0794600FDE764 /* AppDelegate.swift */; };
-		FBBF94F41ED0794600FDE764 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBF94F31ED0794600FDE764 /* ViewController.swift */; };
-		FBBF94F71ED0794600FDE764 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBF94F51ED0794600FDE764 /* Main.storyboard */; };
-		FBBF94F91ED0794600FDE764 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBBF94F81ED0794600FDE764 /* Assets.xcassets */; };
-		FBBF94FC1ED0794600FDE764 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBBF94FA1ED0794600FDE764 /* LaunchScreen.storyboard */; };
+		FBB9D5BB1EEC0AE80094A9FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB9D5BA1EEC0AE80094A9FD /* AppDelegate.swift */; };
+		FBB9D5BD1EEC0AE80094A9FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB9D5BC1EEC0AE80094A9FD /* ViewController.swift */; };
+		FBB9D5C01EEC0AE80094A9FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB9D5BE1EEC0AE80094A9FD /* Main.storyboard */; };
+		FBB9D5C21EEC0AE80094A9FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB9D5C11EEC0AE80094A9FD /* Assets.xcassets */; };
+		FBB9D5C51EEC0AE80094A9FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB9D5C31EEC0AE80094A9FD /* LaunchScreen.storyboard */; };
+		FBB9D5CF1EEC0C3C0094A9FD /* GameTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB9D5CE1EEC0C3C0094A9FD /* GameTimer.swift */; };
+		FBB9D5D11EEC0C6D0094A9FD /* Directions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB9D5D01EEC0C6D0094A9FD /* Directions.swift */; };
+		FBB9D5D31EEC0C890094A9FD /* Items.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB9D5D21EEC0C890094A9FD /* Items.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FBBF94EE1ED0794600FDE764 /* Swiperia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiperia.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBBF94F11ED0794600FDE764 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBBF94F31ED0794600FDE764 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FBBF94F61ED0794600FDE764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FBBF94F81ED0794600FDE764 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FBBF94FB1ED0794600FDE764 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FBBF94FD1ED0794600FDE764 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB9D5B71EEC0AE80094A9FD /* Swiperia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiperia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FBB9D5BA1EEC0AE80094A9FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FBB9D5BC1EEC0AE80094A9FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FBB9D5BF1EEC0AE80094A9FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FBB9D5C11EEC0AE80094A9FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBB9D5C41EEC0AE80094A9FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FBB9D5C61EEC0AE80094A9FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FBB9D5CE1EEC0C3C0094A9FD /* GameTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameTimer.swift; sourceTree = "<group>"; };
+		FBB9D5D01EEC0C6D0094A9FD /* Directions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Directions.swift; sourceTree = "<group>"; };
+		FBB9D5D21EEC0C890094A9FD /* Items.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Items.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FBBF94EB1ED0794600FDE764 /* Frameworks */ = {
+		FBB9D5B41EEC0AE80094A9FD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -35,53 +41,64 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		FBBF94E51ED0794600FDE764 = {
+		FBB9D5AE1EEC0AE80094A9FD = {
 			isa = PBXGroup;
 			children = (
-				FBBF94F01ED0794600FDE764 /* Swiperia */,
-				FBBF94EF1ED0794600FDE764 /* Products */,
+				FBB9D5B91EEC0AE80094A9FD /* Swiperia */,
+				FBB9D5B81EEC0AE80094A9FD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		FBBF94EF1ED0794600FDE764 /* Products */ = {
+		FBB9D5B81EEC0AE80094A9FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FBBF94EE1ED0794600FDE764 /* Swiperia.app */,
+				FBB9D5B71EEC0AE80094A9FD /* Swiperia.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FBBF94F01ED0794600FDE764 /* Swiperia */ = {
+		FBB9D5B91EEC0AE80094A9FD /* Swiperia */ = {
 			isa = PBXGroup;
 			children = (
-				FBBF94F11ED0794600FDE764 /* AppDelegate.swift */,
-				FBBF94F31ED0794600FDE764 /* ViewController.swift */,
-				FBBF94F51ED0794600FDE764 /* Main.storyboard */,
-				FBBF95031ED07A7300FDE764 /* helper */,
+				FBB9D5CD1EEC0C090094A9FD /* models */,
+				FBB9D5BA1EEC0AE80094A9FD /* AppDelegate.swift */,
+				FBB9D5BC1EEC0AE80094A9FD /* ViewController.swift */,
+				FBB9D5BE1EEC0AE80094A9FD /* Main.storyboard */,
+				FBB9D5CC1EEC0BFC0094A9FD /* helper */,
 			);
 			path = Swiperia;
 			sourceTree = "<group>";
 		};
-		FBBF95031ED07A7300FDE764 /* helper */ = {
+		FBB9D5CC1EEC0BFC0094A9FD /* helper */ = {
 			isa = PBXGroup;
 			children = (
-				FBBF94F81ED0794600FDE764 /* Assets.xcassets */,
-				FBBF94FA1ED0794600FDE764 /* LaunchScreen.storyboard */,
-				FBBF94FD1ED0794600FDE764 /* Info.plist */,
+				FBB9D5C11EEC0AE80094A9FD /* Assets.xcassets */,
+				FBB9D5C31EEC0AE80094A9FD /* LaunchScreen.storyboard */,
+				FBB9D5C61EEC0AE80094A9FD /* Info.plist */,
 			);
 			name = helper;
+			sourceTree = "<group>";
+		};
+		FBB9D5CD1EEC0C090094A9FD /* models */ = {
+			isa = PBXGroup;
+			children = (
+				FBB9D5CE1EEC0C3C0094A9FD /* GameTimer.swift */,
+				FBB9D5D01EEC0C6D0094A9FD /* Directions.swift */,
+				FBB9D5D21EEC0C890094A9FD /* Items.swift */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FBBF94ED1ED0794600FDE764 /* Swiperia */ = {
+		FBB9D5B61EEC0AE80094A9FD /* Swiperia */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBBF95001ED0794600FDE764 /* Build configuration list for PBXNativeTarget "Swiperia" */;
+			buildConfigurationList = FBB9D5C91EEC0AE80094A9FD /* Build configuration list for PBXNativeTarget "Swiperia" */;
 			buildPhases = (
-				FBBF94EA1ED0794600FDE764 /* Sources */,
-				FBBF94EB1ED0794600FDE764 /* Frameworks */,
-				FBBF94EC1ED0794600FDE764 /* Resources */,
+				FBB9D5B31EEC0AE80094A9FD /* Sources */,
+				FBB9D5B41EEC0AE80094A9FD /* Frameworks */,
+				FBB9D5B51EEC0AE80094A9FD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -89,27 +106,29 @@
 			);
 			name = Swiperia;
 			productName = Swiperia;
-			productReference = FBBF94EE1ED0794600FDE764 /* Swiperia.app */;
+			productReference = FBB9D5B71EEC0AE80094A9FD /* Swiperia.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FBBF94E61ED0794600FDE764 /* Project object */ = {
+		FBB9D5AF1EEC0AE80094A9FD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Dennis Dubbert";
+				ORGANIZATIONNAME = "Dedy Gubbert";
 				TargetAttributes = {
-					FBBF94ED1ED0794600FDE764 = {
+					FBB9D5B61EEC0AE80094A9FD = {
 						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = 479XAN3PCG;
+
+						DevelopmentTeam = Z8537KSETR;
+
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = FBBF94E91ED0794600FDE764 /* Build configuration list for PBXProject "Swiperia" */;
+			buildConfigurationList = FBB9D5B21EEC0AE80094A9FD /* Build configuration list for PBXProject "Swiperia" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -117,54 +136,57 @@
 				en,
 				Base,
 			);
-			mainGroup = FBBF94E51ED0794600FDE764;
-			productRefGroup = FBBF94EF1ED0794600FDE764 /* Products */;
+			mainGroup = FBB9D5AE1EEC0AE80094A9FD;
+			productRefGroup = FBB9D5B81EEC0AE80094A9FD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FBBF94ED1ED0794600FDE764 /* Swiperia */,
+				FBB9D5B61EEC0AE80094A9FD /* Swiperia */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FBBF94EC1ED0794600FDE764 /* Resources */ = {
+		FBB9D5B51EEC0AE80094A9FD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBBF94FC1ED0794600FDE764 /* LaunchScreen.storyboard in Resources */,
-				FBBF94F91ED0794600FDE764 /* Assets.xcassets in Resources */,
-				FBBF94F71ED0794600FDE764 /* Main.storyboard in Resources */,
+				FBB9D5C51EEC0AE80094A9FD /* LaunchScreen.storyboard in Resources */,
+				FBB9D5C21EEC0AE80094A9FD /* Assets.xcassets in Resources */,
+				FBB9D5C01EEC0AE80094A9FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		FBBF94EA1ED0794600FDE764 /* Sources */ = {
+		FBB9D5B31EEC0AE80094A9FD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBBF94F41ED0794600FDE764 /* ViewController.swift in Sources */,
-				FBBF94F21ED0794600FDE764 /* AppDelegate.swift in Sources */,
+				FBB9D5BD1EEC0AE80094A9FD /* ViewController.swift in Sources */,
+				FBB9D5D31EEC0C890094A9FD /* Items.swift in Sources */,
+				FBB9D5BB1EEC0AE80094A9FD /* AppDelegate.swift in Sources */,
+				FBB9D5CF1EEC0C3C0094A9FD /* GameTimer.swift in Sources */,
+				FBB9D5D11EEC0C6D0094A9FD /* Directions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FBBF94F51ED0794600FDE764 /* Main.storyboard */ = {
+		FBB9D5BE1EEC0AE80094A9FD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FBBF94F61ED0794600FDE764 /* Base */,
+				FBB9D5BF1EEC0AE80094A9FD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FBBF94FA1ED0794600FDE764 /* LaunchScreen.storyboard */ = {
+		FBB9D5C31EEC0AE80094A9FD /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FBBF94FB1ED0794600FDE764 /* Base */,
+				FBB9D5C41EEC0AE80094A9FD /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -172,7 +194,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FBBF94FE1ED0794600FDE764 /* Debug */ = {
+		FBB9D5C71EEC0AE80094A9FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -223,7 +245,7 @@
 			};
 			name = Debug;
 		};
-		FBBF94FF1ED0794600FDE764 /* Release */ = {
+		FBB9D5C81EEC0AE80094A9FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -267,27 +289,27 @@
 			};
 			name = Release;
 		};
-		FBBF95011ED0794600FDE764 /* Debug */ = {
+		FBB9D5CA1EEC0AE80094A9FD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 479XAN3PCG;
+				DEVELOPMENT_TEAM = Z8537KSETR;
 				INFOPLIST_FILE = Swiperia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DDUBBERT-EGELLERT.Swiperia";
+				PRODUCT_BUNDLE_IDENTIFIER = "DEDY-GUBBERT.Swiperia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		FBBF95021ED0794600FDE764 /* Release */ = {
+		FBB9D5CB1EEC0AE80094A9FD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = 479XAN3PCG;
+				DEVELOPMENT_TEAM = Z8537KSETR;
 				INFOPLIST_FILE = Swiperia/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DDUBBERT-EGELLERT.Swiperia";
+				PRODUCT_BUNDLE_IDENTIFIER = "DEDY-GUBBERT.Swiperia";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -296,25 +318,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FBBF94E91ED0794600FDE764 /* Build configuration list for PBXProject "Swiperia" */ = {
+		FBB9D5B21EEC0AE80094A9FD /* Build configuration list for PBXProject "Swiperia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBBF94FE1ED0794600FDE764 /* Debug */,
-				FBBF94FF1ED0794600FDE764 /* Release */,
+				FBB9D5C71EEC0AE80094A9FD /* Debug */,
+				FBB9D5C81EEC0AE80094A9FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FBBF95001ED0794600FDE764 /* Build configuration list for PBXNativeTarget "Swiperia" */ = {
+		FBB9D5C91EEC0AE80094A9FD /* Build configuration list for PBXNativeTarget "Swiperia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBBF95011ED0794600FDE764 /* Debug */,
-				FBBF95021ED0794600FDE764 /* Release */,
+				FBB9D5CA1EEC0AE80094A9FD /* Debug */,
+				FBB9D5CB1EEC0AE80094A9FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FBBF94E61ED0794600FDE764 /* Project object */;
+	rootObject = FBB9D5AF1EEC0AE80094A9FD /* Project object */;
 }
