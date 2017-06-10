@@ -121,7 +121,9 @@
 				TargetAttributes = {
 					FBB9D5B61EEC0AE80094A9FD = {
 						CreatedOnToolsVersion = 8.3.2;
+
 						DevelopmentTeam = Z8537KSETR;
+
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -332,6 +334,7 @@
 				FBB9D5CB1EEC0AE80094A9FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
