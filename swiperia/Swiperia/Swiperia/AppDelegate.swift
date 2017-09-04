@@ -16,6 +16,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+//        let views = (self.window?.rootViewController as! UITabBarController).viewControllers
+//        print(views)
+//        if let singlePlayerView = (views?[0] as? ViewController) {
+//            singlePlayerView.currentGameMode = GameMode.single
+//            print("singlePlayer")
+//        }
+//        
+//        if let multiPlayerView = (views?[1] as? ViewController) {
+//            multiPlayerView.currentGameMode = GameMode.multi
+//            print("multiPlayer")
+//        }
+        UITabBar.appearance().tintColor = UIColor.white
+
         return true
     }
 
