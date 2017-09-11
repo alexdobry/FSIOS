@@ -41,7 +41,17 @@ class TimeManager {
     
     
     /// currentMaxTime describes a maximum the remainingTime can be.
-    var currentMaxTime : Double
+    var currentMaxTime : Double {
+        didSet {
+            if currentMaxTime > maxTime {
+                currentMaxTime = maxTime
+            }
+            
+            if currentMaxTime < remainingTime {
+                remainingTime = currentMaxTime
+            }
+        }
+    }
     
     
     /// timer is the Timer-Object used for counting down.
@@ -52,32 +62,30 @@ class TimeManager {
     weak var delegate: TimeManagerDelegate?
     
     
+    /// the delegate used for auto deletion
+    var autoReset: Bool
+    
+    
+    /// count stops
+    private var stopCounter = 1
+    
+    
     /// remainingTime describes the time left until 0 is reached. Whenever its changed the delegate gets notified (via the updatedCurrentMaxTime-function).
     var remainingTime : Double {
         didSet {
             delegate?.updatedRemainingTime(of: timerName, to: remainingTime)
-            if remainingTime <= 0.0 {stopTimer()}
-        }
-    }
-    
-    /// defines if the timer is frozen
-    var isFrozen = false {
-        didSet {
-            if isFrozen == true {
-                freezeCounter += 1;
+            if remainingTime <= 0.0 && autoReset{
+                resetRemainingTime()
             }
         }
     }
-    
-    /// Defines if the timer can be unfrozen
-    var freezeCounter = 0
-    
     
     // MARK: Functions
     
     /// This function instanciates the timer and triggers the countdown.
     @objc func startTimer() {
-        if timer == nil && !isFrozen{
+        stopCounter -= 1
+        if timer == nil && stopCounter == 0 {
             timer = Timer.scheduledTimer(
                 timeInterval: currentTimeIntervalForReduction,
                 target: self,
@@ -91,6 +99,7 @@ class TimeManager {
     
     /// This function stops the timer / countdown.
     func stopTimer() {
+        stopCounter += 1
         if timer != nil {
             timer!.invalidate()
             timer = nil
@@ -103,17 +112,10 @@ class TimeManager {
     /// - Parameter time: The period of time in seconds.
     func freezeTimer(forSeconds time: Double) {
         stopTimer()
-        isFrozen = true
         let when = DispatchTime.now() + time
         DispatchQueue.main.asyncAfter(deadline: when) {[weak self] in
             guard let strongS = self else {return}
-            if strongS.isFrozen {
-                strongS.freezeCounter -= 1
-                if strongS.freezeCounter <= 0 {
-                    strongS.isFrozen = false
-                    strongS.startTimer()
-                }
-            }
+            strongS.startTimer()
         }
     }
     
@@ -143,10 +145,13 @@ class TimeManager {
     /// This functions resets the timer to its maximum time
     func reset() {
         stopTimer()
+        let tempDel = delegate
+        delegate = nil
         currentMaxTime = maxTime
         remainingTime = maxTime
         currentTimeIntervalForReduction = maxTimeIntervalForReduction
-        isFrozen = false
+        stopCounter = 1
+        delegate = tempDel
     }
     
     /// Init function for TimeManager
@@ -154,12 +159,13 @@ class TimeManager {
     /// - Parameter max: The maximum time for the countdown in seconds
     /// - Parameter name: The name of the TimeManager
     /// - Parameter interval: The amount the currentcurrentMaxTime gets reduced by every tick in seconds
-    init(maxTime max: Double, timerName name: String, maxTimeIntervalForReduction interval: Double) {
+    init(maxTime max: Double, timerName name: String, maxTimeIntervalForReduction interval: Double,_ autoReset: Bool = false) {
         maxTime = max
         currentMaxTime = max
         remainingTime = max
         timerName = name
         maxTimeIntervalForReduction = (max <= interval) ? max : interval
         currentTimeIntervalForReduction = maxTimeIntervalForReduction
+        self.autoReset = autoReset
     }
 }

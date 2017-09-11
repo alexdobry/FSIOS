@@ -1,3 +1,11 @@
+//
+//  ProfileImageMaker.swift
+//  GlobeNew
+//
+//  Created by Dennis Dubbert on 28.08.17.
+//  Copyright © 2017 Dennis Dubbert. All rights reserved.
+//
+
 import Foundation
 import SpriteKit
 
@@ -32,7 +40,6 @@ class ProfileImageMaker {
         let resultImage = UIImage(cgImage: bwCGIImage!, scale: 1.0, orientation: image.imageOrientation)
         
         let texture = SKTexture(image: resultImage)
-        /*let path = UIBezierPath(arcCenter: CGPoint.zero, radius: radius, startAngle: startAngle, endAngle: startAngle, clockwise: true).cgPath*/
         
         let path =  UIBezierPath(
             roundedRect: CGRect.init(
@@ -63,11 +70,11 @@ class ProfileImageMaker {
                 height: sWidth),
             cornerRadius: sWidth/2
             ).cgPath
-        
+
         colorNode.lineWidth = radius*2 / (reduceFactor * 4)
         colorNode.strokeColor = .black
         colorNode.fillColor = color
-        colorNode.blendMode = .multiplyX2
+        colorNode.blendMode = .multiply
         colorNode.isAntialiased = false
         colorNode.lineCap = CGLineCap(rawValue: 1)!
         colorNode.name = "colorNode"
@@ -95,3 +102,4 @@ class ProfileImageMaker {
         return newImage
     }
 }
+

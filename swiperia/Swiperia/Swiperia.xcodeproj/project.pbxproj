@@ -7,195 +7,426 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6D01B1A61F4F227300E84486 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D01B1A51F4F227300E84486 /* MyTabBarController.swift */; };
-		6D01B1AA1F54197600E84486 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D01B1A91F54197600E84486 /* ProfileViewController.swift */; };
-		6D01B1AC1F5448A700E84486 /* ProfileImageMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D01B1AB1F5448A700E84486 /* ProfileImageMaker.swift */; };
-		6D1ED2521EF57BFC00EDA53B /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D1ED2511EF57BFC00EDA53B /* GameViewController.swift */; };
-		6D2E2B961F4B2B3200586610 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E2B941F4B2B3200586610 /* iCarousel.m */; };
-		6D2E2B971F4B2B3200586610 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6D2E2B951F4B2B3200586610 /* Info.plist */; };
-		6D2E2BCD1F4DBC1D00586610 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D2E2BCC1F4DBC1D00586610 /* GameManager.swift */; };
-		6D8835081F56C39400390838 /* SinglePlayerCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8835071F56C39400390838 /* SinglePlayerCellController.swift */; };
-		6D88350A1F56ECAD00390838 /* MultiPlayerCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8835091F56ECAD00390838 /* MultiPlayerCellController.swift */; };
-		6D94C7A21F3B29C400255B3F /* GameScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D94C7A11F3B29C400255B3F /* GameScoreManager.swift */; };
-		6D9E5E651F44735F006C1B81 /* ItemPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E5E641F44735F006C1B81 /* ItemPanel.swift */; };
-		6D9E5E671F4AD6A3006C1B81 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E5E661F4AD6A3006C1B81 /* Constants.swift */; };
-		6D9E5E691F4AD6EC006C1B81 /* SwiftClassExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9E5E681F4AD6EC006C1B81 /* SwiftClassExtensions.swift */; };
-		6DB9DC601F5D422C0070D9F7 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB9DC5F1F5D422C0070D9F7 /* SettingsController.swift */; };
-		6DB9DC621F5D8E610070D9F7 /* HSBColorPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB9DC611F5D8E610070D9F7 /* HSBColorPicker.swift */; };
-		6DD2A18F1F41D3A800D883FB /* ProgressCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DD2A18E1F41D3A800D883FB /* ProgressCircle.swift */; };
-		FBB9D5BB1EEC0AE80094A9FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB9D5BA1EEC0AE80094A9FD /* AppDelegate.swift */; };
-		FBB9D5BD1EEC0AE80094A9FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB9D5BC1EEC0AE80094A9FD /* ViewController.swift */; };
-		FBB9D5C01EEC0AE80094A9FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB9D5BE1EEC0AE80094A9FD /* Main.storyboard */; };
-		FBB9D5C21EEC0AE80094A9FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBB9D5C11EEC0AE80094A9FD /* Assets.xcassets */; };
-		FBB9D5C51EEC0AE80094A9FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FBB9D5C31EEC0AE80094A9FD /* LaunchScreen.storyboard */; };
-		FBB9D5CF1EEC0C3C0094A9FD /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB9D5CE1EEC0C3C0094A9FD /* TimeManager.swift */; };
-		FBB9D5D11EEC0C6D0094A9FD /* DirectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB9D5D01EEC0C6D0094A9FD /* DirectionManager.swift */; };
-		FBB9D5D31EEC0C890094A9FD /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB9D5D21EEC0C890094A9FD /* ItemManager.swift */; };
+		DA911CECA2533B68B9B655FB /* Pods_Swiperia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3994EED37A80224069614EB /* Pods_Swiperia.framework */; };
+		FB16DCBE1F4319B300FA205D /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB16DCBD1F4319B300FA205D /* ItemManager.swift */; };
+		FB16DCC01F43357E00FA205D /* DirectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB16DCBF1F43357E00FA205D /* DirectionManager.swift */; };
+		FB16DCC21F44733500FA205D /* ItemPanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB16DCC11F44733500FA205D /* ItemPanel.swift */; };
+		FB16DCC41F44AA9A00FA205D /* ConstantsAndGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB16DCC31F44AA9A00FA205D /* ConstantsAndGlobals.swift */; };
+		FB16DCC81F44B49300FA205D /* SwiftClassExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB16DCC71F44B49300FA205D /* SwiftClassExtensions.swift */; };
+		FB244E211F600B5F0048FE62 /* CreateLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB244E201F600B5F0048FE62 /* CreateLobbyViewController.swift */; };
+		FB244E231F618B010048FE62 /* MultipeerBrowserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB244E221F618B010048FE62 /* MultipeerBrowserCell.swift */; };
+		FB244E271F62C0460048FE62 /* OpponentHealthBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB244E261F62C0460048FE62 /* OpponentHealthBar.swift */; };
+		FB27B88A1F586A8B00D737EB /* MPCManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB27B8891F586A8B00D737EB /* MPCManager.swift */; };
+		FB27B88E1F58A86000D737EB /* MessageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB27B88D1F58A86000D737EB /* MessageManager.swift */; };
+		FB2C80301F38C5C0009CEEE4 /* Smoke.scnp in Resources */ = {isa = PBXBuildFile; fileRef = FB2C802E1F38C5C0009CEEE4 /* Smoke.scnp */; };
+		FB2C80311F38C5C0009CEEE4 /* smoke.png in Resources */ = {isa = PBXBuildFile; fileRef = FB2C802F1F38C5C0009CEEE4 /* smoke.png */; };
+		FB3AC66B1F32468E00CCAF75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3AC66A1F32468E00CCAF75 /* AppDelegate.swift */; };
+		FB3AC66F1F32468E00CCAF75 /* GiantWarsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB3AC66E1F32468E00CCAF75 /* GiantWarsController.swift */; };
+		FB3AC6721F32468E00CCAF75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3AC6701F32468E00CCAF75 /* Main.storyboard */; };
+		FB3AC6771F32468E00CCAF75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB3AC6751F32468E00CCAF75 /* LaunchScreen.storyboard */; };
+		FB4B71F71F5C99A2002FCF81 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4B71F61F5C99A2002FCF81 /* GameViewController.swift */; };
+		FB4B71F91F5C9D0F002FCF81 /* Pausable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4B71F81F5C9D0F002FCF81 /* Pausable.swift */; };
+		FB4B71FC1F5C9F2C002FCF81 /* BeatTheMachineController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB4B71FB1F5C9F2C002FCF81 /* BeatTheMachineController.swift */; };
+		FB51DAD11F41AAF400B92735 /* ProgressSpark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB51DAD01F41AAF400B92735 /* ProgressSpark.swift */; };
+		FB51DAD41F41E1B000B92735 /* Spark.sks in Resources */ = {isa = PBXBuildFile; fileRef = FB51DAD31F41E1B000B92735 /* Spark.sks */; };
+		FB77AC441F34CE65004F21FB /* OverlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB77AC431F34CE65004F21FB /* OverlayScene.swift */; };
+		FB77AC461F34D19F004F21FB /* TimeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB77AC451F34D19F004F21FB /* TimeManager.swift */; };
+		FB77AC481F34DB7F004F21FB /* SphereNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB77AC471F34DB7F004F21FB /* SphereNode.swift */; };
+		FB9A9A461F486205009EBF16 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A9A451F486205009EBF16 /* GameScene.swift */; };
+		FB9A9A481F4A3DF3009EBF16 /* BorderTextNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A9A471F4A3DF3009EBF16 /* BorderTextNode.swift */; };
+		FB9A9A501F4B8F33009EBF16 /* Eye.scnp in Resources */ = {isa = PBXBuildFile; fileRef = FB9A9A4E1F4B8F33009EBF16 /* Eye.scnp */; };
+		FB9A9A511F4B8F33009EBF16 /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = FB9A9A4F1F4B8F33009EBF16 /* spark.png */; };
+		FB9A9A531F4CD97F009EBF16 /* ProgressLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A9A521F4CD97F009EBF16 /* ProgressLayer.swift */; };
+		FB9A9A551F4DC226009EBF16 /* SnowLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9A9A541F4DC226009EBF16 /* SnowLayer.swift */; };
+		FBBAFC871F66AADA009A40A3 /* GameSelectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBAFC861F66AADA009A40A3 /* GameSelectionController.swift */; };
+		FBEE1D371F4F0276002936B4 /* Bass17w20.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FBEE1D361F4F0276002936B4 /* Bass17w20.mp3 */; };
+		FBEE1D391F4F0FDB002936B4 /* MusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEE1D381F4F0FDB002936B4 /* MusicPlayer.swift */; };
+		FBEE1D401F4F32D6002936B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FBEE1D3F1F4F32D6002936B4 /* Assets.xcassets */; };
+		FBEE1D461F5430B6002936B4 /* ProfileImageMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEE1D451F5430B6002936B4 /* ProfileImageMaker.swift */; };
+		FBEE1D521F547651002936B4 /* Enums.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEE1D511F547651002936B4 /* Enums.swift */; };
+		FBEE1D581F55BB9D002936B4 /* MultipeerLobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEE1D571F55BB9D002936B4 /* MultipeerLobbyViewController.swift */; };
+		FBEE1D5A1F55C2BE002936B4 /* MultipeerAdvertiserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEE1D591F55C2BE002936B4 /* MultipeerAdvertiserCell.swift */; };
+		FBEE1D5C1F56E3B4002936B4 /* MultipeerBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEE1D5B1F56E3B4002936B4 /* MultipeerBrowserViewController.swift */; };
+		FBF22FCD1F3B2E1F00A85082 /* GameScoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF22FCC1F3B2E1F00A85082 /* GameScoreManager.swift */; };
+		FBF22FDF1F3BB78100A85082 /* golem.obj in Resources */ = {isa = PBXBuildFile; fileRef = FBF22FDE1F3BB78100A85082 /* golem.obj */; };
+		FBF7F2221F66B504000C3CB4 /* iCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F2201F66B504000C3CB4 /* iCarousel.m */; };
+		FBF7F2231F66B504000C3CB4 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FBF7F2211F66B504000C3CB4 /* Info.plist */; };
+		FBF7F2251F66B8EE000C3CB4 /* GameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F2241F66B8EE000C3CB4 /* GameManager.swift */; };
+		FBF7F2271F66BE90000C3CB4 /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F2261F66BE90000C3CB4 /* CustomTabBarController.swift */; };
+		FBF7F2291F66BF1F000C3CB4 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F2281F66BF1F000C3CB4 /* ProfileController.swift */; };
+		FBF7F22C1F66BF59000C3CB4 /* SinglePlayerCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F22B1F66BF59000C3CB4 /* SinglePlayerCellController.swift */; };
+		FBF7F22E1F66BF8E000C3CB4 /* MultiPlayerCellController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F22D1F66BF8E000C3CB4 /* MultiPlayerCellController.swift */; };
+		FBF7F2301F66C036000C3CB4 /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBF7F22F1F66C036000C3CB4 /* SettingsController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		6D01B1A51F4F227300E84486 /* MyTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
-		6D01B1A91F54197600E84486 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		6D01B1AB1F5448A700E84486 /* ProfileImageMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageMaker.swift; sourceTree = "<group>"; };
-		6D1ED2511EF57BFC00EDA53B /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		6D2E2B931F4B2B3200586610 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCarousel.h; sourceTree = "<group>"; };
-		6D2E2B941F4B2B3200586610 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCarousel.m; sourceTree = "<group>"; };
-		6D2E2B951F4B2B3200586610 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6D2E2BAB1F4C157700586610 /* Swiperia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swiperia-Bridging-Header.h"; sourceTree = "<group>"; };
-		6D2E2BCC1F4DBC1D00586610 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
-		6D8835071F56C39400390838 /* SinglePlayerCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePlayerCellController.swift; sourceTree = "<group>"; };
-		6D8835091F56ECAD00390838 /* MultiPlayerCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPlayerCellController.swift; sourceTree = "<group>"; };
-		6D94C7A11F3B29C400255B3F /* GameScoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScoreManager.swift; sourceTree = "<group>"; };
-		6D9E5E641F44735F006C1B81 /* ItemPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPanel.swift; sourceTree = "<group>"; };
-		6D9E5E661F4AD6A3006C1B81 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		6D9E5E681F4AD6EC006C1B81 /* SwiftClassExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftClassExtensions.swift; sourceTree = "<group>"; };
-		6DB9DC5F1F5D422C0070D9F7 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
-		6DB9DC611F5D8E610070D9F7 /* HSBColorPicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HSBColorPicker.swift; sourceTree = "<group>"; };
-		6DD2A18E1F41D3A800D883FB /* ProgressCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressCircle.swift; sourceTree = "<group>"; };
-		FBB9D5B71EEC0AE80094A9FD /* Swiperia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiperia.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FBB9D5BA1EEC0AE80094A9FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FBB9D5BC1EEC0AE80094A9FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FBB9D5BF1EEC0AE80094A9FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		FBB9D5C11EEC0AE80094A9FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		FBB9D5C41EEC0AE80094A9FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		FBB9D5C61EEC0AE80094A9FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FBB9D5CE1EEC0C3C0094A9FD /* TimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
-		FBB9D5D01EEC0C6D0094A9FD /* DirectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionManager.swift; sourceTree = "<group>"; };
-		FBB9D5D21EEC0C890094A9FD /* ItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
+		AA1032170CF4A494B8E8D8BB /* Pods-Swiperia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiperia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swiperia/Pods-Swiperia.release.xcconfig"; sourceTree = "<group>"; };
+		C3994EED37A80224069614EB /* Pods_Swiperia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swiperia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1D30B2172340E49A9972D16 /* Pods-Swiperia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiperia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swiperia/Pods-Swiperia.debug.xcconfig"; sourceTree = "<group>"; };
+		FB16DCBD1F4319B300FA205D /* ItemManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemManager.swift; sourceTree = "<group>"; };
+		FB16DCBF1F43357E00FA205D /* DirectionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectionManager.swift; sourceTree = "<group>"; };
+		FB16DCC11F44733500FA205D /* ItemPanel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemPanel.swift; sourceTree = "<group>"; };
+		FB16DCC31F44AA9A00FA205D /* ConstantsAndGlobals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstantsAndGlobals.swift; sourceTree = "<group>"; };
+		FB16DCC71F44B49300FA205D /* SwiftClassExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftClassExtensions.swift; sourceTree = "<group>"; };
+		FB244E201F600B5F0048FE62 /* CreateLobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateLobbyViewController.swift; sourceTree = "<group>"; };
+		FB244E221F618B010048FE62 /* MultipeerBrowserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipeerBrowserCell.swift; sourceTree = "<group>"; };
+		FB244E261F62C0460048FE62 /* OpponentHealthBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OpponentHealthBar.swift; sourceTree = "<group>"; };
+		FB27B8891F586A8B00D737EB /* MPCManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MPCManager.swift; sourceTree = "<group>"; };
+		FB27B88D1F58A86000D737EB /* MessageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageManager.swift; sourceTree = "<group>"; };
+		FB2C802E1F38C5C0009CEEE4 /* Smoke.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Smoke.scnp; sourceTree = "<group>"; };
+		FB2C802F1F38C5C0009CEEE4 /* smoke.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smoke.png; sourceTree = "<group>"; };
+		FB3AC6671F32468E00CCAF75 /* Swiperia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Swiperia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB3AC66A1F32468E00CCAF75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB3AC66E1F32468E00CCAF75 /* GiantWarsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiantWarsController.swift; sourceTree = "<group>"; };
+		FB3AC6711F32468E00CCAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FB3AC6761F32468E00CCAF75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FB3AC6781F32468E00CCAF75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB4B71F61F5C99A2002FCF81 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		FB4B71F81F5C9D0F002FCF81 /* Pausable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pausable.swift; sourceTree = "<group>"; };
+		FB4B71FB1F5C9F2C002FCF81 /* BeatTheMachineController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeatTheMachineController.swift; sourceTree = "<group>"; };
+		FB51DAD01F41AAF400B92735 /* ProgressSpark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressSpark.swift; sourceTree = "<group>"; };
+		FB51DAD31F41E1B000B92735 /* Spark.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Spark.sks; sourceTree = "<group>"; };
+		FB77AC431F34CE65004F21FB /* OverlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OverlayScene.swift; sourceTree = "<group>"; };
+		FB77AC451F34D19F004F21FB /* TimeManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeManager.swift; sourceTree = "<group>"; };
+		FB77AC471F34DB7F004F21FB /* SphereNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SphereNode.swift; sourceTree = "<group>"; };
+		FB9A9A451F486205009EBF16 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		FB9A9A471F4A3DF3009EBF16 /* BorderTextNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderTextNode.swift; sourceTree = "<group>"; };
+		FB9A9A4E1F4B8F33009EBF16 /* Eye.scnp */ = {isa = PBXFileReference; lastKnownFileType = file.scp; path = Eye.scnp; sourceTree = "<group>"; };
+		FB9A9A4F1F4B8F33009EBF16 /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		FB9A9A521F4CD97F009EBF16 /* ProgressLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProgressLayer.swift; sourceTree = "<group>"; };
+		FB9A9A541F4DC226009EBF16 /* SnowLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowLayer.swift; sourceTree = "<group>"; };
+		FBBAFC861F66AADA009A40A3 /* GameSelectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSelectionController.swift; sourceTree = "<group>"; };
+		FBEE1D361F4F0276002936B4 /* Bass17w20.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Bass17w20.mp3; sourceTree = "<group>"; };
+		FBEE1D381F4F0FDB002936B4 /* MusicPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicPlayer.swift; sourceTree = "<group>"; };
+		FBEE1D3F1F4F32D6002936B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FBEE1D451F5430B6002936B4 /* ProfileImageMaker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageMaker.swift; sourceTree = "<group>"; };
+		FBEE1D511F547651002936B4 /* Enums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Enums.swift; sourceTree = "<group>"; };
+		FBEE1D571F55BB9D002936B4 /* MultipeerLobbyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipeerLobbyViewController.swift; sourceTree = "<group>"; };
+		FBEE1D591F55C2BE002936B4 /* MultipeerAdvertiserCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipeerAdvertiserCell.swift; sourceTree = "<group>"; };
+		FBEE1D5B1F56E3B4002936B4 /* MultipeerBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultipeerBrowserViewController.swift; sourceTree = "<group>"; };
+		FBF22FCC1F3B2E1F00A85082 /* GameScoreManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScoreManager.swift; sourceTree = "<group>"; };
+		FBF22FDE1F3BB78100A85082 /* golem.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = golem.obj; sourceTree = "<group>"; };
+		FBF7F21E1F66B503000C3CB4 /* Swiperia-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Swiperia-Bridging-Header.h"; sourceTree = "<group>"; };
+		FBF7F21F1F66B504000C3CB4 /* iCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iCarousel.h; path = iCarousel/iCarousel.h; sourceTree = "<group>"; };
+		FBF7F2201F66B504000C3CB4 /* iCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = iCarousel.m; path = iCarousel/iCarousel.m; sourceTree = "<group>"; };
+		FBF7F2211F66B504000C3CB4 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = iCarousel/Info.plist; sourceTree = "<group>"; };
+		FBF7F2241F66B8EE000C3CB4 /* GameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameManager.swift; sourceTree = "<group>"; };
+		FBF7F2261F66BE90000C3CB4 /* CustomTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		FBF7F2281F66BF1F000C3CB4 /* ProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		FBF7F22B1F66BF59000C3CB4 /* SinglePlayerCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SinglePlayerCellController.swift; sourceTree = "<group>"; };
+		FBF7F22D1F66BF8E000C3CB4 /* MultiPlayerCellController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MultiPlayerCellController.swift; sourceTree = "<group>"; };
+		FBF7F22F1F66C036000C3CB4 /* SettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		FBB9D5B41EEC0AE80094A9FD /* Frameworks */ = {
+		FB3AC6641F32468E00CCAF75 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA911CECA2533B68B9B655FB /* Pods_Swiperia.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6D1ED2501EF57BBF00EDA53B /* controller */ = {
+		B5458669F0962E6927A6F3DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				FBB9D5BC1EEC0AE80094A9FD /* ViewController.swift */,
-				6D1ED2511EF57BFC00EDA53B /* GameViewController.swift */,
-				6D01B1A51F4F227300E84486 /* MyTabBarController.swift */,
-				6D01B1A91F54197600E84486 /* ProfileViewController.swift */,
-				6D8835071F56C39400390838 /* SinglePlayerCellController.swift */,
-				6D8835091F56ECAD00390838 /* MultiPlayerCellController.swift */,
-				6DB9DC5F1F5D422C0070D9F7 /* SettingsController.swift */,
-				6DB9DC611F5D8E610070D9F7 /* HSBColorPicker.swift */,
+				C3994EED37A80224069614EB /* Pods_Swiperia.framework */,
 			);
-			name = controller;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		6D2E2B921F4B2B3200586610 /* iCarousel */ = {
+		FB27B88F1F59D9D000D737EB /* Games */ = {
 			isa = PBXGroup;
 			children = (
-				6D2E2B931F4B2B3200586610 /* iCarousel.h */,
-				6D2E2B941F4B2B3200586610 /* iCarousel.m */,
-				6D2E2B951F4B2B3200586610 /* Info.plist */,
+				FB3AC6881F33809C00CCAF75 /* Particles */,
+				FB27B8901F59DA3500D737EB /* Models */,
+				FB51DAD21F41AB1900B92735 /* Controller */,
 			);
-			name = iCarousel;
-			path = ../iCarousel;
+			name = Games;
 			sourceTree = "<group>";
 		};
-		FBB9D5AE1EEC0AE80094A9FD = {
+		FB27B8901F59DA3500D737EB /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FBB9D5B91EEC0AE80094A9FD /* Swiperia */,
-				FBB9D5B81EEC0AE80094A9FD /* Products */,
+				FB77AC401F34CDE9004F21FB /* StandardModels */,
+				FB9A9A491F4B1929009EBF16 /* CALayer */,
+				FB51DACF1F41AAC400B92735 /* spriteKit */,
+				FB96334C1F461B01009B5FB4 /* SceneKit */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FB3AC65E1F32468E00CCAF75 = {
+			isa = PBXGroup;
+			children = (
+				FB3AC6691F32468E00CCAF75 /* Swiperia */,
+				FB3AC6681F32468E00CCAF75 /* Products */,
+				FBEE1D3F1F4F32D6002936B4 /* Assets.xcassets */,
+				FF5AD66791BB8A1FC5966B04 /* Pods */,
+				B5458669F0962E6927A6F3DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		FBB9D5B81EEC0AE80094A9FD /* Products */ = {
+		FB3AC6681F32468E00CCAF75 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FBB9D5B71EEC0AE80094A9FD /* Swiperia.app */,
+				FB3AC6671F32468E00CCAF75 /* Swiperia.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		FBB9D5B91EEC0AE80094A9FD /* Swiperia */ = {
+		FB3AC6691F32468E00CCAF75 /* Swiperia */ = {
 			isa = PBXGroup;
 			children = (
-				6D2E2BAB1F4C157700586610 /* Swiperia-Bridging-Header.h */,
-				6D2E2B921F4B2B3200586610 /* iCarousel */,
-				FBB9D5CD1EEC0C090094A9FD /* models */,
-				FBB9D5BA1EEC0AE80094A9FD /* AppDelegate.swift */,
-				6D1ED2501EF57BBF00EDA53B /* controller */,
-				FBB9D5BE1EEC0AE80094A9FD /* Main.storyboard */,
-				FBB9D5CC1EEC0BFC0094A9FD /* helper */,
+				FBF7F21D1F66B4B9000C3CB4 /* iCarousel */,
+				FBBAFC841F66A9DF009A40A3 /* Menue */,
+				FB96334D1F461B1D009B5FB4 /* Helper */,
+				FB27B88F1F59D9D000D737EB /* Games */,
+				FBEE1D4A1F547407002936B4 /* Multipeer */,
+				FBEE1D3A1F4F100F002936B4 /* Music */,
+				FB77AC5F1F37C5BD004F21FB /* golem-radial */,
+				FB3AC66A1F32468E00CCAF75 /* AppDelegate.swift */,
+				FB3AC6701F32468E00CCAF75 /* Main.storyboard */,
+				FB3AC6751F32468E00CCAF75 /* LaunchScreen.storyboard */,
+				FB3AC6781F32468E00CCAF75 /* Info.plist */,
 			);
 			path = Swiperia;
 			sourceTree = "<group>";
 		};
-		FBB9D5CC1EEC0BFC0094A9FD /* helper */ = {
+		FB3AC6881F33809C00CCAF75 /* Particles */ = {
 			isa = PBXGroup;
 			children = (
-				FBB9D5C11EEC0AE80094A9FD /* Assets.xcassets */,
-				FBB9D5C31EEC0AE80094A9FD /* LaunchScreen.storyboard */,
-				FBB9D5C61EEC0AE80094A9FD /* Info.plist */,
-				6D9E5E681F4AD6EC006C1B81 /* SwiftClassExtensions.swift */,
-				6D9E5E661F4AD6A3006C1B81 /* Constants.swift */,
+				FB2C802E1F38C5C0009CEEE4 /* Smoke.scnp */,
+				FB2C802F1F38C5C0009CEEE4 /* smoke.png */,
+				FB51DAD31F41E1B000B92735 /* Spark.sks */,
+				FB9A9A4E1F4B8F33009EBF16 /* Eye.scnp */,
+				FB9A9A4F1F4B8F33009EBF16 /* spark.png */,
 			);
-			name = helper;
+			name = Particles;
 			sourceTree = "<group>";
 		};
-		FBB9D5CD1EEC0C090094A9FD /* models */ = {
+		FB51DACF1F41AAC400B92735 /* spriteKit */ = {
 			isa = PBXGroup;
 			children = (
-				FBB9D5CE1EEC0C3C0094A9FD /* TimeManager.swift */,
-				FBB9D5D01EEC0C6D0094A9FD /* DirectionManager.swift */,
-				FBB9D5D21EEC0C890094A9FD /* ItemManager.swift */,
-				6D94C7A11F3B29C400255B3F /* GameScoreManager.swift */,
-				6DD2A18E1F41D3A800D883FB /* ProgressCircle.swift */,
-				6D9E5E641F44735F006C1B81 /* ItemPanel.swift */,
-				6D2E2BCC1F4DBC1D00586610 /* GameManager.swift */,
-				6D01B1AB1F5448A700E84486 /* ProfileImageMaker.swift */,
+				FB77AC431F34CE65004F21FB /* OverlayScene.swift */,
+				FB16DCC11F44733500FA205D /* ItemPanel.swift */,
+				FB51DAD01F41AAF400B92735 /* ProgressSpark.swift */,
+				FB9A9A471F4A3DF3009EBF16 /* BorderTextNode.swift */,
 			);
-			name = models;
+			name = spriteKit;
+			sourceTree = "<group>";
+		};
+		FB51DAD21F41AB1900B92735 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FB4B71F61F5C99A2002FCF81 /* GameViewController.swift */,
+				FB3AC66E1F32468E00CCAF75 /* GiantWarsController.swift */,
+				FB4B71FB1F5C9F2C002FCF81 /* BeatTheMachineController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FB77AC401F34CDE9004F21FB /* StandardModels */ = {
+			isa = PBXGroup;
+			children = (
+				FB77AC451F34D19F004F21FB /* TimeManager.swift */,
+				FBF22FCC1F3B2E1F00A85082 /* GameScoreManager.swift */,
+				FB16DCBD1F4319B300FA205D /* ItemManager.swift */,
+				FB16DCBF1F43357E00FA205D /* DirectionManager.swift */,
+				FB4B71F81F5C9D0F002FCF81 /* Pausable.swift */,
+			);
+			name = StandardModels;
+			sourceTree = "<group>";
+		};
+		FB77AC5F1F37C5BD004F21FB /* golem-radial */ = {
+			isa = PBXGroup;
+			children = (
+				FBF22FDE1F3BB78100A85082 /* golem.obj */,
+			);
+			path = "golem-radial";
+			sourceTree = "<group>";
+		};
+		FB96334C1F461B01009B5FB4 /* SceneKit */ = {
+			isa = PBXGroup;
+			children = (
+				FB77AC471F34DB7F004F21FB /* SphereNode.swift */,
+				FB9A9A451F486205009EBF16 /* GameScene.swift */,
+			);
+			name = SceneKit;
+			sourceTree = "<group>";
+		};
+		FB96334D1F461B1D009B5FB4 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FBEE1D491F54501F002936B4 /* profile */,
+				FB16DCC31F44AA9A00FA205D /* ConstantsAndGlobals.swift */,
+				FB16DCC71F44B49300FA205D /* SwiftClassExtensions.swift */,
+				FBEE1D381F4F0FDB002936B4 /* MusicPlayer.swift */,
+				FBF7F2241F66B8EE000C3CB4 /* GameManager.swift */,
+			);
+			name = Helper;
+			sourceTree = "<group>";
+		};
+		FB96C5891F5734FE00184E30 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FBEE1D5D1F56E815002936B4 /* Cells */,
+				FBEE1D511F547651002936B4 /* Enums.swift */,
+				FB27B8891F586A8B00D737EB /* MPCManager.swift */,
+				FB27B88D1F58A86000D737EB /* MessageManager.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		FB9A9A491F4B1929009EBF16 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				FB9A9A521F4CD97F009EBF16 /* ProgressLayer.swift */,
+				FB9A9A541F4DC226009EBF16 /* SnowLayer.swift */,
+				FB244E261F62C0460048FE62 /* OpponentHealthBar.swift */,
+			);
+			name = CALayer;
+			sourceTree = "<group>";
+		};
+		FBBAFC841F66A9DF009A40A3 /* Menue */ = {
+			isa = PBXGroup;
+			children = (
+				FBBAFC851F66AA22009A40A3 /* Controller */,
+			);
+			name = Menue;
+			sourceTree = "<group>";
+		};
+		FBBAFC851F66AA22009A40A3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FBF7F22A1F66BF3C000C3CB4 /* Cells */,
+				FBBAFC861F66AADA009A40A3 /* GameSelectionController.swift */,
+				FBF7F2261F66BE90000C3CB4 /* CustomTabBarController.swift */,
+				FBF7F2281F66BF1F000C3CB4 /* ProfileController.swift */,
+				FBF7F22F1F66C036000C3CB4 /* SettingsController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FBEE1D3A1F4F100F002936B4 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				FBEE1D361F4F0276002936B4 /* Bass17w20.mp3 */,
+			);
+			name = Music;
+			sourceTree = "<group>";
+		};
+		FBEE1D491F54501F002936B4 /* profile */ = {
+			isa = PBXGroup;
+			children = (
+				FBEE1D451F5430B6002936B4 /* ProfileImageMaker.swift */,
+			);
+			name = profile;
+			sourceTree = "<group>";
+		};
+		FBEE1D4A1F547407002936B4 /* Multipeer */ = {
+			isa = PBXGroup;
+			children = (
+				FB96C5891F5734FE00184E30 /* Models */,
+				FBEE1D5E1F56E826002936B4 /* Controller */,
+			);
+			name = Multipeer;
+			sourceTree = "<group>";
+		};
+		FBEE1D5D1F56E815002936B4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FBEE1D591F55C2BE002936B4 /* MultipeerAdvertiserCell.swift */,
+				FB244E221F618B010048FE62 /* MultipeerBrowserCell.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		FBEE1D5E1F56E826002936B4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FBEE1D571F55BB9D002936B4 /* MultipeerLobbyViewController.swift */,
+				FBEE1D5B1F56E3B4002936B4 /* MultipeerBrowserViewController.swift */,
+				FB244E201F600B5F0048FE62 /* CreateLobbyViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		FBF7F21D1F66B4B9000C3CB4 /* iCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				FBF7F21F1F66B504000C3CB4 /* iCarousel.h */,
+				FBF7F2201F66B504000C3CB4 /* iCarousel.m */,
+				FBF7F2211F66B504000C3CB4 /* Info.plist */,
+				FBF7F21E1F66B503000C3CB4 /* Swiperia-Bridging-Header.h */,
+			);
+			name = iCarousel;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		FBF7F22A1F66BF3C000C3CB4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FBF7F22B1F66BF59000C3CB4 /* SinglePlayerCellController.swift */,
+				FBF7F22D1F66BF8E000C3CB4 /* MultiPlayerCellController.swift */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		FF5AD66791BB8A1FC5966B04 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1D30B2172340E49A9972D16 /* Pods-Swiperia.debug.xcconfig */,
+				AA1032170CF4A494B8E8D8BB /* Pods-Swiperia.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		FBB9D5B61EEC0AE80094A9FD /* Swiperia */ = {
+		FB3AC6661F32468E00CCAF75 /* Swiperia */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = FBB9D5C91EEC0AE80094A9FD /* Build configuration list for PBXNativeTarget "Swiperia" */;
+			buildConfigurationList = FB3AC67B1F32468E00CCAF75 /* Build configuration list for PBXNativeTarget "Swiperia" */;
 			buildPhases = (
-				FBB9D5B31EEC0AE80094A9FD /* Sources */,
-				FBB9D5B41EEC0AE80094A9FD /* Frameworks */,
-				FBB9D5B51EEC0AE80094A9FD /* Resources */,
+				A6D7856DCD04CB42ACE07E00 /* [CP] Check Pods Manifest.lock */,
+				FB3AC6631F32468E00CCAF75 /* Sources */,
+				FB3AC6641F32468E00CCAF75 /* Frameworks */,
+				FB3AC6651F32468E00CCAF75 /* Resources */,
+				3FBDFF066DC84EEC95DAE0F2 /* [CP] Embed Pods Frameworks */,
+				E5474EAC4BD98D049AA30BEA /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = Swiperia;
-			productName = Swiperia;
-			productReference = FBB9D5B71EEC0AE80094A9FD /* Swiperia.app */;
+			productName = GlobeNew;
+			productReference = FB3AC6671F32468E00CCAF75 /* Swiperia.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		FBB9D5AF1EEC0AE80094A9FD /* Project object */ = {
+		FB3AC65F1F32468E00CCAF75 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Dedy Gubbert";
+				ORGANIZATIONNAME = "Dennis Dubbert";
 				TargetAttributes = {
-					FBB9D5B61EEC0AE80094A9FD = {
-						CreatedOnToolsVersion = 8.3.2;
-						DevelopmentTeam = Z8537KSETR;
+					FB3AC6661F32468E00CCAF75 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = JQY7EZ27YQ;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = FBB9D5B21EEC0AE80094A9FD /* Build configuration list for PBXProject "Swiperia" */;
+			buildConfigurationList = FB3AC6621F32468E00CCAF75 /* Build configuration list for PBXProject "Swiperia" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -203,73 +434,152 @@
 				en,
 				Base,
 			);
-			mainGroup = FBB9D5AE1EEC0AE80094A9FD;
-			productRefGroup = FBB9D5B81EEC0AE80094A9FD /* Products */;
+			mainGroup = FB3AC65E1F32468E00CCAF75;
+			productRefGroup = FB3AC6681F32468E00CCAF75 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FBB9D5B61EEC0AE80094A9FD /* Swiperia */,
+				FB3AC6661F32468E00CCAF75 /* Swiperia */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		FBB9D5B51EEC0AE80094A9FD /* Resources */ = {
+		FB3AC6651F32468E00CCAF75 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D2E2B971F4B2B3200586610 /* Info.plist in Resources */,
-				FBB9D5C51EEC0AE80094A9FD /* LaunchScreen.storyboard in Resources */,
-				FBB9D5C21EEC0AE80094A9FD /* Assets.xcassets in Resources */,
-				FBB9D5C01EEC0AE80094A9FD /* Main.storyboard in Resources */,
+				FBF22FDF1F3BB78100A85082 /* golem.obj in Resources */,
+				FB9A9A511F4B8F33009EBF16 /* spark.png in Resources */,
+				FB2C80301F38C5C0009CEEE4 /* Smoke.scnp in Resources */,
+				FB3AC6771F32468E00CCAF75 /* LaunchScreen.storyboard in Resources */,
+				FBEE1D401F4F32D6002936B4 /* Assets.xcassets in Resources */,
+				FB51DAD41F41E1B000B92735 /* Spark.sks in Resources */,
+				FB9A9A501F4B8F33009EBF16 /* Eye.scnp in Resources */,
+				FB2C80311F38C5C0009CEEE4 /* smoke.png in Resources */,
+				FBF7F2231F66B504000C3CB4 /* Info.plist in Resources */,
+				FB3AC6721F32468E00CCAF75 /* Main.storyboard in Resources */,
+				FBEE1D371F4F0276002936B4 /* Bass17w20.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3FBDFF066DC84EEC95DAE0F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Swiperia/Pods-Swiperia-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChromaColorPicker/ChromaColorPicker.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChromaColorPicker.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swiperia/Pods-Swiperia-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6D7856DCD04CB42ACE07E00 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Swiperia-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E5474EAC4BD98D049AA30BEA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Swiperia/Pods-Swiperia-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		FBB9D5B31EEC0AE80094A9FD /* Sources */ = {
+		FB3AC6631F32468E00CCAF75 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D88350A1F56ECAD00390838 /* MultiPlayerCellController.swift in Sources */,
-				6D2E2BCD1F4DBC1D00586610 /* GameManager.swift in Sources */,
-				FBB9D5BD1EEC0AE80094A9FD /* ViewController.swift in Sources */,
-				6D9E5E691F4AD6EC006C1B81 /* SwiftClassExtensions.swift in Sources */,
-				FBB9D5D31EEC0C890094A9FD /* ItemManager.swift in Sources */,
-				FBB9D5BB1EEC0AE80094A9FD /* AppDelegate.swift in Sources */,
-				6D94C7A21F3B29C400255B3F /* GameScoreManager.swift in Sources */,
-				6D01B1AC1F5448A700E84486 /* ProfileImageMaker.swift in Sources */,
-				FBB9D5CF1EEC0C3C0094A9FD /* TimeManager.swift in Sources */,
-				6D9E5E671F4AD6A3006C1B81 /* Constants.swift in Sources */,
-				6D1ED2521EF57BFC00EDA53B /* GameViewController.swift in Sources */,
-				6D8835081F56C39400390838 /* SinglePlayerCellController.swift in Sources */,
-				6DD2A18F1F41D3A800D883FB /* ProgressCircle.swift in Sources */,
-				6DB9DC621F5D8E610070D9F7 /* HSBColorPicker.swift in Sources */,
-				6D2E2B961F4B2B3200586610 /* iCarousel.m in Sources */,
-				FBB9D5D11EEC0C6D0094A9FD /* DirectionManager.swift in Sources */,
-				6DB9DC601F5D422C0070D9F7 /* SettingsController.swift in Sources */,
-				6D01B1AA1F54197600E84486 /* ProfileViewController.swift in Sources */,
-				6D9E5E651F44735F006C1B81 /* ItemPanel.swift in Sources */,
-				6D01B1A61F4F227300E84486 /* MyTabBarController.swift in Sources */,
+				FBF7F2291F66BF1F000C3CB4 /* ProfileController.swift in Sources */,
+				FB9A9A531F4CD97F009EBF16 /* ProgressLayer.swift in Sources */,
+				FB27B88A1F586A8B00D737EB /* MPCManager.swift in Sources */,
+				FB4B71F91F5C9D0F002FCF81 /* Pausable.swift in Sources */,
+				FBEE1D581F55BB9D002936B4 /* MultipeerLobbyViewController.swift in Sources */,
+				FB244E231F618B010048FE62 /* MultipeerBrowserCell.swift in Sources */,
+				FB3AC66F1F32468E00CCAF75 /* GiantWarsController.swift in Sources */,
+				FBEE1D5C1F56E3B4002936B4 /* MultipeerBrowserViewController.swift in Sources */,
+				FBF7F22C1F66BF59000C3CB4 /* SinglePlayerCellController.swift in Sources */,
+				FB4B71FC1F5C9F2C002FCF81 /* BeatTheMachineController.swift in Sources */,
+				FB244E271F62C0460048FE62 /* OpponentHealthBar.swift in Sources */,
+				FBBAFC871F66AADA009A40A3 /* GameSelectionController.swift in Sources */,
+				FB16DCC41F44AA9A00FA205D /* ConstantsAndGlobals.swift in Sources */,
+				FB77AC481F34DB7F004F21FB /* SphereNode.swift in Sources */,
+				FBF7F2271F66BE90000C3CB4 /* CustomTabBarController.swift in Sources */,
+				FBF7F22E1F66BF8E000C3CB4 /* MultiPlayerCellController.swift in Sources */,
+				FBF22FCD1F3B2E1F00A85082 /* GameScoreManager.swift in Sources */,
+				FBF7F2221F66B504000C3CB4 /* iCarousel.m in Sources */,
+				FBEE1D5A1F55C2BE002936B4 /* MultipeerAdvertiserCell.swift in Sources */,
+				FB77AC461F34D19F004F21FB /* TimeManager.swift in Sources */,
+				FB51DAD11F41AAF400B92735 /* ProgressSpark.swift in Sources */,
+				FBEE1D391F4F0FDB002936B4 /* MusicPlayer.swift in Sources */,
+				FB27B88E1F58A86000D737EB /* MessageManager.swift in Sources */,
+				FB4B71F71F5C99A2002FCF81 /* GameViewController.swift in Sources */,
+				FB16DCC01F43357E00FA205D /* DirectionManager.swift in Sources */,
+				FB77AC441F34CE65004F21FB /* OverlayScene.swift in Sources */,
+				FBEE1D461F5430B6002936B4 /* ProfileImageMaker.swift in Sources */,
+				FB16DCC81F44B49300FA205D /* SwiftClassExtensions.swift in Sources */,
+				FB16DCBE1F4319B300FA205D /* ItemManager.swift in Sources */,
+				FBF7F2251F66B8EE000C3CB4 /* GameManager.swift in Sources */,
+				FB3AC66B1F32468E00CCAF75 /* AppDelegate.swift in Sources */,
+				FB9A9A551F4DC226009EBF16 /* SnowLayer.swift in Sources */,
+				FB9A9A461F486205009EBF16 /* GameScene.swift in Sources */,
+				FB16DCC21F44733500FA205D /* ItemPanel.swift in Sources */,
+				FBF7F2301F66C036000C3CB4 /* SettingsController.swift in Sources */,
+				FBEE1D521F547651002936B4 /* Enums.swift in Sources */,
+				FB9A9A481F4A3DF3009EBF16 /* BorderTextNode.swift in Sources */,
+				FB244E211F600B5F0048FE62 /* CreateLobbyViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FBB9D5BE1EEC0AE80094A9FD /* Main.storyboard */ = {
+		FB3AC6701F32468E00CCAF75 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FBB9D5BF1EEC0AE80094A9FD /* Base */,
+				FB3AC6711F32468E00CCAF75 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		FBB9D5C31EEC0AE80094A9FD /* LaunchScreen.storyboard */ = {
+		FB3AC6751F32468E00CCAF75 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				FBB9D5C41EEC0AE80094A9FD /* Base */,
+				FB3AC6761F32468E00CCAF75 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -277,7 +587,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		FBB9D5C71EEC0AE80094A9FD /* Debug */ = {
+		FB3AC6791F32468E00CCAF75 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -323,13 +633,12 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		FBB9D5C81EEC0AE80094A9FD /* Release */ = {
+		FB3AC67A1F32468E00CCAF75 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -367,65 +676,71 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		FBB9D5CA1EEC0AE80094A9FD /* Debug */ = {
+		FB3AC67C1F32468E00CCAF75 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1D30B2172340E49A9972D16 /* Pods-Swiperia.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z8537KSETR;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = JQY7EZ27YQ;
 				INFOPLIST_FILE = Swiperia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DEDY-GUBBERT.Swiperia";
+				PRODUCT_BUNDLE_IDENTIFIER = DDUBBERT.Swiperia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Swiperia/Swiperia-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swiperia-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Swiperia-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
-				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Debug;
 		};
-		FBB9D5CB1EEC0AE80094A9FD /* Release */ = {
+		FB3AC67D1F32468E00CCAF75 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA1032170CF4A494B8E8D8BB /* Pods-Swiperia.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = Z8537KSETR;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = JQY7EZ27YQ;
 				INFOPLIST_FILE = Swiperia/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "DEDY-GUBBERT.Swiperia";
+				PRODUCT_BUNDLE_IDENTIFIER = DDUBBERT.Swiperia;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "Swiperia/Swiperia-Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "Swiperia-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "Swiperia-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
-				USER_HEADER_SEARCH_PATHS = "Pods/**";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		FBB9D5B21EEC0AE80094A9FD /* Build configuration list for PBXProject "Swiperia" */ = {
+		FB3AC6621F32468E00CCAF75 /* Build configuration list for PBXProject "Swiperia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBB9D5C71EEC0AE80094A9FD /* Debug */,
-				FBB9D5C81EEC0AE80094A9FD /* Release */,
+				FB3AC6791F32468E00CCAF75 /* Debug */,
+				FB3AC67A1F32468E00CCAF75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		FBB9D5C91EEC0AE80094A9FD /* Build configuration list for PBXNativeTarget "Swiperia" */ = {
+		FB3AC67B1F32468E00CCAF75 /* Build configuration list for PBXNativeTarget "Swiperia" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				FBB9D5CA1EEC0AE80094A9FD /* Debug */,
-				FBB9D5CB1EEC0AE80094A9FD /* Release */,
+				FB3AC67C1F32468E00CCAF75 /* Debug */,
+				FB3AC67D1F32468E00CCAF75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = FBB9D5AF1EEC0AE80094A9FD /* Project object */;
+	rootObject = FB3AC65F1F32468E00CCAF75 /* Project object */;
 }

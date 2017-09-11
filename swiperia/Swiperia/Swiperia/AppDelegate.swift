@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  Swiperia
+//  GlobeNew
 //
-//  Created by Dennis Dubbert on 10.06.17.
-//  Copyright © 2017 Dedy Gubbert. All rights reserved.
+//  Created by Dennis Dubbert on 02.08.17.
+//  Copyright © 2017 Dennis Dubbert. All rights reserved.
 //
 
 import UIKit
@@ -13,29 +13,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-//        let views = (self.window?.rootViewController as! UITabBarController).viewControllers
-//        print(views)
-//        if let singlePlayerView = (views?[0] as? ViewController) {
-//            singlePlayerView.currentGameMode = GameMode.single
-//            print("singlePlayer")
-//        }
-//        
-//        if let multiPlayerView = (views?[1] as? ViewController) {
-//            multiPlayerView.currentGameMode = GameMode.multi
-//            print("multiPlayer")
-//        }
+        UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 11)!], for: UIControlState.normal)
+        
         UITabBar.appearance().tintColor = UIColor.white
-
+        
         return true
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
         // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: Constants.pauseNotification), object: nil)
     }
 
     func applicationDidEnterBackground(_ application: UIApplication) {

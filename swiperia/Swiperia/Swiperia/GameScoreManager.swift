@@ -1,52 +1,25 @@
 //
 //  GameScoreManager.swift
-//  Swiperia
+//  GlobeNew
 //
-//  Created by Edgar Gellert on 09.08.17.
-//  Copyright © 2017 Dedy Gubbert. All rights reserved.
+//  Created by Dennis Dubbert on 09.08.17.
+//  Copyright © 2017 Dennis Dubbert. All rights reserved.
 //
 
 import Foundation
 
-protocol GameScoreManagerDelegate : class {
-    func scoreDidChange(to score : Double)
-    func comboLevelDidChange(to level : Int)
-    func itemProgressDidChange(to progress : Int)
+protocol GameScoreManagerDelegate: class {
+    func scoreDidChange(to score: Double)
+    func comboLevelDidChange(to level: Int)
+    func itemProgressDidChange(to progress: Double)
     func itemProgressDidFinish()
 }
 
-class GameScoreManager {
-    
-//MARK: Properties
-    
-    ///
-    static let LEVEL_CHANGE_MULTIPLICATOR : Double = 1.5
-    
-    ///
-    static let MULTIPLICATOR_STEPS = [1.1, 1.2, 1.3, 1.5, 1.8, 2.3]
-    
+class GameScoreManager {    
     ///
     private var score : Double = 0 {
         didSet {
             delegate?.scoreDidChange(to: score)
-        }
-    }
-    
-    ///
-    private var comboCount : Int = 0 {
-        didSet {
-            if comboCount == currentAmountForLevelChange {
-                comboCount = 0
-                
-                if comboLevel < GameScoreManager.MULTIPLICATOR_STEPS.count { comboLevel += 1 }
-            }
-        }
-    }
-    
-    ///
-    var comboLevel : Int = 0 {
-        didSet {
-            delegate?.comboLevelDidChange(to : comboLevel)
         }
     }
     
@@ -58,16 +31,33 @@ class GameScoreManager {
         return standardScoreIncreaseAmount * currentMultiplicator
     }
     
-    
     ///
     var currentMultiplicator : Double {
         var multiplicator = 1.0
         if comboLevel > 0 {
-            for index in 0...comboLevel - 1 {
-                multiplicator *= GameScoreManager.MULTIPLICATOR_STEPS[index]
+            for index in 0...comboLevel-1 {
+                multiplicator *= Constants.MULTIPLICATOR_STEPS[index]
             }
         }
         return multiplicator
+    }
+    
+    ///
+    var comboCount : Int = 0 {
+        didSet {
+            if comboCount == currentAmountForLevelChange {
+                comboCount = 0
+
+                if comboLevel < Constants.MULTIPLICATOR_STEPS.count {comboLevel += 1}
+            }
+        }
+    }
+    
+    ///
+    private var comboLevel : Int = 0 {
+        didSet {
+            delegate?.comboLevelDidChange(to: comboLevel)
+        }
     }
     
     ///
@@ -75,11 +65,11 @@ class GameScoreManager {
     
     ///
     private var currentAmountForLevelChange : Int {
-        return standardAmountForLevelChange * Int(pow(GameScoreManager.LEVEL_CHANGE_MULTIPLICATOR, Double(comboLevel)).rounded())
+        return Int(Double(standardAmountForLevelChange) * pow(Constants.LEVEL_CHANGE_MULTIPLICATOR, Double(comboLevel)))
     }
-    
+
     ///
-    var itemProgress : Int = 0 {
+    private var itemProgress : Double = 0 {
         didSet {
             if itemProgress == itemProgressFinished {
                 delegate?.itemProgressDidFinish()
@@ -92,33 +82,44 @@ class GameScoreManager {
     }
     
     ///
-    let itemProgressFinished : Int
+    let itemProgressFinished : Double
     
     ///
     var itemChargable : Bool = true
     
     ///
-    weak var delegate : GameScoreManagerDelegate?
+    weak var delegate: GameScoreManagerDelegate?
     
     
-//MARK: Functions
+    // MARK: Functions
     
     ///
-    func scored(successfully success : Bool) {
+    func scored(successfully success: Bool) {
         if success {
             comboCount += 1
             score += currentIncrement
-            itemProgress += 1
+            if itemChargable {itemProgress += 1}
         } else {
             comboCount = 0
             comboLevel = 0
         }
     }
     
-    ///
-    init(standardScoreIncreaseAmount scoreInc : Double, standardAmountForLevelChange levelInc : Int, itemProgressFinished itemFinished : Int) {
+    func reset() {
+        let tempDel = delegate
+        delegate = nil
+        itemChargable = true
+        itemProgress = 0
+        comboLevel = 0
+        comboCount = 0
+        score = 0
+        delegate = tempDel
+    }
+    
+    init(standardScoreIncreaseAmount scoreInc: Double, standardAmountForLevelChange levelInc: Int, itemProgressFinished itemFinished: Double) {
         standardScoreIncreaseAmount = scoreInc
         standardAmountForLevelChange = levelInc
         itemProgressFinished = itemFinished
     }
 }
+
