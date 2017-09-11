@@ -35,7 +35,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="9PC-FD-rHg" id="R4V-cj-CST">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t1b-CD-7dk">
@@ -159,7 +159,7 @@
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" contentMode="center" tableViewCell="vPW-ym-KKb" id="Scq-b7-sgg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="YOt-MM-zr6">
@@ -607,7 +607,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Settings" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qfd-i6-iM7">
                                         <rect key="frame" x="99.5" y="86" width="176.5" height="56"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="48"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VB6-xx-IUQ">
@@ -615,42 +615,48 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uT4-iO-3B9" userLabel="musicButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="217" height="53"/>
-                                                <state key="normal" title="Button" image="musicOnButton"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                                <state key="normal" title="Music" backgroundImage="musicOnButton"/>
                                                 <connections>
                                                     <action selector="musicButtonPressed:" destination="oR9-ii-R9F" eventType="touchUpInside" id="ADN-cB-hZe"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KF9-Zl-mqd" userLabel="soundsButton">
                                                 <rect key="frame" x="0.0" y="61" width="217" height="52.5"/>
-                                                <state key="normal" title="Button" image="soundsOnButton"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                                <state key="normal" title="Sound" backgroundImage="soundsOnButton"/>
                                                 <connections>
                                                     <action selector="soundsButtonPressed:" destination="oR9-ii-R9F" eventType="touchUpInside" id="fgI-jG-vjt"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pD-iU-Jkw" userLabel="rumbleButton">
                                                 <rect key="frame" x="0.0" y="121.5" width="217" height="53"/>
-                                                <state key="normal" title="Button" image="rumbleOnButton"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                                <state key="normal" title="Rumble" backgroundImage="rumbleOnButton"/>
                                                 <connections>
                                                     <action selector="rumbleButtonPressed:" destination="oR9-ii-R9F" eventType="touchUpInside" id="w3t-1J-TQa"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlJ-Ub-WoS" userLabel="languagePickerButton">
                                                 <rect key="frame" x="0.0" y="182.5" width="217" height="53"/>
-                                                <state key="normal" title="Button" image="languagePickerButton"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                                <state key="normal" title="Language" backgroundImage="languagePickerButton"/>
                                                 <connections>
                                                     <action selector="languagePickerButtonPressed:" destination="oR9-ii-R9F" eventType="touchUpInside" id="5ek-rr-jL5"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayc-gY-wRV" userLabel="posColorPickerButton">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayc-gY-wRV" userLabel="posColorPickerButton">
                                                 <rect key="frame" x="0.0" y="243.5" width="217" height="52.5"/>
-                                                <state key="normal" title="Button" image="posColorPickerButton"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="Positive Color" backgroundImage="colorPickerButton"/>
                                                 <connections>
                                                     <action selector="posColorPickerButtonPressed:" destination="oR9-ii-R9F" eventType="touchUpInside" id="YhA-aI-gie"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqx-lc-mHS" userLabel="negColorPickerButton">
                                                 <rect key="frame" x="0.0" y="304" width="217" height="53"/>
-                                                <state key="normal" title="Button" image="negColorPickerButton"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                                <state key="normal" title="Negative Color" backgroundImage="colorPickerButton"/>
                                                 <connections>
                                                     <action selector="negColorPickerButtonPressed:" destination="oR9-ii-R9F" eventType="touchUpInside" id="VBw-kY-0cy"/>
                                                 </connections>
@@ -727,10 +733,10 @@
                                 <color key="sectionIndexBackgroundColor" red="0.38823529410000002" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="SinglePlayerCell" rowHeight="74" id="Drh-df-ecg" customClass="SinglePlayerCellController" customModule="Swiperia" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="74"/>
+                                        <rect key="frame" x="0.0" y="56" width="375" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Drh-df-ecg" id="2zt-7u-vfv">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blizzard" translatesAutoresizingMaskIntoConstraints="NO" id="T3A-9l-73I" userLabel="GameImageView">
@@ -762,10 +768,10 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MultiPlayerCell" rowHeight="74" id="Eoj-nk-Z4T" customClass="MultiPlayerCellController" customModule="Swiperia" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="129.5" width="375" height="74"/>
+                                        <rect key="frame" x="0.0" y="130" width="375" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Eoj-nk-Z4T" id="QO5-dy-y0p">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YO6-Um-s8F">
@@ -906,15 +912,14 @@
     </scenes>
     <resources>
         <image name="blizzard" width="512" height="512"/>
-        <image name="languagePickerButton" width="1000" height="258"/>
+        <image name="colorPickerButton" width="800" height="206"/>
+        <image name="languagePickerButton" width="800" height="206"/>
         <image name="multiPlayerControllerIcon" width="25" height="25"/>
-        <image name="musicOnButton" width="1000" height="258"/>
-        <image name="negColorPickerButton" width="1000" height="258"/>
-        <image name="posColorPickerButton" width="1000" height="258"/>
-        <image name="rumbleOnButton" width="1000" height="258"/>
+        <image name="musicOnButton" width="800" height="206"/>
+        <image name="rumbleOnButton" width="800" height="206"/>
         <image name="settingsIcon" width="25" height="25"/>
         <image name="singlePlayerControllerIcon" width="25" height="25"/>
-        <image name="soundsOnButton" width="1000" height="258"/>
+        <image name="soundsOnButton" width="800" height="206"/>
         <image name="unlock" width="500" height="500"/>
         <image name="userProfileIcon" width="25" height="25"/>
     </resources>

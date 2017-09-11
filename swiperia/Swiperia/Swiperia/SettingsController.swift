@@ -36,26 +36,26 @@ class SettingsController: UIViewController, ChromaColorPickerDelegate {
     
     //MARK: Actions
     @IBAction func musicButtonPressed(_ sender: UIButton) {
-        if sender.currentImage == #imageLiteral(resourceName: "musicOffButton") {
-            sender.setImage(#imageLiteral(resourceName: "musicOnButton"), for: .normal)
-        } else if sender.currentImage == #imageLiteral(resourceName: "musicOnButton") {
-            sender.setImage(#imageLiteral(resourceName: "musicOffButton"), for: .normal)
+        if sender.backgroundImage(for: .normal) == #imageLiteral(resourceName: "musicOffButton") {
+            sender.setBackgroundImage(#imageLiteral(resourceName: "musicOnButton"), for: .normal)
+        } else if sender.backgroundImage(for: .normal) == #imageLiteral(resourceName: "musicOnButton") {
+            sender.setBackgroundImage(#imageLiteral(resourceName: "musicOffButton"), for: .normal)
         }
     }
     
     @IBAction func soundsButtonPressed(_ sender: UIButton) {
-        if sender.currentImage == #imageLiteral(resourceName: "soundsOffButton") {
-            sender.setImage(#imageLiteral(resourceName: "soundsOnButton"), for: .normal)
-        } else if sender.currentImage == #imageLiteral(resourceName: "soundsOnButton") {
-            sender.setImage(#imageLiteral(resourceName: "soundsOffButton"), for: .normal)
+        if sender.backgroundImage(for: .normal) == #imageLiteral(resourceName: "soundsOffButton") {
+            sender.setBackgroundImage(#imageLiteral(resourceName: "soundsOnButton"), for: .normal)
+        } else if sender.backgroundImage(for: .normal) == #imageLiteral(resourceName: "soundsOnButton") {
+            sender.setBackgroundImage(#imageLiteral(resourceName: "soundsOffButton"), for: .normal)
         }
     }
     
     @IBAction func rumbleButtonPressed(_ sender: UIButton) {
-        if sender.currentImage == #imageLiteral(resourceName: "rumbleOffButton") {
-            sender.setImage(#imageLiteral(resourceName: "rumbleOnButton"), for: .normal)
-        } else if sender.currentImage == #imageLiteral(resourceName: "rumbleOnButton") {
-            sender.setImage(#imageLiteral(resourceName: "rumbleOffButton"), for: .normal)
+        if sender.backgroundImage(for: .normal) == #imageLiteral(resourceName: "rumbleOffButton") {
+            sender.setBackgroundImage(#imageLiteral(resourceName: "rumbleOnButton"), for: .normal)
+        } else if sender.backgroundImage(for: .normal) == #imageLiteral(resourceName: "rumbleOnButton") {
+            sender.setBackgroundImage(#imageLiteral(resourceName: "rumbleOffButton"), for: .normal)
         }
     }
     
@@ -138,7 +138,8 @@ class SettingsController: UIViewController, ChromaColorPickerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-
+        posColorPickerButton.contentEdgeInsets = UIEdgeInsetsMake(0, posColorPickerButton.frame.width/15, 0, 0)
+        posColorPickerButton.titleLabel?.font = UIFont(name: "HelveticaNeue-BoldItalic", size: posColorPickerButton.frame.height / 2)
     }
     
     override func didReceiveMemoryWarning() {
