@@ -10,20 +10,22 @@ import UIKit
 
 class SinglePlayerCellController: UITableViewCell {
     
-    // ImageView in Cell
-    @IBOutlet weak var cellImageView: UIImageView!
-    // Label in Cell
-    @IBOutlet weak var cellLabel: UILabel!
-
+    // GameImageView in Cell
+    @IBOutlet weak var gameImageView: UIImageView!
+    // gameNameLabel in Cell
+    @IBOutlet weak var gameNameLabel: UILabel!
+    // gameScoreLabel in Cell
+    @IBOutlet weak var gameScoreLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
 }
