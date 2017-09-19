@@ -615,7 +615,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uT4-iO-3B9" userLabel="musicButton">
                                                 <rect key="frame" x="0.0" y="0.0" width="217" height="53"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Music" backgroundImage="musicOnButton"/>
                                                 <connections>
                                                     <action selector="musicButtonPressed:" destination="oR9-ii-R9F" eventType="touchUpInside" id="ADN-cB-hZe"/>
@@ -623,7 +623,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KF9-Zl-mqd" userLabel="soundsButton">
                                                 <rect key="frame" x="0.0" y="61" width="217" height="52.5"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Sound" backgroundImage="soundsOnButton"/>
                                                 <connections>
                                                     <action selector="soundsButtonPressed:" destination="oR9-ii-R9F" eventType="touchUpInside" id="fgI-jG-vjt"/>
@@ -631,7 +631,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pD-iU-Jkw" userLabel="rumbleButton">
                                                 <rect key="frame" x="0.0" y="121.5" width="217" height="53"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Rumble" backgroundImage="rumbleOnButton"/>
                                                 <connections>
                                                     <action selector="rumbleButtonPressed:" destination="oR9-ii-R9F" eventType="touchUpInside" id="w3t-1J-TQa"/>
@@ -639,13 +639,13 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tlJ-Ub-WoS" userLabel="languagePickerButton">
                                                 <rect key="frame" x="0.0" y="182.5" width="217" height="53"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Language" backgroundImage="languagePickerButton"/>
                                                 <connections>
                                                     <action selector="languagePickerButtonPressed:" destination="oR9-ii-R9F" eventType="touchUpInside" id="5ek-rr-jL5"/>
                                                 </connections>
                                             </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayc-gY-wRV" userLabel="posColorPickerButton">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ayc-gY-wRV" userLabel="posColorPickerButton">
                                                 <rect key="frame" x="0.0" y="243.5" width="217" height="52.5"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Positive Color" backgroundImage="colorPickerButton"/>
@@ -655,7 +655,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kqx-lc-mHS" userLabel="negColorPickerButton">
                                                 <rect key="frame" x="0.0" y="304" width="217" height="53"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="20"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="15"/>
                                                 <state key="normal" title="Negative Color" backgroundImage="colorPickerButton"/>
                                                 <connections>
                                                     <action selector="negColorPickerButtonPressed:" destination="oR9-ii-R9F" eventType="touchUpInside" id="VBw-kY-0cy"/>
@@ -687,10 +687,14 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settingsIcon" id="DOt-mm-EOu"/>
                     <connections>
+                        <outlet property="buttonStackView" destination="VB6-xx-IUQ" id="abH-zO-lJ2"/>
                         <outlet property="languagePickerButton" destination="tlJ-Ub-WoS" id="VwB-IO-kne"/>
+                        <outlet property="musicButton" destination="uT4-iO-3B9" id="AX5-gL-6qc"/>
                         <outlet property="negColorPickerButton" destination="kqx-lc-mHS" id="w7A-B0-hYU"/>
                         <outlet property="posColorPickerButton" destination="Ayc-gY-wRV" id="qZr-8w-RRQ"/>
+                        <outlet property="rumbleButton" destination="6pD-iU-Jkw" id="mjl-Uh-IiV"/>
                         <outlet property="settingsView" destination="kLl-hx-mCH" id="GQF-uY-RJy"/>
+                        <outlet property="soundsButton" destination="KF9-Zl-mqd" id="fl6-zp-8qi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QrO-89-mX9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -739,26 +743,43 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blizzard" translatesAutoresizingMaskIntoConstraints="NO" id="T3A-9l-73I" userLabel="GameImageView">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blizzard" translatesAutoresizingMaskIntoConstraints="NO" id="T3A-9l-73I" userLabel="GameImageView">
                                                     <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="T3A-9l-73I" secondAttribute="height" multiplier="1:1" id="LNe-0Z-GV8"/>
+                                                    </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmy-nE-qeC" userLabel="GameName">
-                                                    <rect key="frame" x="82" y="0.0" width="293" height="36"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vmy-nE-qeC" userLabel="GameName">
+                                                    <rect key="frame" x="74" y="0.0" width="301" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="Vmy-nE-qeC" secondAttribute="height" multiplier="301:36" id="lbD-tT-6yF"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Default Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWb-ZI-x3Z" userLabel="GameScoreLabel">
-                                                    <rect key="frame" x="82" y="37" width="293" height="36"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Default Text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QWb-ZI-x3Z" userLabel="GameScoreLabel">
+                                                    <rect key="frame" x="74" y="38" width="301" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="QWb-ZI-x3Z" secondAttribute="height" multiplier="301:36" id="UwD-up-QKD"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" red="0.38823529410000002" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <constraints>
+                                                <constraint firstItem="QWb-ZI-x3Z" firstAttribute="leading" secondItem="T3A-9l-73I" secondAttribute="trailing" id="35z-H9-Mjf"/>
+                                                <constraint firstAttribute="bottom" secondItem="QWb-ZI-x3Z" secondAttribute="bottom" id="5g3-fX-GuS"/>
+                                                <constraint firstAttribute="trailing" secondItem="QWb-ZI-x3Z" secondAttribute="trailing" id="9DX-jw-o10"/>
+                                                <constraint firstItem="T3A-9l-73I" firstAttribute="top" secondItem="2zt-7u-vfv" secondAttribute="top" id="GEY-SH-Dwf"/>
+                                                <constraint firstAttribute="bottom" secondItem="T3A-9l-73I" secondAttribute="bottom" id="SOu-XZ-qZT"/>
+                                                <constraint firstItem="T3A-9l-73I" firstAttribute="leading" secondItem="2zt-7u-vfv" secondAttribute="leading" id="Ued-Ho-7V0"/>
+                                                <constraint firstAttribute="trailing" secondItem="Vmy-nE-qeC" secondAttribute="trailing" id="mRO-fP-YmK"/>
+                                                <constraint firstItem="Vmy-nE-qeC" firstAttribute="leading" secondItem="T3A-9l-73I" secondAttribute="trailing" id="nEv-Bs-r3Y"/>
+                                                <constraint firstItem="Vmy-nE-qeC" firstAttribute="top" secondItem="2zt-7u-vfv" secondAttribute="top" id="uq7-pW-hbQ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.21960784310000001" green="0.21176470589999999" blue="0.25098039220000001" alpha="1" colorSpace="calibratedRGB"/>
                                         <connections>
@@ -767,25 +788,35 @@
                                             <outlet property="gameScoreLabel" destination="QWb-ZI-x3Z" id="nNK-ab-BCB"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MultiPlayerCell" rowHeight="74" id="Eoj-nk-Z4T" customClass="MultiPlayerCellController" customModule="Swiperia" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="MultiPlayerCell" rowHeight="74" id="Eoj-nk-Z4T" customClass="CollapsableTableViewCell" customModule="Swiperia" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="130" width="375" height="74"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Eoj-nk-Z4T" id="QO5-dy-y0p">
                                             <rect key="frame" x="0.0" y="0.0" width="342" height="74"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YO6-Um-s8F">
-                                                    <rect key="frame" x="166" y="26" width="42" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blizzard" translatesAutoresizingMaskIntoConstraints="NO" id="4Ql-IB-Cfs" userLabel="GameImageView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="4Ql-IB-Cfs" secondAttribute="height" multiplier="1:1" id="IHl-YI-PeU"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YO6-Um-s8F">
+                                                    <rect key="frame" x="72" y="0.0" width="276" height="74"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blizzard" translatesAutoresizingMaskIntoConstraints="NO" id="4Ql-IB-Cfs" userLabel="GameImageView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="74" height="74"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="4Ql-IB-Cfs" firstAttribute="top" secondItem="QO5-dy-y0p" secondAttribute="top" id="0NP-KC-LVU"/>
+                                                <constraint firstItem="4Ql-IB-Cfs" firstAttribute="leading" secondItem="QO5-dy-y0p" secondAttribute="leading" id="1wJ-Nt-pbl"/>
+                                                <constraint firstItem="YO6-Um-s8F" firstAttribute="bottom" secondItem="4Ql-IB-Cfs" secondAttribute="bottom" id="3vt-qx-7xc"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="YO6-Um-s8F" secondAttribute="trailing" constant="-14" id="BXO-Ad-gov"/>
+                                                <constraint firstItem="YO6-Um-s8F" firstAttribute="top" secondItem="4Ql-IB-Cfs" secondAttribute="top" id="DHN-OI-aTd"/>
+                                                <constraint firstAttribute="bottom" secondItem="4Ql-IB-Cfs" secondAttribute="bottom" id="TrZ-22-JVA"/>
+                                                <constraint firstItem="YO6-Um-s8F" firstAttribute="leading" secondItem="QO5-dy-y0p" secondAttribute="leadingMargin" constant="64" id="v5c-Eg-qXJ"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.38823529410000002" green="0.3921568627" blue="0.3921568627" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <connections>
@@ -794,6 +825,10 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="as1-Cm-wpq" id="ENV-wU-Y0p"/>
+                                    <outlet property="delegate" destination="as1-Cm-wpq" id="Dp3-aj-fAF"/>
+                                </connections>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bIb-7o-JwZ">
                                 <rect key="frame" x="83" y="256.5" width="208" height="30"/>
@@ -871,7 +906,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j7K-oo-JgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="ADv-GG-Gm6"/>
             </objects>
-            <point key="canvasLocation" x="-8444" y="-143"/>
+            <point key="canvasLocation" x="-8444" y="-143.47826086956522"/>
         </scene>
         <!--Data Source-->
         <scene sceneID="reZ-N8-SUh">

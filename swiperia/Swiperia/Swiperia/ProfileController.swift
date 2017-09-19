@@ -12,7 +12,7 @@ import Photos
 
 class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate{
     
-    //MARK: Properties
+    //MARK: - Properties --------------------------------------------------
     // Properties for profile Images
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var profileView: UIView!
@@ -51,7 +51,7 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
             profileTableView.layer.borderWidth = 0.7
             profileTableView.layer.borderColor = UIColor.black.cgColor
             
-            // Set Seperatro
+            // Set Seperator
             profileTableView.separatorStyle = .singleLine
             profileTableView.separatorColor = UIColor.black
             
@@ -60,7 +60,7 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
         }
     }
     
-    //MARK: System Functions
+    //MARK: - System Functions --------------------------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
         initiateAvatarImage()
@@ -77,6 +77,8 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
         
         userNameTextField.textColor = .black
         setTextFieldBorder()
+        
+        displayedRows = data
     }
     
     override func didReceiveMemoryWarning() {
@@ -87,7 +89,7 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     
     
     
-    //MARK: Functions
+    //MARK: - Functions --------------------------------------------------
     // Initiate avatar image with a default image
     func initiateAvatarImage() {
         
@@ -171,7 +173,7 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     }
     
     
-    // Action-Functions
+    // MARK: - Action-Functions --------------------------------------------------
     @IBAction func singlePlayerButtonTapped(_ sender: UIButton) {
         let labelText = sender.titleLabel?.text
         wantedTableView = labelText!
@@ -193,7 +195,8 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     
     
     
-    //MARK: ImagePicker-Functions
+    //MARK: - ImagePicker-Functions --------------------------------------------------
+    
     func imagePicker(sender: UITapGestureRecognizer) {
         tapedImageView = sender.view as? UIImageView
         let imagePickerController = UIImagePickerController()
@@ -274,18 +277,43 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     }
     
     
-    // --------------- Table View Stuff
+    // MARK: - Table View Functions --------------------------------------------------
+    
+    let data = [
+        CollapseableViewModel(label: "Account", image: #imageLiteral(resourceName: "blizzard"), children: [
+            CollapseableViewModel(label: "Profile"),
+            CollapseableViewModel(label: "Activate Account"),
+            CollapseableViewModel(label: "Change Password")]),
+        CollapseableViewModel(label: "Group"),
+        CollapseableViewModel(label: "Events", image: nil, children: [
+            CollapseableViewModel(label: "Nearby"),
+            CollapseableViewModel(label: "Global"),
+            ]),
+        CollapseableViewModel(label: "Deals")
+    ]
+    
+    var displayedRows : [CollapseableViewModel] = []
+    
+    
+    // MARK: Table view data source
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return (demoData[wantedTableView]?.count)!
+        if wantedTableView == "Single Player" {
+            return (demoData[wantedTableView]?.count)!
+        } else {
+            return displayedRows.count
+        }
     }
     
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cellData : String
+        tableView.separatorStyle = .none
         
         if wantedTableView == "Single Player" {
             let cell = profileTableView.dequeueReusableCell(withIdentifier: "SinglePlayerCell", for: indexPath) as! SinglePlayerCellController
@@ -294,17 +322,44 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
             cell.gameScoreLabel.text = cellData
             return cell
         } else {
-            let cell = profileTableView.dequeueReusableCell(withIdentifier: "MultiPlayerCell", for: indexPath) as! MultiPlayerCellController
-            cellData = multiPlayerDemoData[indexPath.row]
-            cell.cellLabel.text = cellData
+            //let cell = (tableView.dequeueReusableCell(withIdentifier: "MultiPlayerCell", for: indexPath) as? CollapsableTableViewCell) ?? CollapsableTableViewCell(style: .default, reuseIdentifier: "MultiPlayerCell")
+//            let cell = (UITableViewCell(style: .default, reuseIdentifier: "MultiPlayerCell") as? CollapsableTableViewCell) ?? CollapsableTableViewCell(style: .default, reuseIdentifier: "MultiPlayerCell") 
+//            let viewModel = displayedRows[indexPath.row]
+//            cell.textLabel?.text = viewModel.label
+//            return cell
+            
+            let cell = (UITableViewCell(style: .default, reuseIdentifier: "MultiPlayerCell") as? CollapsableTableViewCell) ?? CollapsableTableViewCell(style: .default, reuseIdentifier: "MultiPlayerCell")
+            //cell.layer.backgroundColor = UIColor.blue as? CGColor
+            cell.configure(viewModel: displayedRows[indexPath.row])
             return cell
         }
         
-        //return cell
+//        let cell = (tableView.dequeueReusableCell(withIdentifier: "MultiPlayerCell", for: indexPath) as? CollapsableTableViewCell) ?? CollapsableTableViewCell(style: .default, reuseIdentifier: "MultiPlayerCell")
+//        let viewModel = displayedRows[indexPath.row]
+//        cell.textLabel?.text = viewModel.label
+//        
+//        return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return view.frame.height / 10
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: false)
+        let viewModel = displayedRows[indexPath.row]
+        
+        if viewModel.children.count > 0 {
+            let range = indexPath.row+1...indexPath.row+viewModel.children.count
+            let indexPaths = range.map{return NSIndexPath(row: $0, section: indexPath.section)}
+            tableView.beginUpdates()
+            
+            if viewModel.isCollapsed {
+                displayedRows.insert(contentsOf: viewModel.children, at: indexPath.row+1)
+                tableView.insertRows(at: indexPaths as [IndexPath], with: .automatic)
+            } else {
+                displayedRows.removeSubrange(range)
+                tableView.deleteRows(at: indexPaths as [IndexPath], with: .automatic)
+            }
+            tableView.endUpdates()
+        }
+        viewModel.isCollapsed = !viewModel.isCollapsed
     }
     
     

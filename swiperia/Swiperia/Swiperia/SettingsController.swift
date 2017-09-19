@@ -21,11 +21,15 @@ class SettingsController: UIViewController, ChromaColorPickerDelegate {
     let languages = ["English", "German", "Klingon", "Calamari"]
     var pickedLanguage : String?
     
+    
+    @IBOutlet weak var buttonStackView: UIStackView!
+    @IBOutlet weak var musicButton: UIButton!
+    @IBOutlet weak var soundsButton: UIButton!
+    @IBOutlet weak var rumbleButton: UIButton!
     @IBOutlet weak var languagePickerButton: UIButton!
     @IBOutlet weak var posColorPickerButton: UIButton!
     @IBOutlet weak var negColorPickerButton: UIButton!
     @IBOutlet weak var settingsView: UIView!
-    
     
     
     //MARK: Language Picker
@@ -126,20 +130,27 @@ class SettingsController: UIViewController, ChromaColorPickerDelegate {
             .map{ UIAlertAction(title: $0, style: .default) {
                 self.pickedLanguage = $0.title
                 print(self.pickedLanguage!) // Hier Code für Sprachänderung einfügen
+                // Aktualisieren des Buttonlabels mit der gewählten Sprache.
+                self.languagePickerButton.titleLabel?.text = self.pickedLanguage
                 } }
             .forEach{alert.addAction($0)}
         present(alert, animated: true, completion: nil)
     }
     
+    // Initiate Buttons
+    func initiateButtons() {
+        for view in buttonStackView.arrangedSubviews {
+            if let button = view as? UIButton {
+                button.contentHorizontalAlignment = .left
+                button.titleEdgeInsets.left = 15
+            }
+        }
+    }
     
-    
-    
-    //    MARK: System-Functions
+    // MARK: System-Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        posColorPickerButton.contentEdgeInsets = UIEdgeInsetsMake(0, posColorPickerButton.frame.width/15, 0, 0)
-        posColorPickerButton.titleLabel?.font = UIFont(name: "HelveticaNeue-BoldItalic", size: posColorPickerButton.frame.height / 2)
+        initiateButtons()
     }
     
     override func didReceiveMemoryWarning() {
@@ -148,14 +159,10 @@ class SettingsController: UIViewController, ChromaColorPickerDelegate {
     }
     
     
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destinationViewController.
-     // Pass the selected object to the new view controller.
-     }
-     */
+    
     
 }
+
+
+
+
