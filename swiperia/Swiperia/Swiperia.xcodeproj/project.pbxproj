@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6DA9E71C1F6AACEC00500B78 /* CollapsableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9E71B1F6AACEC00500B78 /* CollapsableViewModel.swift */; };
+		6DA9E71E1F6AB0CF00500B78 /* CollapsableTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9E71D1F6AB0CF00500B78 /* CollapsableTableViewCell.swift */; };
+		6DA9E7201F6AB13800500B78 /* CollapsableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9E71F1F6AB13800500B78 /* CollapsableTableViewController.swift */; };
 		DA911CECA2533B68B9B655FB /* Pods_Swiperia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3994EED37A80224069614EB /* Pods_Swiperia.framework */; };
 		FB16DCBE1F4319B300FA205D /* ItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB16DCBD1F4319B300FA205D /* ItemManager.swift */; };
 		FB16DCC01F43357E00FA205D /* DirectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB16DCBF1F43357E00FA205D /* DirectionManager.swift */; };
@@ -60,6 +63,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6DA9E71B1F6AACEC00500B78 /* CollapsableViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsableViewModel.swift; sourceTree = "<group>"; };
+		6DA9E71D1F6AB0CF00500B78 /* CollapsableTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsableTableViewCell.swift; sourceTree = "<group>"; };
+		6DA9E71F1F6AB13800500B78 /* CollapsableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollapsableTableViewController.swift; sourceTree = "<group>"; };
 		AA1032170CF4A494B8E8D8BB /* Pods-Swiperia.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiperia.release.xcconfig"; path = "Pods/Target Support Files/Pods-Swiperia/Pods-Swiperia.release.xcconfig"; sourceTree = "<group>"; };
 		C3994EED37A80224069614EB /* Pods_Swiperia.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Swiperia.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E1D30B2172340E49A9972D16 /* Pods-Swiperia.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Swiperia.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Swiperia/Pods-Swiperia.debug.xcconfig"; sourceTree = "<group>"; };
@@ -130,6 +136,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6DA9E71A1F6AACAF00500B78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				6DA9E71B1F6AACEC00500B78 /* CollapsableViewModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		B5458669F0962E6927A6F3DB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -294,6 +308,7 @@
 		FBBAFC841F66A9DF009A40A3 /* Menue */ = {
 			isa = PBXGroup;
 			children = (
+				6DA9E71A1F6AACAF00500B78 /* Models */,
 				FBBAFC851F66AA22009A40A3 /* Controller */,
 			);
 			name = Menue;
@@ -307,6 +322,7 @@
 				FBF7F2261F66BE90000C3CB4 /* CustomTabBarController.swift */,
 				FBF7F2281F66BF1F000C3CB4 /* ProfileController.swift */,
 				FBF7F22F1F66C036000C3CB4 /* SettingsController.swift */,
+				6DA9E71F1F6AB13800500B78 /* CollapsableTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -372,6 +388,7 @@
 			children = (
 				FBF7F22B1F66BF59000C3CB4 /* SinglePlayerCellController.swift */,
 				FBF7F22D1F66BF8E000C3CB4 /* MultiPlayerCellController.swift */,
+				6DA9E71D1F6AB0CF00500B78 /* CollapsableTableViewCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -545,7 +562,10 @@
 				FBEE1D5A1F55C2BE002936B4 /* MultipeerAdvertiserCell.swift in Sources */,
 				FB77AC461F34D19F004F21FB /* TimeManager.swift in Sources */,
 				FB51DAD11F41AAF400B92735 /* ProgressSpark.swift in Sources */,
+				6DA9E7201F6AB13800500B78 /* CollapsableTableViewController.swift in Sources */,
 				FBEE1D391F4F0FDB002936B4 /* MusicPlayer.swift in Sources */,
+				6DA9E71E1F6AB0CF00500B78 /* CollapsableTableViewCell.swift in Sources */,
+				6DA9E71C1F6AACEC00500B78 /* CollapsableViewModel.swift in Sources */,
 				FB27B88E1F58A86000D737EB /* MessageManager.swift in Sources */,
 				FB4B71F71F5C99A2002FCF81 /* GameViewController.swift in Sources */,
 				FB16DCC01F43357E00FA205D /* DirectionManager.swift in Sources */,
