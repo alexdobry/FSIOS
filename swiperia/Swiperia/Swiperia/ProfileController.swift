@@ -13,6 +13,9 @@ import Photos
 class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate{
     
     //MARK: - Properties --------------------------------------------------
+    // UserDefaults Short Var
+    //let store = UserDefaults.standard
+    
     // Properties for profile Images
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var profileView: UIView!
@@ -84,6 +87,10 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        //checkForProfileUserDefaults()
     }
     
     
@@ -172,6 +179,18 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
         }
     }
     
+//    func checkForProfileUserDefaults() {
+//        if let userName = store.object(forKey: UserDefaults.UserDefaultKeys.userName.rawValue) {
+//            userNameTextField.text = userName as? String
+//        }
+//        if let userProfileImage = store.object(forKey: UserDefaults.UserDefaultKeys.userProfileImage.rawValue) {
+//            avatarImageView.image = store.getImage(forKey: userProfileImage as! String)
+//        }
+//        if let profileBannerImage = store.object(forKey: UserDefaults.UserDefaultKeys.userProfileBanner.rawValue) {
+//            bannerImageView.image = store.getImage(forKey: profileBannerImage as! String)
+//        }
+//    }
+    
     
     // MARK: - Action-Functions --------------------------------------------------
     @IBAction func singlePlayerButtonTapped(_ sender: UIButton) {
@@ -190,6 +209,7 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     
     @IBAction func userNameTextfieldPressed(_ sender: UITextField) {
         userNameTextField.text = sender.text
+        //store.set(sender.text, forKey: UserDefaults.UserDefaultKeys.userName.rawValue)
         sender.resignFirstResponder()
     }
     
@@ -265,8 +285,12 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
         let image = info[UIImagePickerControllerOriginalImage] as! UIImage
         if tapedImageView == bannerImageView {
             tapedImageView?.image = image
+            // Hier Banner im Store speichern
+            //store.setImage(image: image, forKey: UserDefaults.UserDefaultKeys.userProfileBanner.rawValue)
         } else if tapedImageView == avatarImageView {
             tapedImageView?.image = ProfileImageMaker.imageMaker.createProfileImage(from: image, favoriteColor: .yellow, radius: avatarImageView.frame.width/2)
+            // Hier Avatar im Store speichern
+            //store.setImage(image: image, forKey: UserDefaults.UserDefaultKeys.userProfileImage.rawValue)
         }
         //tapedImageView?.image = image
         picker.dismiss(animated: true, completion: nil)
