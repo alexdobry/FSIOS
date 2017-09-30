@@ -96,8 +96,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         print("Background")
         UserDefaults.standard.setData(dictionaryData: settings, forKey: "swiperiaSettings")
-        UserDefaults.standard.setData(dictionaryData: singlePlayerDefaults, forKey: "swiperiaSinglePlayer")
-        UserDefaults.standard.setData(dictionaryData: multiPlayerDefaults, forKey: "swiperiaMultiPlayer")
+        UserDefaults.standard.setData(dictionaryData: singlePlayerScores, forKey: "swiperiaSinglePlayer")
+        UserDefaults.standard.setData(dictionaryData: multiPlayerScores, forKey: "swiperiaMultiPlayer")
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {

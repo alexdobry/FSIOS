@@ -14,9 +14,6 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     
     //MARK: - UserDefaults AppDelegate
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    var settingStore = [String : Any]()
-    var singleStore = [String : Any]()
-    var multiStore = [String : Any]()
     
     
     //MARK: - Properties --------------------------------------------------
@@ -72,11 +69,7 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        settingStore = appDelegate.settings
-        singleStore = appDelegate.singlePlayerScores
-        multiStore = appDelegate.multiPlayerScores
-        
-        checkUserDefaults(settings: settingStore)
+        checkUserDefaults(settings: appDelegate.settings)
         
 //        initiateAvatarImage()
 //        initiateBanner()
@@ -130,14 +123,16 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     
     // Initiate avatar image with a default image
     func initiateAvatarImage(avatar : UIImage) {
-        let newImage = ProfileImageMaker.imageMaker.createProfileImage(from: avatar, favoriteColor: .yellow, radius: avatarImageView.frame.width/2)
+        let newImage = ProfileImageMaker.imageMaker.createProfileImage(from: avatar, favoriteColor: appDelegate.settings["posColor"] as! UIColor, radius: avatarImageView.frame.width/2)
         avatarImageView.image = newImage
+        appDelegate.settings["userImage"] = newImage
         addTabGestureForImageView(view: avatarImageView)
     }
     
     // Initiating banner with a default image
     func initiateBanner(banner : UIImage) {
         bannerImageView.image = banner
+        appDelegate.settings["userBanner"] = banner
         addTabGestureForImageView(view: bannerImageView)
     }
     
@@ -352,23 +347,23 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if wantedTableView == "Singleplayer" {
-            return (demoData[wantedTableView]?.count)!
+            return appDelegate.singlePlayerScores.count
         } else {
-            return displayedRows.count
+            return appDelegate.multiPlayerScores.count
         }
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cellData : String
         tableView.separatorStyle = .none
         
         if wantedTableView == "Singleplayer" {
             let cell = profileTableView.dequeueReusableCell(withIdentifier: "SinglePlayerCell", for: indexPath) as! SinglePlayerCellController
-            cellData = singlePlayerDemoData[indexPath.row]
-            cell.gameNameLabel.text = cellData
-            cell.gameScoreLabel.text = cellData
+            
+            cell.gameNameLabel.text = Array(appDelegate.singlePlayerScores.keys)[indexPath.row]
+            cell.gameScoreLabel.text = (appDelegate.singlePlayerScores[Array(appDelegate.singlePlayerScores.keys)[indexPath.row]] as! [String : Any])["score"] as! String
+            cell.gameImageView.image = (appDelegate.singlePlayerScores[Array(appDelegate.singlePlayerScores.keys)[indexPath.row]] as! [String : Any])["image"] as! UIImage
             return cell
         } else {
             //let cell = (tableView.dequeueReusableCell(withIdentifier: "MultiPlayerCell", for: indexPath) as? CollapsableTableViewCell) ?? CollapsableTableViewCell(style: .default, reuseIdentifier: "MultiPlayerCell")
