@@ -13,12 +13,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     
-    let gameModes = GameManager()
-    var games : [Game] = []
+    var test = "bin in der AppDelegate"
     
-    var settingsDefaults : [String : Any] = ["music" : true, "sounds" : true, "rumble" : true, "language" : "english", "posColor" : UIColor.orange, "negColor" : UIColor.red, "userName" : "scrub", "userImage" : #imageLiteral(resourceName: "profileUnknown"), "userBanner" : #imageLiteral(resourceName: "defaultBanner")]
-    var singlePlayerDefaults = [String : [String : Any]]() //(image : UIImage, score : Double)]()
-    var multiPlayerDefaults = [String : [String : Any]]()
+    
+    private let gameModes = GameManager()
+    private var games : [Game] = []
+    
+    private var settingsDefaults : [String : Any?] = ["music" : true, "sounds" : true, "rumble" : true, "language" : "english", "posColor" : UIColor.orange, "negColor" : UIColor.red, "userName" : nil, "userImage" : #imageLiteral(resourceName: "profileUnknown"), "userBanner" : #imageLiteral(resourceName: "defaultBanner")]
+    private var singlePlayerDefaults = [String : [String : Any]]() //(image : UIImage, score : Double)]()
+    private var multiPlayerDefaults = [String : [String : Any]]()
     
     var settings = [String : Any]()
     var singlePlayerScores = [String : Any]()
@@ -91,6 +94,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
         print("Background")
+        //print(settings)
+        settingsDefaults = settings
         UserDefaults.standard.setData(dictionaryData: settingsDefaults, forKey: "swiperiaSettings")
         UserDefaults.standard.setData(dictionaryData: singlePlayerDefaults, forKey: "swiperiaSinglePlayer")
         UserDefaults.standard.setData(dictionaryData: multiPlayerDefaults, forKey: "swiperiaMultiPlayer")

@@ -11,7 +11,10 @@ import ChromaColorPicker
 
 class SettingsController: UIViewController, ChromaColorPickerDelegate {
     
-    //MARK: Properties
+    //MARK: - UserDefaults AppDelegate
+    
+    
+    //MARK: - Properties
     var positiveColor : UIColor = .orange //temporär
     var negativeColor : UIColor = .red //temporär
     var activeColorPicker : String?
@@ -32,13 +35,13 @@ class SettingsController: UIViewController, ChromaColorPickerDelegate {
     @IBOutlet weak var settingsView: UIView!
     
     
-    //MARK: Language Picker
+    //MARK: - Language Picker
     
     let alert = UIAlertController(title: "Languages", message: "Choose a language!", preferredStyle: .actionSheet)
     
     
     
-    //MARK: Actions
+    //MARK: - Actions
     @IBAction func musicButtonPressed(_ sender: UIButton) {
         if sender.backgroundImage(for: .normal) == #imageLiteral(resourceName: "musicOffButton") {
             sender.setBackgroundImage(#imageLiteral(resourceName: "musicOnButton"), for: .normal)
@@ -81,7 +84,7 @@ class SettingsController: UIViewController, ChromaColorPickerDelegate {
     }
     
     
-    //    MARK: Functions
+    //MARK: - Functions
     
     // Funktion zum Speichern der Farbe aus dem ColorPicker
     func colorPickerDidChooseColor(_ colorPicker: ChromaColorPicker, color: UIColor) {
@@ -148,7 +151,7 @@ class SettingsController: UIViewController, ChromaColorPickerDelegate {
         }
     }
     
-    // MARK: System-Functions
+    // MARK: - System-Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         initiateButtons()
