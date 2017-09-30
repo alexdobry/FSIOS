@@ -84,7 +84,7 @@ class ViewController: UIViewController {
             sender.setTitle(card.description, for: .normal)
         }
     }
-    
+
     private func highlight(_ cardButtons: [UIButton]) {
         cardButtons.forEach { button in
             button.layer.cornerRadius = 5
