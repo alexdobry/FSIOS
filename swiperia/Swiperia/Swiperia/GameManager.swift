@@ -31,40 +31,54 @@ struct GameManager {
         //MARK: MultiPlayerGameMode: giantWars
         "giantWars" : Game(
             gameName: "Giant Wars",
-            imageName: "giantWars",
+            imageName: "beatTheMachineImage",
             gameType: .multi,
             description: "Let your giant fight your opponent. Play with your friend, earn items and hurl them aiganst your enemy to excaerbate his proceed."),
         
         //MARK: SinglePlayerGameMode: beatTheMachine
         "beatTheMachine" : Game(
             gameName: "Beat The Machine",
-            imageName: "beatTheMachine",
+            imageName: "beatTheMachineImage",
+            gameType: .single,
+            description: "Fight against the computer, chase the highscore and defy the obstacles of the machine."),
+        
+        //MARK: SinglePlayerGameMode: beatTheMachine
+        "brainChain" : Game(
+            gameName: "Brain Chain",
+            imageName: "beatTheMachineImage",
+            gameType: .single,
+            description: "Fight against the computer, chase the highscore and defy the obstacles of the machine."),
+        
+        //MARK: SinglePlayerGameMode: beatTheMachine
+        "singlePlayerGame3" : Game(
+            gameName: "SinglePlayerGame3",
+            imageName: "beatTheMachineImage",
             gameType: .single,
             description: "Fight against the computer, chase the highscore and defy the obstacles of the machine."),
         
         //Mark: MultiPlayerGameMode: sequenceBreaker
         "sequenceBreaker" : Game(
             gameName: "Sequence Breaker",
-            imageName: "sequenceBreaker",
+            imageName: "beatTheMachineImage",
             gameType: .multi,
-            description: "Play a session with your friend. Indicate directions alternately and remember the sequence. The first one who fail loses the game."),
+            description: "Play a session with your friend. Indicate directions alternately and remember the sequence. The first one who fails loses the game."),
         
         //MARK: MultiPlayerGameMode: testGameMode
         "testGameMode1" : Game(
             gameName: "testGameMode1",
-            imageName: "testGameMode1",
+            imageName: "beatTheMachineImage",
             gameType: .multi,
             description: "Play a session with your friend. Indicate directions alternately and remember the sequence. The first one who fail loses the game."),
         //MARK: MultiPlayerGameMode: testGameMode
         "testGameMode2" : Game(
             gameName: "testGameMode2",
-            imageName: "testGameMode2",
+            imageName: "beatTheMachineImage",
             gameType: .multi,
             description: "Play a session with your friend. Indicate directions alternately and remember the sequence. The first one who fail loses the game."),
         //MARK: MultiPlayerGameMode: testGameMode
         "testGameMode3" : Game(
             gameName: "testGameMode3",
-            imageName: "testGameMode3",
+            imageName: "beatTheMachineImage",
             gameType: .multi,
             description: "Play a session with your friend. Indicate directions alternately and remember the sequence. The first one who fail loses the game.")
         

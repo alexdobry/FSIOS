@@ -44,7 +44,7 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     var demoData = [String : [String]]()
     var singlePlayerDemoData = ["first", "second", "third"]
     var multiPlayerDemoData = ["fourth", "fifth", "sixth"]
-    var wantedTableView : String = "Single Player"
+    var wantedTableView : String = "Singleplayer"
     var currentTypedUserName : String? = ""
     
     // Properties for profile table view
@@ -72,9 +72,9 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
         profileTableView.delegate = self
         profileTableView.dataSource = self
         
-        wantedTableView = "Single Player"
-        demoData["Single Player"] = singlePlayerDemoData
-        demoData["Multi Player"] = multiPlayerDemoData
+        wantedTableView = "Singleplayer"
+        demoData["Singleplayer"] = singlePlayerDemoData
+        demoData["Multiplayer"] = multiPlayerDemoData
         
         userNameTextField.delegate = self
         
@@ -131,7 +131,7 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     
     // Hide Keyboard when user touches outside the keyboard
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        textFieldShouldReturn(userNameTextField)
+        userNameTextField.resignFirstResponder()
     }
     
     // User pressed "done" on keyboard
@@ -162,12 +162,10 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
                 userNameTextField.placeholder = "Type in your name!"
                 userNameTextField.textColor = .black
                 userNameTextField.backgroundColor = .white
-                print("1")
             } else {
                 userNameTextField.borderStyle = .none
                 userNameTextField.textColor = .white
                 userNameTextField.backgroundColor = .clear
-                print("2")
             }
             
         } else {
@@ -175,7 +173,6 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
             userNameTextField.placeholder = "Type in your name!"
             userNameTextField.textColor = .black
             userNameTextField.backgroundColor = .white
-            print("3")
         }
     }
     
@@ -326,7 +323,7 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if wantedTableView == "Single Player" {
+        if wantedTableView == "Singleplayer" {
             return (demoData[wantedTableView]?.count)!
         } else {
             return displayedRows.count
@@ -339,7 +336,7 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
         let cellData : String
         tableView.separatorStyle = .none
         
-        if wantedTableView == "Single Player" {
+        if wantedTableView == "Singleplayer" {
             let cell = profileTableView.dequeueReusableCell(withIdentifier: "SinglePlayerCell", for: indexPath) as! SinglePlayerCellController
             cellData = singlePlayerDemoData[indexPath.row]
             cell.gameNameLabel.text = cellData

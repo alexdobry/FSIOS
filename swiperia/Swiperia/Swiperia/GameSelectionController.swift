@@ -15,7 +15,7 @@ class GameSelectionController: UIViewController, iCarouselDataSource, iCarouselD
     var items : [Game] = []
     // temporär
     var currentGameMode = GameMode.multi
-    
+    var activatedGame : Game?
     
     @IBOutlet weak var carousel: iCarousel!
     
@@ -28,7 +28,7 @@ class GameSelectionController: UIViewController, iCarouselDataSource, iCarouselD
     //MARK: Functions
     override func viewDidLoad() {
         super.viewDidLoad()
-        carousel.type = .invertedCylinder
+        carousel.type = .rotary
     }
     
     override func didReceiveMemoryWarning() {
@@ -44,26 +44,37 @@ class GameSelectionController: UIViewController, iCarouselDataSource, iCarouselD
     func carousel(_ carousel: iCarousel, viewForItemAt index: Int, reusing
         view: UIView?) -> UIView {
         
-        var itemView: UIImageView
+        var itemView: CarousselGameView
         
         // Reuse view if available, otherwise create a new view
-        if let view = view as? UIImageView {
-            let size = view.frame
-            itemView = view
-            itemView.image = resizeImage(image: UIImage(named: items[index].imageName)!, newWidth: size.width, newHeight: size.height)
-        } else {
-            let size = self.view.frame
-            let newWidth = size.width*0.7
-            let newHeight = size.height*0.6
-            itemView = UIImageView(frame: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
-            itemView.image = resizeImage(image: UIImage(named: items[index].imageName)!, newWidth: newWidth, newHeight: newHeight)
+        //if let view = view as? CarousselGameView {
+            //let size = view.frame
+            //itemView = view
+            /*itemView.image = resizeImage(image: UIImage(named: items[index].imageName)!, newWidth: size.width, newHeight: size.height)*/
+        //} else {
+        let size = self.view.frame
+        var newWidth = size.width
+        var newHeight = size.height - UIApplication.shared.statusBarFrame.height
+        if let navBar = self.navigationController?.navigationBar {
+            newHeight -= navBar.frame.height
+        }
+        if let tabBar = self.tabBarController?.tabBar {
+            newHeight -= tabBar.frame.height
+        }
+        
+        newHeight *= 0.95
+        newWidth *= 0.75
+        
+            //itemView = UIImageView(frame: CGRect(x: 0, y: 0, width: newWidth, height: newHeight))
+            //itemView.image = resizeImage(image: UIImage(named: items[index].imageName)!, newWidth: newWidth, newHeight: newHeight)
+        itemView = CarousselGameView(parentController: self, size: CGRect.init(x: 0, y: 0, width: newWidth, height: newHeight), item: items[index])
             itemView.contentMode = .center
             
             // Create Info-Button
             
             // Create Play-Button
             
-        }
+        //}
         
         return itemView
     }
@@ -85,4 +96,20 @@ class GameSelectionController: UIViewController, iCarouselDataSource, iCarouselD
         return newImage!
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "CreateLobby" {
+            if let toViewController = segue.destination as? CreateLobbyViewController, let game = activatedGame {
+                toViewController.game = game
+            }
+        }
+        if segue.identifier == "SearchLobby" {
+            if let toViewController = segue.destination as? MultipeerBrowserViewController, let game = activatedGame {
+                toViewController.game = game
+            }
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+    }
 }
