@@ -12,10 +12,14 @@ import Photos
 
 class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITableViewDelegate, UITableViewDataSource, UITextFieldDelegate{
     
-    //MARK: - Properties --------------------------------------------------
-    // UserDefaults Short Var
-    //let store = UserDefaults.standard
+    //MARK: - UserDefaults AppDelegate
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
+    var settingStore = [String : Any]()
+    var singleStore = [String : Any]()
+    var multiStore = [String : Any]()
     
+    
+    //MARK: - Properties --------------------------------------------------
     // Properties for profile Images
     @IBOutlet weak var avatarImageView: UIImageView!
     @IBOutlet weak var profileView: UIView!
@@ -46,6 +50,7 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     var multiPlayerDemoData = ["fourth", "fifth", "sixth"]
     var wantedTableView : String = "Singleplayer"
     var currentTypedUserName : String? = ""
+
     
     // Properties for profile table view
     @IBOutlet weak var profileTableView: UITableView! {
@@ -66,8 +71,15 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     //MARK: - System Functions --------------------------------------------------
     override func viewDidLoad() {
         super.viewDidLoad()
-        initiateAvatarImage()
-        initiateBanner()
+        
+        settingStore = appDelegate.settings
+        singleStore = appDelegate.singlePlayerScores
+        multiStore = appDelegate.multiPlayerScores
+        
+        checkUserDefaults(settings: settingStore)
+        
+//        initiateAvatarImage()
+//        initiateBanner()
         
         profileTableView.delegate = self
         profileTableView.dataSource = self
@@ -97,20 +109,35 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     
     
     //MARK: - Functions --------------------------------------------------
+    // Check auf UserDefaults
+    func checkUserDefaults(settings : [String:Any]) {
+        // Check auf UserName
+        if let userName = settings["userName"] as? String {
+            userNameTextField.text = userName
+            setTextFieldBorder()
+        } else {
+            setTextFieldBorder()
+        }
+        
+        // Setzen des Default Banner Image
+        let bannerImage = settings["userBanner"] as! UIImage
+        initiateBanner(banner: bannerImage)
+        
+        // Setzen des Default Avatar Image
+        let avatarImage = settings["userImage"] as! UIImage
+        initiateAvatarImage(avatar: avatarImage)
+    }
+    
     // Initiate avatar image with a default image
-    func initiateAvatarImage() {
-        
-        //avatarImageView.frame.size = CGSize(width: self.view.frame.width/3, height: self.view.frame.width/3)
-        let newImage = ProfileImageMaker.imageMaker.createProfileImage(from: #imageLiteral(resourceName: "eddy"), favoriteColor: .yellow, radius: avatarImageView.frame.width/2)
-        
+    func initiateAvatarImage(avatar : UIImage) {
+        let newImage = ProfileImageMaker.imageMaker.createProfileImage(from: avatar, favoriteColor: .yellow, radius: avatarImageView.frame.width/2)
         avatarImageView.image = newImage
-        
         addTabGestureForImageView(view: avatarImageView)
     }
     
     // Initiating banner with a default image
-    func initiateBanner() {
-        bannerImageView.image = #imageLiteral(resourceName: "BannerDefault")
+    func initiateBanner(banner : UIImage) {
+        bannerImageView.image = banner
         addTabGestureForImageView(view: bannerImageView)
     }
     
@@ -206,6 +233,7 @@ class ProfileController: UIViewController, UIImagePickerControllerDelegate, UINa
     
     @IBAction func userNameTextfieldPressed(_ sender: UITextField) {
         userNameTextField.text = sender.text
+        appDelegate.settings["userName"] = sender.text
         //store.set(sender.text, forKey: UserDefaults.UserDefaultKeys.userName.rawValue)
         sender.resignFirstResponder()
     }
