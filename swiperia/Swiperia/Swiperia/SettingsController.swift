@@ -140,7 +140,7 @@ class SettingsController: UIViewController, ChromaColorPickerDelegate {
             negativeColor = color
             colorPicker.removeFromSuperview()
             subView?.removeFromSuperview()
-            (UIApplication.shared.delegate as! AppDelegate).settings["negColor"] = positiveColor
+            (UIApplication.shared.delegate as! AppDelegate).settings["negColor"] = negativeColor
             if let newColor = negativeColor.toRGBA32() {
                 negColorPickerButton.setBackgroundImage(processPixels(in: #imageLiteral(resourceName: "colorPickerButton"), to: newColor), for: .normal)
             }
