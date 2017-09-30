@@ -66,6 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 singlePlayerDefaults[game.name] = spDefaults
             }
            
+            singlePlayerScores = singlePlayerDefaults
             
             // MultiPlayerDefaults in die UserDefaults überführen
             games = gameModes.getSpecificGameModes(for: .multi)
@@ -75,6 +76,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 mpDefaults["opponents"] = [String : Any]()
                 multiPlayerDefaults[game.name] = mpDefaults
             }
+            
+            multiPlayerScores = multiPlayerDefaults
         }
         
         
@@ -92,10 +95,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
 
         print("Background")
-        //print(settings)
-        settingsDefaults = settings
-
-        UserDefaults.standard.setData(dictionaryData: settingsDefaults, forKey: "swiperiaSettings")
+        UserDefaults.standard.setData(dictionaryData: settings, forKey: "swiperiaSettings")
         UserDefaults.standard.setData(dictionaryData: singlePlayerDefaults, forKey: "swiperiaSinglePlayer")
         UserDefaults.standard.setData(dictionaryData: multiPlayerDefaults, forKey: "swiperiaMultiPlayer")
     }
@@ -111,9 +111,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
         print("Terminate")
-        UserDefaults.standard.setData(dictionaryData: settingsDefaults, forKey: "swiperiaSettings")
-        UserDefaults.standard.setData(dictionaryData: singlePlayerDefaults, forKey: "swiperiaSinglePlayer")
-        UserDefaults.standard.setData(dictionaryData: multiPlayerDefaults, forKey: "swiperiaMultiPlayer")
+        UserDefaults.standard.setData(dictionaryData: settings, forKey: "swiperiaSettings")
+        UserDefaults.standard.setData(dictionaryData: singlePlayerScores, forKey: "swiperiaSinglePlayer")
+        UserDefaults.standard.setData(dictionaryData: multiPlayerScores, forKey: "swiperiaMultiPlayer")
     }
 
 
