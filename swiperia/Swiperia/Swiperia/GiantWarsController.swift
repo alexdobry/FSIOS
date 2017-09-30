@@ -13,6 +13,7 @@ import SpriteKit
 import MultipeerConnectivity
 
 class GiantWarsController: GameViewController {
+    let gameName = "Giant Wars"
     var mpcManager : MPCManager!
     var opponent : (peer: MCPeerID ,image: UIImage)!
     
@@ -187,16 +188,16 @@ class GiantWarsController: GameViewController {
     
     override func leaveGame() {
         super.leaveGame()
-        //unterschiede machen für isLobby
-        //TODO: save all results / do segue
-        //TODO: leave game senden
+        //TODO: save all results
         if toLobby == nil {
             if isHost { toLobby = true }
             else { toLobby = false }
         }
         if toLobby! {
             dismiss(animated: true, completion: nil)
-            if isHost { mpcManager.sendData(messageType: .leftGame, messageValue: "", toPeers: mpcManager.session.connectedPeers) }
+            if isHost {
+                mpcManager.sendData(messageType: .leftGame, messageValue: "", toPeers: mpcManager.session.connectedPeers)
+            }
         }
         else {
             mpcManager.shutDown()

@@ -13,7 +13,7 @@ class MultipeerBrowserViewController: UIViewController {
     @IBOutlet weak var peerTable: UITableView!
     @IBOutlet weak var header: UINavigationItem!
     
-    var game : Game = Game(gameName: "Giant Wars", imageName: "String", gameType: .multi, description: "String")
+    var game : Game!
     var mpcManager : MPCManager!
     var inviteActive = false
     var myPicture : UIImage!
@@ -25,6 +25,7 @@ class MultipeerBrowserViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tabBarController?.tabBar.isHidden = true
         let rndImage = images[Int(arc4random_uniform(UInt32(images.count)))]
         let rndColor = colors[Int(arc4random_uniform(UInt32(colors.count)))]
         myPicture = ProfileImageMaker.imageMaker.createProfileImage(from: rndImage, favoriteColor: rndColor, radius: view.frame.height / 20)
@@ -144,7 +145,7 @@ extension MultipeerBrowserViewController : UITableViewDelegate, UITableViewDataS
 
         if mpcManager.foundPeers[index].passwordNeeded {
             let alertController = UIAlertController(title: "Enter the password.", message: "", preferredStyle: .alert)
-            
+
             let saveAction = UIAlertAction(title: "Enter Room", style: .default, handler: {
                 alert -> Void in
                 
@@ -164,6 +165,7 @@ extension MultipeerBrowserViewController : UITableViewDelegate, UITableViewDataS
             
             alertController.addTextField { (textField : UITextField!) -> Void in
                 textField.placeholder = "Password"
+                textField.keyboardAppearance = .dark
             }
             
             alertController.addAction(saveAction)

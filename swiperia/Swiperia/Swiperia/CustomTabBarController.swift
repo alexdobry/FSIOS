@@ -12,11 +12,11 @@ import UIKit
 class CustomTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let singlePlayerView = (self.viewControllers?[0] as? GameSelectionController) {
+        if let singlePlayerView = ((self.viewControllers?[0] as? UINavigationController)?.viewControllers.first as? GameSelectionController) {
             singlePlayerView.currentGameMode = GameMode.single
         }
         
-        if let multiPlayerView = (self.viewControllers?[1] as? GameSelectionController) {
+        if let multiPlayerView = ((self.viewControllers?[1] as? UINavigationController)?.viewControllers.first as? GameSelectionController) {
             multiPlayerView.currentGameMode = GameMode.multi
         }
     }

@@ -16,11 +16,10 @@ class CreateLobbyViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var bannerImage: UIImageView!
     @IBOutlet weak var textFieldPW: UITextField!
     
-    var game : Game = Game(gameName: "Giant Wars", imageName: "String", gameType: .multi, description: "String")
+    var game : Game!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         textFieldPW.delegate = self
 
         createButton.backgroundColor = .clear
@@ -84,5 +83,10 @@ class CreateLobbyViewController: UIViewController, UITextFieldDelegate {
                 toViewController.game = game
             }
         }
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        //self.tabBarController?.setTabBarVisible(visible: true, duration: 0.3, animated: true)
     }
 }
