@@ -12,6 +12,19 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    
+    let gameModes = GameManager()
+    var games : [Game] = []
+    
+    var settingsDefaults : [String : Any] = ["music" : true, "sounds" : true, "rumble" : true, "language" : "english", "posColor" : UIColor.orange, "negColor" : UIColor.red, "userName" : "scrub", "userImage" : #imageLiteral(resourceName: "profileUnknown"), "userBanner" : #imageLiteral(resourceName: "defaultBanner")]
+    var singlePlayerDefaults = [String : [String : Any]]() //(image : UIImage, score : Double)]()
+    var multiPlayerDefaults = [String : [String : Any]]()
+    
+    var settings = [String : Any]()
+    var singlePlayerScores = [String : Any]()
+    var multiPlayerScores = [String : Any]()
+    
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -19,6 +32,51 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UIBarButtonItem.appearance().setTitleTextAttributes([NSFontAttributeName: UIFont(name: "HelveticaNeue", size: 11)!], for: UIControlState.normal)
         
         UITabBar.appearance().tintColor = UIColor.white
+        
+        
+        //print(UserDefaults.standard.getData(forKey: "swiperiaSettings"))
+        if (UserDefaults.standard.object(forKey: "swiperiaSettings") != nil) {
+            print("Key vorhanden.")
+            settings = UserDefaults.standard.getData(forKey: "swiperiaSettings")
+            singlePlayerScores = UserDefaults.standard.getData(forKey: "swiperiaSinglePlayer")
+            multiPlayerScores = UserDefaults.standard.getData(forKey: "swiperiaMultiPlayer")
+            
+            print(settings)
+            print("----------------------")
+            print(singlePlayerScores)
+            print("----------------------")
+            print(multiPlayerScores)
+            
+        } else {
+            print("Key nicht vorhanden, Standard UserDefaults werden angelegt.")
+            
+            // SettingsDefaults in die UserDefaults überführen
+            settings = settingsDefaults
+        
+            // SinglePlayerDefaults in die UserDefaults überführen
+            games = gameModes.getSpecificGameModes(for: .single)
+            for game in games {
+                var spDefaults = [String : Any]()
+                spDefaults["image"] = game.imageName
+                spDefaults["score"] = 0
+                singlePlayerDefaults[game.name] = spDefaults
+                //print(singlePlayerDefaults)
+            }
+            print(singlePlayerDefaults)
+           
+            
+            // MultiPlayerDefaults in die UserDefaults überführen
+            games = gameModes.getSpecificGameModes(for: .multi)
+            for game in games {
+                var mpDefaults = [String : Any]()
+                mpDefaults["image"] = game.imageName
+                mpDefaults["opponents"] = [String : Any]()
+                multiPlayerDefaults[game.name] = mpDefaults
+                //print(multiPlayerDefaults)
+            }
+            print(multiPlayerDefaults)
+        }
+        
         
         return true
     }
@@ -32,6 +90,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+        print("Background")
+        UserDefaults.standard.setData(dictionaryData: settingsDefaults, forKey: "swiperiaSettings")
+        UserDefaults.standard.setData(dictionaryData: singlePlayerDefaults, forKey: "swiperiaSinglePlayer")
+        UserDefaults.standard.setData(dictionaryData: multiPlayerDefaults, forKey: "swiperiaMultiPlayer")
     }
 
     func applicationWillEnterForeground(_ application: UIApplication) {
@@ -44,6 +106,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+        print("Terminate")
+        UserDefaults.standard.setData(dictionaryData: settingsDefaults, forKey: "swiperiaSettings")
+        UserDefaults.standard.setData(dictionaryData: singlePlayerDefaults, forKey: "swiperiaSinglePlayer")
+        UserDefaults.standard.setData(dictionaryData: multiPlayerDefaults, forKey: "swiperiaMultiPlayer")
     }
 
 
