@@ -22,6 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     private var settingsDefaults : [String : Any?] = ["music" : true, "sounds" : true, "rumble" : true, "language" : "english", "posColor" : UIColor.orange, "negColor" : UIColor.red, "userName" : nil, "userImage" : #imageLiteral(resourceName: "profileUnknown"), "userBanner" : #imageLiteral(resourceName: "defaultBanner")]
     private var singlePlayerDefaults = [String : [String : Any]]() //(image : UIImage, score : Double)]()
     private var multiPlayerDefaults = [String : [String : Any]]()
+
     
     var settings = [String : Any]()
     var singlePlayerScores = [String : Any]()
@@ -63,9 +64,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 spDefaults["image"] = game.imageName
                 spDefaults["score"] = 0
                 singlePlayerDefaults[game.name] = spDefaults
-                //print(singlePlayerDefaults)
             }
-            print(singlePlayerDefaults)
            
             
             // MultiPlayerDefaults in die UserDefaults überführen
@@ -75,9 +74,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 mpDefaults["image"] = game.imageName
                 mpDefaults["opponents"] = [String : Any]()
                 multiPlayerDefaults[game.name] = mpDefaults
-                //print(multiPlayerDefaults)
             }
-            print(multiPlayerDefaults)
         }
         
         
@@ -93,9 +90,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+
         print("Background")
         //print(settings)
         settingsDefaults = settings
+
         UserDefaults.standard.setData(dictionaryData: settingsDefaults, forKey: "swiperiaSettings")
         UserDefaults.standard.setData(dictionaryData: singlePlayerDefaults, forKey: "swiperiaSinglePlayer")
         UserDefaults.standard.setData(dictionaryData: multiPlayerDefaults, forKey: "swiperiaMultiPlayer")
