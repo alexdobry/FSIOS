@@ -18,4 +18,7 @@ Eine `.gitattributes` auf der gleichen Ebene wie `.gitignore` erstellen. Der Inh
 | 15.05.17 um 11 Uhr | - Swift und Foundation |
 | 15.05.17 um 13 Uhr | - Lifecycle und Segues <br /> - Segues, Application- und ViewController-Lifecycle <br /> - Demo `CardGames` |
 | 16.05.17 um 11 Uhr | - TableView, Networking, Multithreading & Storage <br /> - Demo `LWM` |
+| 16.05.17 um 13 Uhr | - Projekt: Vorstellung |
 | 18.05.17 um 11 Uhr | - User-Story-Mapping als aktive Übung |
+| 20.07.17 um 16 Uhr | - Projekt: Zwischenstand |
+| 06.10.17 um 11 Uhr | - Projekt: Abschlusspräsentionen |
