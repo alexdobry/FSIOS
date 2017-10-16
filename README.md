@@ -22,3 +22,9 @@ Eine `.gitattributes` auf der gleichen Ebene wie `.gitignore` erstellen. Der Inh
 | 18.05.17 um 11 Uhr | - User-Story-Mapping als aktive Übung |
 | 20.07.17 um 16 Uhr | - Projekt: Zwischenstand |
 | 06.10.17 um 11 Uhr | - Projekt: Abschlusspräsentionen |
+
+## Projekte
+| Team | Projekt |
+| ------------- | ------------- |
+| Dubbert und Gellert | [Swiperia](https://github.com/ddubbert/FSIOS/tree/master/swiperia) |
+| Müsse und Hahn | [watChili](https://github.com/christianh92/FSIOS/tree/master/watChili) |
