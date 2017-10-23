@@ -3,7 +3,7 @@
 ## Inhaltsverzeichnis
 | Datum  | Themen |
 | ------------- | ------------- |
-| 18.10.17 um 11 Uhr  | - KickOff, Einleitung und Organisatorisches |
+| 24.10.17 um 14 Uhr  | - KickOff, Einleitung und Organisatorisches |
 
 ## Projekte
 | Team | Projekt |
