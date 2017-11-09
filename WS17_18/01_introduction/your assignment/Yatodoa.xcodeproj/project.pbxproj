@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D9ECE4641F9F6E2300EB298E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ECE4631F9F6E2300EB298E /* AppDelegate.swift */; };
+		D9ECE4661F9F6E2300EB298E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9ECE4651F9F6E2300EB298E /* ViewController.swift */; };
+		D9ECE4691F9F6E2300EB298E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9ECE4671F9F6E2300EB298E /* Main.storyboard */; };
+		D9ECE46B1F9F6E2300EB298E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D9ECE46A1F9F6E2300EB298E /* Assets.xcassets */; };
+		D9ECE46E1F9F6E2300EB298E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9ECE46C1F9F6E2300EB298E /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		D9ECE4601F9F6E2300EB298E /* Yatodoa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Yatodoa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D9ECE4631F9F6E2300EB298E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D9ECE4651F9F6E2300EB298E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D9ECE4681F9F6E2300EB298E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D9ECE46A1F9F6E2300EB298E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D9ECE46D1F9F6E2300EB298E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D9ECE46F1F9F6E2300EB298E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D9ECE45D1F9F6E2300EB298E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D9ECE4571F9F6E2200EB298E = {
+			isa = PBXGroup;
+			children = (
+				D9ECE4621F9F6E2300EB298E /* Yatodoa */,
+				D9ECE4611F9F6E2300EB298E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D9ECE4611F9F6E2300EB298E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D9ECE4601F9F6E2300EB298E /* Yatodoa.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D9ECE4621F9F6E2300EB298E /* Yatodoa */ = {
+			isa = PBXGroup;
+			children = (
+				D9ECE4631F9F6E2300EB298E /* AppDelegate.swift */,
+				D9ECE4651F9F6E2300EB298E /* ViewController.swift */,
+				D9ECE4671F9F6E2300EB298E /* Main.storyboard */,
+				D9ECE46A1F9F6E2300EB298E /* Assets.xcassets */,
+				D9ECE46C1F9F6E2300EB298E /* LaunchScreen.storyboard */,
+				D9ECE46F1F9F6E2300EB298E /* Info.plist */,
+			);
+			path = Yatodoa;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D9ECE45F1F9F6E2300EB298E /* Yatodoa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D9ECE4721F9F6E2300EB298E /* Build configuration list for PBXNativeTarget "Yatodoa" */;
+			buildPhases = (
+				D9ECE45C1F9F6E2300EB298E /* Sources */,
+				D9ECE45D1F9F6E2300EB298E /* Frameworks */,
+				D9ECE45E1F9F6E2300EB298E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Yatodoa;
+			productName = Yatodoa;
+			productReference = D9ECE4601F9F6E2300EB298E /* Yatodoa.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D9ECE4581F9F6E2300EB298E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Armin Galinowski";
+				TargetAttributes = {
+					D9ECE45F1F9F6E2300EB298E = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = D9ECE45B1F9F6E2300EB298E /* Build configuration list for PBXProject "Yatodoa" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D9ECE4571F9F6E2200EB298E;
+			productRefGroup = D9ECE4611F9F6E2300EB298E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D9ECE45F1F9F6E2300EB298E /* Yatodoa */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D9ECE45E1F9F6E2300EB298E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9ECE46E1F9F6E2300EB298E /* LaunchScreen.storyboard in Resources */,
+				D9ECE46B1F9F6E2300EB298E /* Assets.xcassets in Resources */,
+				D9ECE4691F9F6E2300EB298E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D9ECE45C1F9F6E2300EB298E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9ECE4661F9F6E2300EB298E /* ViewController.swift in Sources */,
+				D9ECE4641F9F6E2300EB298E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D9ECE4671F9F6E2300EB298E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9ECE4681F9F6E2300EB298E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D9ECE46C1F9F6E2300EB298E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D9ECE46D1F9F6E2300EB298E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D9ECE4701F9F6E2300EB298E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D9ECE4711F9F6E2300EB298E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D9ECE4731F9F6E2300EB298E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Yatodoa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.armingalinowski.Yatodoa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D9ECE4741F9F6E2300EB298E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Yatodoa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.armingalinowski.Yatodoa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D9ECE45B1F9F6E2300EB298E /* Build configuration list for PBXProject "Yatodoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9ECE4701F9F6E2300EB298E /* Debug */,
+				D9ECE4711F9F6E2300EB298E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D9ECE4721F9F6E2300EB298E /* Build configuration list for PBXNativeTarget "Yatodoa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D9ECE4731F9F6E2300EB298E /* Debug */,
+				D9ECE4741F9F6E2300EB298E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D9ECE4581F9F6E2300EB298E /* Project object */;
+}
