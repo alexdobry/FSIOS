@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ToDoView" customModule="Yatodoa" customModuleProvider="target">
+            <connections>
+                <outlet property="checkbox" destination="2gX-yY-0lc" id="9BJ-Zg-4Xz"/>
+                <outlet property="finishedStackView" destination="J1b-kA-zH2" id="gcb-vU-BKg"/>
+                <outlet property="textField" destination="1r0-SA-yge" id="8OW-lP-ghx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="358" height="68"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="TPU-1F-gmy" userLabel="Outer StackView">
+                    <rect key="frame" x="0.0" y="0.0" width="358" height="68"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="2Nv-pM-hfi" userLabel="Todo StackView">
+                            <rect key="frame" x="0.0" y="0.0" width="358" height="30"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2gX-yY-0lc" customClass="TDCheckbox" customModule="Yatodoa" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <color key="backgroundColor" red="0.72156862745098038" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="30" id="dZ7-q4-Hpq"/>
+                                        <constraint firstAttribute="width" constant="30" id="z5D-aa-l5K"/>
+                                    </constraints>
+                                    <connections>
+                                        <action selector="checkboxTapped:" destination="-1" eventType="touchUpInside" id="mSD-Mb-Imv"/>
+                                    </connections>
+                                </button>
+                                <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="dein todo..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1r0-SA-yge">
+                                    <rect key="frame" x="38" y="0.0" width="320" height="30"/>
+                                    <nil key="textColor"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <textInputTraits key="textInputTraits" autocorrectionType="yes"/>
+                                </textField>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="J1b-kA-zH2" userLabel="Finished StackView">
+                            <rect key="frame" x="0.0" y="38" width="358" height="30"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XgW-3h-BmR">
+                                    <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </view>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erledigt am" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Q0-e6-bKm">
+                                    <rect key="frame" x="38" y="0.0" width="320" height="30"/>
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleFootnote"/>
+                                    <color key="textColor" white="0.5" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="XgW-3h-BmR" firstAttribute="height" secondItem="2gX-yY-0lc" secondAttribute="height" id="a9m-N5-GcX"/>
+                        <constraint firstItem="XgW-3h-BmR" firstAttribute="width" secondItem="2gX-yY-0lc" secondAttribute="width" id="bke-9f-K7E"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="TPU-1F-gmy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="BpS-xC-0zt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="TPU-1F-gmy" secondAttribute="bottom" id="DkD-ux-N79"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="TPU-1F-gmy" secondAttribute="trailing" id="I1o-yN-74x"/>
+                <constraint firstItem="TPU-1F-gmy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="JkC-ET-J55"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-631" y="-238"/>
+        </view>
+    </objects>
+</document>

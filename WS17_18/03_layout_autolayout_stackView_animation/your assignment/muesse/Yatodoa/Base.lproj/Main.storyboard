@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jkZ-AR-9eD">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Yatodoa-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ToDoViewController" customModule="Yatodoa" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kZb-8t-Jk7">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9z-LK-43w" userLabel="Scrollable ContentView">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="20105"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Zq-ho-z3U">
+                                                <rect key="frame" x="20" y="20" width="335" height="20065"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="XM7-lt-58t">
+                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="10028.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nBV-8H-SMA">
+                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yce-KU-pJS" userLabel="Todo StackView">
+                                                                <rect key="frame" x="0.0" y="28.5" width="335" height="10000"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jAb-t8-Ko2" customClass="ToDoView" customModule="Yatodoa" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="10000"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="xYh-VV-lwR">
+                                                        <rect key="frame" x="0.0" y="10036.5" width="335" height="10028.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Erledigt" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3He-T4-gJP">
+                                                                <rect key="frame" x="0.0" y="0.0" width="335" height="20.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jeb-Wr-sqL" userLabel="Todo StackView">
+                                                                <rect key="frame" x="0.0" y="28.5" width="335" height="10000"/>
+                                                                <subviews>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="glY-ur-zZ3" customClass="ToDoView" customModule="Yatodoa" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="335" height="10000"/>
+                                                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                                    </view>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.1333333333" green="0.4039215686" blue="0.81960784310000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="4Zq-ho-z3U" secondAttribute="trailing" constant="20" symbolic="YES" id="C6g-fJ-hQL"/>
+                                            <constraint firstItem="4Zq-ho-z3U" firstAttribute="leading" secondItem="Y9z-LK-43w" secondAttribute="leading" constant="20" symbolic="YES" id="K1q-0i-k3M"/>
+                                            <constraint firstAttribute="bottom" secondItem="4Zq-ho-z3U" secondAttribute="bottom" constant="20" symbolic="YES" id="snN-VE-7fD"/>
+                                            <constraint firstItem="4Zq-ho-z3U" firstAttribute="top" secondItem="Y9z-LK-43w" secondAttribute="top" constant="20" symbolic="YES" id="trr-o0-lVg"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.76151806119999998" green="0.29802736639999999" blue="0.277095437" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Y9z-LK-43w" firstAttribute="leading" secondItem="kZb-8t-Jk7" secondAttribute="leading" id="APA-Tl-idR"/>
+                                    <constraint firstItem="Y9z-LK-43w" firstAttribute="top" secondItem="kZb-8t-Jk7" secondAttribute="top" id="Bax-FH-4kj"/>
+                                    <constraint firstAttribute="bottom" secondItem="Y9z-LK-43w" secondAttribute="bottom" id="ETc-zo-VEM"/>
+                                    <constraint firstAttribute="trailing" secondItem="Y9z-LK-43w" secondAttribute="trailing" id="Wx5-Xe-Wg0"/>
+                                    <constraint firstItem="Y9z-LK-43w" firstAttribute="width" secondItem="kZb-8t-Jk7" secondAttribute="width" id="hcs-ve-Msc"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="kZb-8t-Jk7" secondAttribute="top" id="Cem-aX-c6j"/>
+                            <constraint firstItem="kZb-8t-Jk7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dgD-8u-IKt"/>
+                            <constraint firstItem="kZb-8t-Jk7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="fab-F9-CuT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="leading" secondItem="kZb-8t-Jk7" secondAttribute="leading" id="nxO-OO-oXY"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Yatodoa" id="NlV-SI-QlB"/>
+                    <connections>
+                        <outlet property="completeSolvedStackView" destination="xYh-VV-lwR" id="DA4-3j-rXI"/>
+                        <outlet property="solvedStackView" destination="jeb-Wr-sqL" id="CGs-vd-e6n"/>
+                        <outlet property="todoStackView" destination="yce-KU-pJS" id="xb7-TE-Ch6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="370.39999999999998" y="31.934032983508249"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="n7a-h2-bgU">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jkZ-AR-9eD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="B9z-y7-IxT">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="XCZ-kg-CmJ"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GAJ-rR-6gv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-377" y="32"/>
+        </scene>
+    </scenes>
+</document>
