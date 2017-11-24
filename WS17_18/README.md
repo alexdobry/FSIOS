@@ -10,7 +10,7 @@
 | 28.11.17 um 14 Uhr | - Application-, ViewController-Lifecycle und Segues |
 | 05.12.17 um 14 Uhr | - Design |
 | 12.12.17 um 14 Uhr | - *Projektfindung und Diskussion* |
-| 19.12.17 um 14 Uhr | - *Weihnachtsvorlesung*: Swift Programming Language*\** |
+| 19.12.17 um 14 Uhr | - *Weihnachtsvorlesung*: Swift Programming Language\* |
 
 *\* Steht noch nicht fest*
 
