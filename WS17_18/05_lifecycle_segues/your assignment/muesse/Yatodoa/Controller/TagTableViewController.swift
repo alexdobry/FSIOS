@@ -34,7 +34,9 @@ protocol TagTableViewControllerDelegate {
     func ttvc(_ vc: TagTableViewController, selectedTag tag: Tag?)
 }
 
+
 var TAGS: [Tag] = []
+
 
 class TagTableViewController: UITableViewController {
     
@@ -60,11 +62,13 @@ class TagTableViewController: UITableViewController {
         super.viewDidLoad()
         
         tableView.register(UINib(nibName: AddItemTableViewCell.NibName, bundle: nil), forCellReuseIdentifier: AddItemTableViewCell.ReuseIdentifier)
+
         if (TAGS.isEmpty) {
             TAGS.append(Tag.empty)
             TAGS.append(Tag.defaultTag)
         }
         tags.append(contentsOf: TAGS)
+
     }
     
     // MARK: - Table view data source
@@ -140,7 +144,9 @@ class TagTableViewController: UITableViewController {
     // MARK: - private helper
     
     private func insert(_ tag: Tag, animated: Bool) {
+
         TAGS.append(tag)
+
         if animated {
             let section = TagType.created
             let sectionsExists = tagsSections.contains(where: { $0.key == section }) // before we append
@@ -162,7 +168,7 @@ class TagTableViewController: UITableViewController {
             tags.append(tag)
             tableView.reloadData()
         }
-        
+
     }
 
 }
@@ -173,7 +179,7 @@ extension TagTableViewController : AddItemTableViewCellDelegate {
         
         insert(Tag(label: string), animated: true)
         
-        
+
         cell.textField.text = nil
     }
 }
