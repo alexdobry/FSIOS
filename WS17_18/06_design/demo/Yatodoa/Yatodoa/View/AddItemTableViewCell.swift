@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol AddItemTableViewCellDelegate {
+protocol AddItemTableViewCellDelegate: class {
     func addItemCell(_ cell: AddItemTableViewCell, didCreateItem string: String?)
 }
 
@@ -25,7 +25,7 @@ class AddItemTableViewCell: UITableViewCell {
         didSet { textField.placeholder = placeholder }
     }
     
-    var delegate: AddItemTableViewCellDelegate?
+    weak var delegate: AddItemTableViewCellDelegate?
 }
 
 extension AddItemTableViewCell: UITextFieldDelegate {
