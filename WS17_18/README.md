@@ -9,7 +9,7 @@
 | 21.11.17 um 14 Uhr | - TableView und TableViewController <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/04_tableView/demo/Yatodoa) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/04_tableView/your%20assignment) für `Yatodoa` |
 | 28.11.17 um 14 Uhr | - Application-, ViewController-Lifecycle und Segues <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/05_lifecycle_segues/demo/Yatodoa) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/05_lifecycle_segues/your%20assignment) für `Yatodoa` |
 | 05.12.17 um 14 Uhr | - Design <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/06_design/demo/Yatodoa) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/06_design/your%20assignment) für `Yatodoa` |
-| 12.12.17 um 14 Uhr | - *Weihnachtsvorlesung*: Swift Programming Language |
+| 12.12.17 um 14 Uhr | - Swift Programming Language |
 | 19.12.17 um 14 Uhr | - Diskussion zum Projekt (Remote oder vor Ort) |
 
 *\* Steht noch nicht fest*
