@@ -12,6 +12,10 @@
 | 12.12.17 um 14 Uhr | - Swift Programming Language |
 | 19.12.17 um 14 Uhr | - Diskussion zum Projekt (Remote oder vor Ort) |
 | 09.01.18 um 14 Uhr | - Multithreading, Networking und Json-Parsing <br /> - [Demo]() und [Assignment]() für `Cryptomarket` |
+| 16.01.18 um 14 Uhr | - Persistenz <br /> - [Demo]() und [Assignment]() für `Cryptomarket` |
+| 23.01.18 um 14 Uhr | - Notifications, Background-Updates und weitere Misc. Topics <br /> - [Demo]() und [Assignment]() für `Cryptomarket` |
+| 30.01.18 um 14 Uhr | - 3rd-Party Libraries <br /> - [Demo]() und [Assignment]() für `Cryptomarket` |
+| 06.02.18 um 14 Uhr | - Frameworks und Today-Widgets (App-Extensions) <br /> - [Demo]() und [Assignment]() für `Cryptomarket` |
 
 *\* Steht noch nicht fest*
 
