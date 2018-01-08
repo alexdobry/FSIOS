@@ -9,7 +9,7 @@
 | 21.11.17 um 14 Uhr | - TableView und TableViewController <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/04_tableView/demo/Yatodoa) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/04_tableView/your%20assignment) für `Yatodoa` |
 | 28.11.17 um 14 Uhr | - Application-, ViewController-Lifecycle und Segues <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/05_lifecycle_segues/demo/Yatodoa) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/05_lifecycle_segues/your%20assignment) für `Yatodoa` |
 | 05.12.17 um 14 Uhr | - Design <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/06_design/demo/Yatodoa) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/06_design/your%20assignment) für `Yatodoa` |
-| 12.12.17 um 14 Uhr | - Swift Programming Language |
+| 12.12.17 um 14 Uhr | - Swift Programming Language <br /> - [Fix von Memory-Cycles](https://github.com/alexdobry/FSIOS/commit/1422cf813edaef661c7517efec0d2f942a135c14) für `Yatodoa` |
 | 19.12.17 um 14 Uhr | - Diskussion zum Projekt (Remote oder vor Ort) |
 | 09.01.18 um 14 Uhr | - Multithreading, Networking und Json-Parsing <br /> - [Demo]() und [Assignment]() für `Cryptomarket` |
 | 16.01.18 um 14 Uhr | - Persistenz <br /> - [Demo]() und [Assignment]() für `Cryptomarket` |
