@@ -11,6 +11,7 @@
 | 05.12.17 um 14 Uhr | - Design <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/06_design/demo/Yatodoa) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/06_design/your%20assignment) für `Yatodoa` |
 | 12.12.17 um 14 Uhr | - Swift Programming Language |
 | 19.12.17 um 14 Uhr | - Diskussion zum Projekt (Remote oder vor Ort) |
+| 09.01.18 um 14 Uhr | - Multithreading, Networking und Json-Parsing <br /> - [Demo]() und [Assignment]() für `Cryptomarket` |
 
 *\* Steht noch nicht fest*
 
