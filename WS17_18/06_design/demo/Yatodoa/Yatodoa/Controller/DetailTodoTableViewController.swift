@@ -64,6 +64,10 @@ class DetailTodoTableViewController: UITableViewController {
         }
     }
     
+    deinit {
+        print(#file, #function)
+    }
+    
     override func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
         return indexPath.section == 1
     }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-protocol TagsTableViewControllerDelegate {
+protocol TagsTableViewControllerDelegate: class {
     func tagsViewController(_ viewController: TagsTableViewController, updatedTag tag: String)
 }
 
@@ -17,7 +17,7 @@ class TagsTableViewController: UITableViewController {
     // MARK: public api
     var selectedTag: String?
     
-    var delegate: TagsTableViewControllerDelegate?
+    weak var delegate: TagsTableViewControllerDelegate?
     
     private var tags: [Tag] = [] {
         didSet {
@@ -41,6 +41,10 @@ class TagsTableViewController: UITableViewController {
         title = "Taggen"
         
         tableView.register(UINib(nibName: AddItemTableViewCell.NibName, bundle: nil), forCellReuseIdentifier: AddItemTableViewCell.ReuseIdentifier)
+    }
+    
+    deinit {
+        print(#file, #function)
     }
     
     override func viewWillAppear(_ animated: Bool) {

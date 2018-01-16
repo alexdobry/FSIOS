@@ -27,6 +27,10 @@ class NotesViewController: UIViewController {
         notesTextView.text = notes
     }
     
+    deinit {
+        print(#file, #function)
+    }
+    
     @IBAction func cancel(_ sender: UIBarButtonItem) {
         dismiss(animated: true, completion: nil)
     }
