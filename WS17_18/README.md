@@ -12,7 +12,7 @@
 | 12.12.17 um 14 Uhr | - Swift Programming Language <br /> - [Fix von Memory-Cycles](https://github.com/alexdobry/FSIOS/commit/1422cf813edaef661c7517efec0d2f942a135c14) für `Yatodoa` |
 | 19.12.17 um 14 Uhr | - Diskussion zum Projekt (Remote oder vor Ort) |
 | 09.01.18 um 14 Uhr | - Multithreading, Networking und Json-Parsing <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/08_multithreading_networking_jsonparsing/demo/Cryptomarket) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/08_multithreading_networking_jsonparsing/your%20assignment) für `Cryptomarket` |
-| 16.01.18 um 14 Uhr | - Persistenz <br /> - [Demo]() und [Assignment]() für `Cryptomarket` |
+| 16.01.18 um 14 Uhr | - Persistenz <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/09_persistence/demo/Cryptomarket) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/09_persistence/your%20assignment) für `Cryptomarket` |
 | 23.01.18 um 14 Uhr | - Notifications, Background-Updates und weitere Misc. Topics <br /> - [Demo]() und [Assignment]() für `Cryptomarket` |
 | 30.01.18 um 14 Uhr | - 3rd-Party Libraries <br /> - [Demo]() und [Assignment]() für `Cryptomarket` |
 | 06.02.18 um 14 Uhr | - Frameworks und Today-Widgets (App-Extensions) <br /> - [Demo]() und [Assignment]() für `Cryptomarket` |
