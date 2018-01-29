@@ -1,0 +1,534 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		195C9E2E201F6D250007CF64 /* NotificationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 195C9E2D201F6D250007CF64 /* NotificationTableViewController.swift */; };
+		FA31ACAD20172C9C00CFAD02 /* EmptyDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA31ACAC20172C9C00CFAD02 /* EmptyDataTableViewController.swift */; };
+		FA38A8E6200CFAB100C91B6D /* MarketNotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA38A8E5200CFAB100C91B6D /* MarketNotificationService.swift */; };
+		FA3DB5CB1FFF9BCA00C31F8E /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DB5CA1FFF9BCA00C31F8E /* ImageLoader.swift */; };
+		FA3DB5CD1FFFA20B00C31F8E /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DB5CC1FFFA20B00C31F8E /* Networking.swift */; };
+		FA3DB5CF1FFFA59300C31F8E /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DB5CE1FFFA59300C31F8E /* Result.swift */; };
+		FA3DB5D21FFFBF8A00C31F8E /* JsonSerialization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3DB5D11FFFBF8A00C31F8E /* JsonSerialization.swift */; };
+		FA4E85ED1FFF7D95000A95CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E85EC1FFF7D95000A95CF /* AppDelegate.swift */; };
+		FA4E85F21FFF7D95000A95CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4E85F01FFF7D95000A95CF /* Main.storyboard */; };
+		FA4E85F41FFF7D95000A95CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA4E85F31FFF7D95000A95CF /* Assets.xcassets */; };
+		FA4E85F71FFF7D95000A95CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4E85F51FFF7D95000A95CF /* LaunchScreen.storyboard */; };
+		FA4E86011FFF7E5F000A95CF /* MarketsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E86001FFF7E5F000A95CF /* MarketsTableViewController.swift */; };
+		FA4E86031FFF7EA4000A95CF /* MarketSummaryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E86021FFF7EA4000A95CF /* MarketSummaryTableViewController.swift */; };
+		FA4E86061FFF7EDB000A95CF /* MarketTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4E86051FFF7EDB000A95CF /* MarketTableViewCell.xib */; };
+		FA4E86081FFF7F05000A95CF /* MarketTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E86071FFF7F05000A95CF /* MarketTableViewCell.swift */; };
+		FA4E860B1FFF7FED000A95CF /* Market.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E860A1FFF7FED000A95CF /* Market.swift */; };
+		FA4E860E1FFF8260000A95CF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E860D1FFF8260000A95CF /* Extensions.swift */; };
+		FA4E86161FFF85B4000A95CF /* MarketSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E86151FFF85B4000A95CF /* MarketSummary.swift */; };
+		FA4E86181FFF85DE000A95CF /* MarketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E86171FFF85DE000A95CF /* MarketService.swift */; };
+		FA4E861A1FFF86C3000A95CF /* MarketSummaryService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E86191FFF86C3000A95CF /* MarketSummaryService.swift */; };
+		FA4E86201FFF8B74000A95CF /* MarketSummaryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E861E1FFF8B74000A95CF /* MarketSummaryTableViewCell.swift */; };
+		FA4E86211FFF8B74000A95CF /* MarketSummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4E861F1FFF8B74000A95CF /* MarketSummaryTableViewCell.xib */; };
+		FA4E86231FFF8C67000A95CF /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E86221FFF8C67000A95CF /* Formatter.swift */; };
+		FA4E86251FFF8EDC000A95CF /* MarketSummaryDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E86241FFF8EDC000A95CF /* MarketSummaryDelta.swift */; };
+		FA92EEC5200F6DFE0031E974 /* ModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA92EEC4200F6DFE0031E974 /* ModelType.swift */; };
+		FAABCD462008E5A900E40CFB /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAABCD452008E5A800E40CFB /* DataProvider.swift */; };
+		FAD242432003B755009CBEC4 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD242422003B755009CBEC4 /* Database.swift */; };
+		FAD242452003B868009CBEC4 /* DiskDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD242442003B868009CBEC4 /* DiskDatabase.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		195C9E2D201F6D250007CF64 /* NotificationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewController.swift; sourceTree = "<group>"; };
+		FA31ACAC20172C9C00CFAD02 /* EmptyDataTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyDataTableViewController.swift; sourceTree = "<group>"; };
+		FA38A8E5200CFAB100C91B6D /* MarketNotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketNotificationService.swift; sourceTree = "<group>"; };
+		FA3DB5CA1FFF9BCA00C31F8E /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		FA3DB5CC1FFFA20B00C31F8E /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		FA3DB5CE1FFFA59300C31F8E /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		FA3DB5D11FFFBF8A00C31F8E /* JsonSerialization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonSerialization.swift; sourceTree = "<group>"; };
+		FA4E85E91FFF7D95000A95CF /* Cryptomarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptomarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA4E85EC1FFF7D95000A95CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA4E85F11FFF7D95000A95CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA4E85F31FFF7D95000A95CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA4E85F61FFF7D95000A95CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA4E85F81FFF7D95000A95CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA4E86001FFF7E5F000A95CF /* MarketsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketsTableViewController.swift; sourceTree = "<group>"; };
+		FA4E86021FFF7EA4000A95CF /* MarketSummaryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketSummaryTableViewController.swift; sourceTree = "<group>"; };
+		FA4E86051FFF7EDB000A95CF /* MarketTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketTableViewCell.xib; sourceTree = "<group>"; };
+		FA4E86071FFF7F05000A95CF /* MarketTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketTableViewCell.swift; sourceTree = "<group>"; };
+		FA4E860A1FFF7FED000A95CF /* Market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Market.swift; sourceTree = "<group>"; };
+		FA4E860D1FFF8260000A95CF /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FA4E86151FFF85B4000A95CF /* MarketSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketSummary.swift; sourceTree = "<group>"; };
+		FA4E86171FFF85DE000A95CF /* MarketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketService.swift; sourceTree = "<group>"; };
+		FA4E86191FFF86C3000A95CF /* MarketSummaryService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketSummaryService.swift; sourceTree = "<group>"; };
+		FA4E861E1FFF8B74000A95CF /* MarketSummaryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketSummaryTableViewCell.swift; sourceTree = "<group>"; };
+		FA4E861F1FFF8B74000A95CF /* MarketSummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketSummaryTableViewCell.xib; sourceTree = "<group>"; };
+		FA4E86221FFF8C67000A95CF /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
+		FA4E86241FFF8EDC000A95CF /* MarketSummaryDelta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketSummaryDelta.swift; sourceTree = "<group>"; };
+		FA92EEC4200F6DFE0031E974 /* ModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelType.swift; sourceTree = "<group>"; };
+		FAABCD452008E5A800E40CFB /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		FAD242422003B755009CBEC4 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		FAD242442003B868009CBEC4 /* DiskDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiskDatabase.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FA4E85E61FFF7D95000A95CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		195C9E2C201F6CFA0007CF64 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				195C9E2D201F6D250007CF64 /* NotificationTableViewController.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		FA3DB5D01FFFBF7F00C31F8E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				FA3DB5CA1FFF9BCA00C31F8E /* ImageLoader.swift */,
+				FA3DB5CC1FFFA20B00C31F8E /* Networking.swift */,
+				FA3DB5D11FFFBF8A00C31F8E /* JsonSerialization.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		FA4E85E01FFF7D95000A95CF = {
+			isa = PBXGroup;
+			children = (
+				FA4E85EB1FFF7D95000A95CF /* Cryptomarket */,
+				FA4E85EA1FFF7D95000A95CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FA4E85EA1FFF7D95000A95CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E85E91FFF7D95000A95CF /* Cryptomarket.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA4E85EB1FFF7D95000A95CF /* Cryptomarket */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E860C1FFF8257000A95CF /* Utils */,
+				FA4E86091FFF7FDA000A95CF /* Model */,
+				FA4E86041FFF7EB5000A95CF /* View */,
+				FA4E85FF1FFF7E46000A95CF /* ViewController */,
+				FA4E85EC1FFF7D95000A95CF /* AppDelegate.swift */,
+				FA4E85F01FFF7D95000A95CF /* Main.storyboard */,
+				FA4E85FE1FFF7E39000A95CF /* Supporting Files */,
+				FA4E85F81FFF7D95000A95CF /* Info.plist */,
+			);
+			path = Cryptomarket;
+			sourceTree = "<group>";
+		};
+		FA4E85FE1FFF7E39000A95CF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E85F31FFF7D95000A95CF /* Assets.xcassets */,
+				FA4E85F51FFF7D95000A95CF /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FA4E85FF1FFF7E46000A95CF /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				195C9E2C201F6CFA0007CF64 /* Notification */,
+				FA4E86111FFF857F000A95CF /* Market */,
+				FA4E86121FFF8584000A95CF /* Market Summary */,
+				FA31ACAC20172C9C00CFAD02 /* EmptyDataTableViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		FA4E86041FFF7EB5000A95CF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E86101FFF8570000A95CF /* Market */,
+				FA4E861B1FFF8B3F000A95CF /* Market Summary */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FA4E86091FFF7FDA000A95CF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FAD242412003B741009CBEC4 /* Storage */,
+				FA3DB5D01FFFBF7F00C31F8E /* Networking */,
+				FA4E86141FFF85A9000A95CF /* Market Summary */,
+				FA4E860F1FFF8569000A95CF /* Market */,
+				FA38A8E5200CFAB100C91B6D /* MarketNotificationService.swift */,
+				FA92EEC4200F6DFE0031E974 /* ModelType.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA4E860C1FFF8257000A95CF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E860D1FFF8260000A95CF /* Extensions.swift */,
+				FA4E86221FFF8C67000A95CF /* Formatter.swift */,
+				FA3DB5CE1FFFA59300C31F8E /* Result.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FA4E860F1FFF8569000A95CF /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E860A1FFF7FED000A95CF /* Market.swift */,
+				FA4E86171FFF85DE000A95CF /* MarketService.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		FA4E86101FFF8570000A95CF /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E86051FFF7EDB000A95CF /* MarketTableViewCell.xib */,
+				FA4E86071FFF7F05000A95CF /* MarketTableViewCell.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		FA4E86111FFF857F000A95CF /* Market */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E86001FFF7E5F000A95CF /* MarketsTableViewController.swift */,
+			);
+			path = Market;
+			sourceTree = "<group>";
+		};
+		FA4E86121FFF8584000A95CF /* Market Summary */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E86021FFF7EA4000A95CF /* MarketSummaryTableViewController.swift */,
+			);
+			path = "Market Summary";
+			sourceTree = "<group>";
+		};
+		FA4E86141FFF85A9000A95CF /* Market Summary */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E86151FFF85B4000A95CF /* MarketSummary.swift */,
+				FA4E86191FFF86C3000A95CF /* MarketSummaryService.swift */,
+				FA4E86241FFF8EDC000A95CF /* MarketSummaryDelta.swift */,
+			);
+			path = "Market Summary";
+			sourceTree = "<group>";
+		};
+		FA4E861B1FFF8B3F000A95CF /* Market Summary */ = {
+			isa = PBXGroup;
+			children = (
+				FA4E861E1FFF8B74000A95CF /* MarketSummaryTableViewCell.swift */,
+				FA4E861F1FFF8B74000A95CF /* MarketSummaryTableViewCell.xib */,
+			);
+			path = "Market Summary";
+			sourceTree = "<group>";
+		};
+		FAD242412003B741009CBEC4 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				FAD242422003B755009CBEC4 /* Database.swift */,
+				FAD242442003B868009CBEC4 /* DiskDatabase.swift */,
+				FAABCD452008E5A800E40CFB /* DataProvider.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FA4E85E81FFF7D95000A95CF /* Cryptomarket */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA4E85FB1FFF7D95000A95CF /* Build configuration list for PBXNativeTarget "Cryptomarket" */;
+			buildPhases = (
+				FA4E85E51FFF7D95000A95CF /* Sources */,
+				FA4E85E61FFF7D95000A95CF /* Frameworks */,
+				FA4E85E71FFF7D95000A95CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Cryptomarket;
+			productName = Cryptomarket;
+			productReference = FA4E85E91FFF7D95000A95CF /* Cryptomarket.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA4E85E11FFF7D95000A95CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Alexander Dobrynin";
+				TargetAttributes = {
+					FA4E85E81FFF7D95000A95CF = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = FA4E85E41FFF7D95000A95CF /* Build configuration list for PBXProject "Cryptomarket" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA4E85E01FFF7D95000A95CF;
+			productRefGroup = FA4E85EA1FFF7D95000A95CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA4E85E81FFF7D95000A95CF /* Cryptomarket */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FA4E85E71FFF7D95000A95CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA4E86211FFF8B74000A95CF /* MarketSummaryTableViewCell.xib in Resources */,
+				FA4E85F71FFF7D95000A95CF /* LaunchScreen.storyboard in Resources */,
+				FA4E85F41FFF7D95000A95CF /* Assets.xcassets in Resources */,
+				FA4E85F21FFF7D95000A95CF /* Main.storyboard in Resources */,
+				FA4E86061FFF7EDB000A95CF /* MarketTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FA4E85E51FFF7D95000A95CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA92EEC5200F6DFE0031E974 /* ModelType.swift in Sources */,
+				FA31ACAD20172C9C00CFAD02 /* EmptyDataTableViewController.swift in Sources */,
+				FA4E86011FFF7E5F000A95CF /* MarketsTableViewController.swift in Sources */,
+				FA4E860E1FFF8260000A95CF /* Extensions.swift in Sources */,
+				FA4E86161FFF85B4000A95CF /* MarketSummary.swift in Sources */,
+				FA4E86251FFF8EDC000A95CF /* MarketSummaryDelta.swift in Sources */,
+				195C9E2E201F6D250007CF64 /* NotificationTableViewController.swift in Sources */,
+				FA4E86181FFF85DE000A95CF /* MarketService.swift in Sources */,
+				FA4E85ED1FFF7D95000A95CF /* AppDelegate.swift in Sources */,
+				FA3DB5CF1FFFA59300C31F8E /* Result.swift in Sources */,
+				FAABCD462008E5A900E40CFB /* DataProvider.swift in Sources */,
+				FA38A8E6200CFAB100C91B6D /* MarketNotificationService.swift in Sources */,
+				FA4E861A1FFF86C3000A95CF /* MarketSummaryService.swift in Sources */,
+				FA4E86201FFF8B74000A95CF /* MarketSummaryTableViewCell.swift in Sources */,
+				FA4E86031FFF7EA4000A95CF /* MarketSummaryTableViewController.swift in Sources */,
+				FA3DB5D21FFFBF8A00C31F8E /* JsonSerialization.swift in Sources */,
+				FAD242452003B868009CBEC4 /* DiskDatabase.swift in Sources */,
+				FA4E86231FFF8C67000A95CF /* Formatter.swift in Sources */,
+				FA4E86081FFF7F05000A95CF /* MarketTableViewCell.swift in Sources */,
+				FAD242432003B755009CBEC4 /* Database.swift in Sources */,
+				FA4E860B1FFF7FED000A95CF /* Market.swift in Sources */,
+				FA3DB5CB1FFF9BCA00C31F8E /* ImageLoader.swift in Sources */,
+				FA3DB5CD1FFFA20B00C31F8E /* Networking.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FA4E85F01FFF7D95000A95CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA4E85F11FFF7D95000A95CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FA4E85F51FFF7D95000A95CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA4E85F61FFF7D95000A95CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FA4E85F91FFF7D95000A95CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA4E85FA1FFF7D95000A95CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA4E85FC1FFF7D95000A95CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cryptomarket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex-dobrynin.Cryptomarket";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA4E85FD1FFF7D95000A95CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Cryptomarket/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.alex-dobrynin.Cryptomarket";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FA4E85E41FFF7D95000A95CF /* Build configuration list for PBXProject "Cryptomarket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA4E85F91FFF7D95000A95CF /* Debug */,
+				FA4E85FA1FFF7D95000A95CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA4E85FB1FFF7D95000A95CF /* Build configuration list for PBXNativeTarget "Cryptomarket" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA4E85FC1FFF7D95000A95CF /* Debug */,
+				FA4E85FD1FFF7D95000A95CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA4E85E11FFF7D95000A95CF /* Project object */;
+}
