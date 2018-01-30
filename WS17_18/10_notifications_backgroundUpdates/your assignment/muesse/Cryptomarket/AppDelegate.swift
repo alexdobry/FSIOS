@@ -30,22 +30,31 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         debugPrint(#function)
-        
-        let market = Market(baseCurrency: "USDT", logoUrl: nil, currency: "", currencyLong: "", name: "USDT-BTC", active: true) // FIXME: assigment
-        MarketSummaryService.with(market: market).deltaFromNetwork { delta in
-            if let delta = delta {
-                debugPrint(#function, delta)
-                
-                MarketNotificationService.scheduleNotification(
-                    with: market,
-                    delta: delta,
-                    and: application.applicationIconBadgeNumber
-                )
-                
-                completionHandler(.newData)
-            } else {
-                completionHandler(.noData)
+        let decoder = PropertyListDecoder()
+
+        if let data = UserDefaults.standard.object(forKey: "selectedMarket") as? Data, let selectedMarket = try? decoder.decode(Market.self, from: data) {
+            debugPrint(#function, data)
+            
+            let market = Market(baseCurrency: selectedMarket.baseCurrency, logoUrl: nil, currency: "", currencyLong: "", name: selectedMarket.name, active: true)
+            debugPrint(#function, market)
+            
+            MarketSummaryService.with(market: market).deltaFromNetwork { delta in
+                if let delta = delta {
+                    debugPrint(#function, delta)
+                    
+                    MarketNotificationService.scheduleNotification(
+                        with: market,
+                        delta: delta,
+                        and: application.applicationIconBadgeNumber
+                    )
+                    
+                    completionHandler(.newData)
+                } else {
+                    completionHandler(.noData)
+                }
             }
+        } else {
+            completionHandler(.noData)
         }
     }
 }
