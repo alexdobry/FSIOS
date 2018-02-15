@@ -88,7 +88,7 @@ Damit ihr einen Leitfaden habt, ist hier meine Bewertungsgrundlage:
   - Datenkapselung, Schnittstellen zwischen Komponenten und Kommunikationsstrukturen
   - Eleganz von Implementierungen
   - ...
-- Einhalten von iOS und Swift Idiomen
+- Einhalten von iOS und [Swift Idiomen](https://github.com/alexdobry/FSIOS/blob/master/WS17_18/07_swift/fsios_swift.pdf)
   - High-Order-Functions vs. For- und While-Schleifen mit If-Abfragen
   - Verwendung von Structs, Klassen, Enums und Optionals
   - Verwendung von `didSet`, `get {}` und `set {}` bei Properties
@@ -98,9 +98,10 @@ Damit ihr einen Leitfaden habt, ist hier meine Bewertungsgrundlage:
   - Einhalten von MVC (keine Anwendungslogik im Controller)
   - Sinnvolle Verwendung des ViewController Lifecycles
   - Belastung des Main-UI-Threads
+  - Berücksichtigung von Memory-Leaks
   - ...
 - Angeeignetes Wissen, welches nicht in der Veranstaltung thematisiert wurde und sonstige Transferleistungen
-- Gebrauchstaugliches und adäquates mobiles Design unter berücksichtigung der [iOS Design-Guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/themes/)
+- Gebrauchstaugliches und adäquates mobiles Design unter Berücksichtigung der [iOS Design-Guidelines](https://developer.apple.com/ios/human-interface-guidelines/overview/themes/)
 - Alles in der Abschlusspräsentation, vor allem der rote Faden, die Qualität der Begründungen und eure persönlichen Gedanken
 - Alles, was ansonsten begeistert
 - Eure persönliche Entwicklung
