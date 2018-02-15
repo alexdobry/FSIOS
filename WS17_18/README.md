@@ -81,6 +81,7 @@ Des Weiteren könnt ihr der Präsentation alles hinzufügen, was Begeisterung en
 ### Bewertungsgrundlage
 Damit ihr einen Leitfaden habt, ist hier meine Bewertungsgrundlage:
 - Erfüllungsgrad der [Learning-Outcomes](#learning-outcomes)
+- Beiteiligung an den [Assignments](#assignments)
 - Beherrschen und Dekonstruieren von komplexen Problemen in lösbare Einheiten
 - Qualität des Codes
   - "Spaghetti-Code" vs. sinnvolle Kapselung von Komponenten
