@@ -1,6 +1,16 @@
 # FSIOS im WS 17/17
 
-## Inhaltsverzeichnis
+- [Vorlesung](#vorlesung)
+  - [Inhaltsverzeichnis](#inhaltsverzeichnis)
+  - [Assignments](#assignments)
+- [Abschlussprojekt](#abschlussprojekt)
+  - [Abschlusspräsentation](#abschlusspräsentation)
+  - [Bewertungsgrundlage](#bewertungsgrundlage)
+  - [Learning Outcomes](#learning-outcomes)
+
+## Vorlesung 
+
+### Inhaltsverzeichnis
 | Datum  | Themen |
 | ------------- | ------------- |
 | 24.10.17 um 14 Uhr | - KickOff, Einleitung und Organisatorisches <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/01_introduction/demo/Yatodoa) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/01_introduction/your%20assignment) für `Yatodoa` |
@@ -19,7 +29,7 @@
 
 *\* Steht noch nicht fest*
 
-## Assignments
+### Assignments
 | Assignment | Eingereicht |
 | ------------- | ------------- |
 | [1](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/01_introduction/your%20assignment) | [christianh92](https://github.com/alexdobry/FSIOS/pull/7), [umuesse](https://github.com/alexdobry/FSIOS/pull/8), [armingal](https://github.com/alexdobry/FSIOS/pull/9) |
@@ -27,8 +37,23 @@
 | [3](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/03_layout_autolayout_stackView_animation/your%20assignment) | TBA |
 | [4](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/04_tableView/your%20assignment) | TBA |
 
+## Abschlussprojekt
+Das Abschlussprojekt soll in einem Fork [dieses Projektes](https://github.com/alexdobry/FSIOS) liegen. Hierbei könnt ihr den gleichen Fork wie für die Assignments verwenden. Verwendet Tools wie Issues, Pull-Requests und Reviews, um euer Projekt auf GitHub zu managen.
 
-## Projekte
 | Team | Projekt |
 | ------------- | ------------- |
 | Alexander Dobrynin | [FSIOS](https://github.com/alexdobry/FSIOS) |
+
+### Dokumentation 
+Neben dem Code soll auch eine kleine Projektdokumentation auf Github zur Verfügung stehen. Hierfür könnt ihr die Readme.md als Landing-Page verwenden und eine Art *Getting-Started* aufsetzen. Alternativ könnt ihr das Wiki eines jeden Github-Projektes verwenden. Die Dokumentation soll einen *Überblick* über eure App geben. Sprich, welche Komponenten (nicht unbedingt Klassen) existieren, was sind die wichtigsten Komponenten und wie Kommunizieren diese miteinander. Das Ganze soll sowohl Prosa als auch Skizzen/Grafiken enthalten. Zudem könnt (und sollt) ihr diese Grafiken für eure Abschlusspräsentation wiederverwenden, um über die Architektur zu reden. **Begründet eure Entscheidungen** und betont zu euren Gunsten die ausschlaggebendsten Eigenschaften eurer App. Eine Strunktur kann bswp. folgendermaßen aussehen:
+
+- Thema, Umfang und Ziel der App
+- Design (optisch, UI)
+- Architektur
+- Spannende Aspekte und Besonderheiten
+
+### Abschlusspräsentation
+
+### Bewertungsgrundlage
+
+### Learning Outcomes
