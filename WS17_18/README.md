@@ -91,7 +91,7 @@ Damit ihr einen Leitfaden habt, ist hier meine Bewertungsgrundlage:
 - Einhalten von iOS und Swift Idiomen
   - High-Order-Functions vs. For- und While-Schleifen mit If-Abfragen
   - Verwendung von Structs, Klassen, Enums und Optionals
-  - Verwendung von `didSet`, `get {}` und `set {}` bei Properties
+  - Verwendung von `didSet`, `get {}` und `set {}` bei Properties
   - Verbosität von Funktionen (Verwendung von internen und externen Parameternamen bei Funktionen)
   - ...
 - Verständnis und korrekte Verwendung von iOS, Cocoa-Touch und Frameworks
