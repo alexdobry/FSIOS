@@ -52,6 +52,8 @@ Neben dem Code soll auch eine kleine Projektdokumentation auf Github zur Verfüg
 - Architektur
 - Spannende Aspekte und Besonderheiten
 
+Die Dokumentation ist als ausführlichere Variante der Abschlusspräsentation zu verstehen, damit ich eine Erinnerungshilfe habe. 
+
 ### Abschlusspräsentation
 
 ### Bewertungsgrundlage
