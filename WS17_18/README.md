@@ -32,10 +32,16 @@
 ### Assignments
 | Assignment | Eingereicht |
 | ------------- | ------------- |
-| [1](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/01_introduction/your%20assignment) | [christianh92](https://github.com/alexdobry/FSIOS/pull/7), [umuesse](https://github.com/alexdobry/FSIOS/pull/8), [armingal](https://github.com/alexdobry/FSIOS/pull/9) |
-| [2](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/02_mvc/your%20assignment) | TBA |
-| [3](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/03_layout_autolayout_stackView_animation/your%20assignment) | TBA |
-| [4](https://github.com/alexdobry/FSIOS/tree/master/WS17_18/04_tableView/your%20assignment) | TBA |
+| 1 | [christianh92](https://github.com/alexdobry/FSIOS/pull/7), [umuesse](https://github.com/alexdobry/FSIOS/pull/8), [armingal](https://github.com/alexdobry/FSIOS/pull/9) |
+| 2 | [christianh92](https://github.com/alexdobry/FSIOS/pull/10), [umuesse](https://github.com/alexdobry/FSIOS/pull/11), [armingal](https://github.com/alexdobry/FSIOS/pull/13) |
+| 3 | [christianh92](https://github.com/alexdobry/FSIOS/pull/12), [umuesse](https://github.com/alexdobry/FSIOS/pull/14) |
+| 4 | [christianh92](https://github.com/alexdobry/FSIOS/pull/18), [umuesse](https://github.com/alexdobry/FSIOS/pull/17) |
+| 5 | [christianh92](https://github.com/alexdobry/FSIOS/pull/19), [umuesse](https://github.com/alexdobry/FSIOS/pull/20) |
+| 6 | [christianh92](https://github.com/alexdobry/FSIOS/pull/21), [umuesse](https://github.com/alexdobry/FSIOS/pull/22) |
+| 7 | [umuesse](https://github.com/alexdobry/FSIOS/pull/24) |
+| 8 | [christianh92](https://github.com/alexdobry/FSIOS/pull/23) |
+| 9 | [christianh92](https://github.com/alexdobry/FSIOS/pull/25) |
+| 10 | [christianh92](https://github.com/alexdobry/FSIOS/pull/26), [umuesse](https://github.com/alexdobry/FSIOS/pull/27) |
 
 ## Abschlussprojekt
 Das Abschlussprojekt soll in einem Fork [dieses Projektes](https://github.com/alexdobry/FSIOS) liegen. Hierbei könnt ihr den gleichen Fork wie für die Assignments verwenden. Verwendet Tools wie Issues, Pull-Requests und Reviews, um euer Projekt auf GitHub zu managen.
