@@ -38,10 +38,9 @@
 | 4 | [christianh92](https://github.com/alexdobry/FSIOS/pull/18), [umuesse](https://github.com/alexdobry/FSIOS/pull/17) |
 | 5 | [christianh92](https://github.com/alexdobry/FSIOS/pull/19), [umuesse](https://github.com/alexdobry/FSIOS/pull/20) |
 | 6 | [christianh92](https://github.com/alexdobry/FSIOS/pull/21), [umuesse](https://github.com/alexdobry/FSIOS/pull/22) |
-| 7 | [umuesse](https://github.com/alexdobry/FSIOS/pull/24) |
-| 8 | [christianh92](https://github.com/alexdobry/FSIOS/pull/23) |
-| 9 | [christianh92](https://github.com/alexdobry/FSIOS/pull/25) |
-| 10 | [christianh92](https://github.com/alexdobry/FSIOS/pull/26), [umuesse](https://github.com/alexdobry/FSIOS/pull/27) |
+| 7 | [christianh92](https://github.com/alexdobry/FSIOS/pull/23), [umuesse](https://github.com/alexdobry/FSIOS/pull/24) |
+| 8 | [christianh92](https://github.com/alexdobry/FSIOS/pull/25) |
+| 9 | [christianh92](https://github.com/alexdobry/FSIOS/pull/26), [umuesse](https://github.com/alexdobry/FSIOS/pull/27) |
 
 ## Abschlussprojekt
 Das Abschlussprojekt soll in einem Fork [dieses Projektes](https://github.com/alexdobry/FSIOS) liegen. Hierbei könnt ihr den gleichen Fork wie für die Assignments verwenden. Verwendet Tools wie Issues, Pull-Requests und Reviews, um euer Projekt auf GitHub zu managen.
