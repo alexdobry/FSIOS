@@ -1,5 +1,11 @@
 # FSIOS
-Die Veranstaltung besteht aus wöchentlichen Vorlesungen, anschließendem Live-Coding und Hands-On Übungen.
+
+Laufende Veranstaltung
+- [SS18](https://github.com/alexdobry/FSIOS/tree/master/SS18)
+
+Vergangene Veranstaltungen
+- [WS 17/18](https://github.com/alexdobry/FSIOS/tree/master/WS17_18)
+- [SS17](https://github.com/alexdobry/FSIOS/tree/master/SS17)
 
 ## Vorlesung
 In den Vorlesungen werden verschiedene Inhalte mobiler Entwicklung, insbesondere der iOS Entwicklung mit Swift, behandelt. Dabei werden viele Aspekte und Konzepte der Informatik theoretisch und praktisch angewendet.
