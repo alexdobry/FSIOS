@@ -14,6 +14,7 @@
 | Datum  | Themen |
 | ------------- | ------------- |
 | 11.04.18 um 13 Uhr | - KickOff, Einleitung und Organisatorisches <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/SS18/01_introduction/demo/FlippingCard) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/SS18/01_introduction/your%20assignment) für `FlippingCard` |
+| 18.04.18 um 13 Uhr | - MVC und weitere Patterns <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/SS18/02_mvc/demo/FlippingCard) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/SS18/02_mvc/your%20assignment) für `MatchingCards` |
 
 ### Assignments
 | Assignment | Eingereicht |
