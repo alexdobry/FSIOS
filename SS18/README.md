@@ -15,8 +15,6 @@
 | ------------- | ------------- |
 | 11.04.18 um 13 Uhr | - KickOff, Einleitung und Organisatorisches <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/SS18/01_introduction/demo/FlippingCard) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/SS18/01_introduction/your%20assignment) für `FlippingCard` |
 
-*\* Steht noch nicht fest*
-
 ### Assignments
 | Assignment | Eingereicht |
 | ------------- | ------------- |
