@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MatchingCards" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8yw-ke-uxU">
+                                <rect key="frame" x="16" y="84" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="card_back"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pg5-kp-Yx9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vAS-LA-qSo">
+                                <rect key="frame" x="104" y="84" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="card_back"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="90f-B1-hpV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D9i-Qa-Q8d">
+                                <rect key="frame" x="192" y="84" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="card_back"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KSr-K3-cP8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnO-tP-ZGu">
+                                <rect key="frame" x="279" y="84" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="card_back"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hCK-LC-kFD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yt1-zo-fdM">
+                                <rect key="frame" x="16" y="242" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="card_back"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qy0-rA-tmZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ka9-Ng-Mgf">
+                                <rect key="frame" x="104" y="242" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="card_back"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="k04-2r-Ff9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Myt-KG-3Wr">
+                                <rect key="frame" x="192" y="242" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="card_back"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="phZ-S3-bM4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WNV-yc-Rl5">
+                                <rect key="frame" x="279" y="242" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="card_back"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fDB-A0-jBu"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="htS-dr-c2A">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A9t-m6-2KX">
+                                <rect key="frame" x="16" y="400" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="card_back"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bzb-EX-hOn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p2g-Zt-niG">
+                                <rect key="frame" x="104" y="400" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="card_back"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pIc-2u-64s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l7h-pS-SYM">
+                                <rect key="frame" x="192" y="400" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="card_back"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vr3-kf-Vbr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Lg-UD-cdz">
+                                <rect key="frame" x="279" y="400" width="80" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="card_back"/>
+                                <connections>
+                                    <action selector="flipCard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="La5-QO-yN7"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="htS-dr-c2A" id="op0-yJ-e9k"/>
+                        <outletCollection property="cardButtons" destination="8yw-ke-uxU" collectionClass="NSMutableArray" id="XWF-fm-cT7"/>
+                        <outletCollection property="cardButtons" destination="vAS-LA-qSo" collectionClass="NSMutableArray" id="teY-v6-Afn"/>
+                        <outletCollection property="cardButtons" destination="D9i-Qa-Q8d" collectionClass="NSMutableArray" id="czx-La-y9M"/>
+                        <outletCollection property="cardButtons" destination="pnO-tP-ZGu" collectionClass="NSMutableArray" id="fMR-bT-lPc"/>
+                        <outletCollection property="cardButtons" destination="yt1-zo-fdM" collectionClass="NSMutableArray" id="O4A-8H-bvW"/>
+                        <outletCollection property="cardButtons" destination="Ka9-Ng-Mgf" collectionClass="NSMutableArray" id="U1E-MG-hY2"/>
+                        <outletCollection property="cardButtons" destination="Myt-KG-3Wr" collectionClass="NSMutableArray" id="jDc-h1-J2O"/>
+                        <outletCollection property="cardButtons" destination="WNV-yc-Rl5" collectionClass="NSMutableArray" id="ghT-tf-br3"/>
+                        <outletCollection property="cardButtons" destination="A9t-m6-2KX" collectionClass="NSMutableArray" id="Eer-JC-bhy"/>
+                        <outletCollection property="cardButtons" destination="p2g-Zt-niG" collectionClass="NSMutableArray" id="LN8-bq-m5S"/>
+                        <outletCollection property="cardButtons" destination="l7h-pS-SYM" collectionClass="NSMutableArray" id="W7W-QG-H4e"/>
+                        <outletCollection property="cardButtons" destination="4Lg-UD-cdz" collectionClass="NSMutableArray" id="cG0-1s-Ag2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="card_back" width="70" height="120"/>
+    </resources>
+</document>
