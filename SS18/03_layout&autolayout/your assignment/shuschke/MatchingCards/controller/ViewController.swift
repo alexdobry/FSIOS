@@ -94,18 +94,36 @@ class ViewController: UIViewController, MatchingCardGameDelegate {
         case .alreadySelected(let card): // das muss ich schöner machen
             sender.cardTitle = "NOPE"
             
+            
+            // ASC Shake-Animation
+            UIView.animate(withDuration: 0.07,
+                           delay: 0.0,
+                           options: [UIViewAnimationOptions.repeat, UIViewAnimationOptions.autoreverse],
+                           animations: {
+                            UIView.setAnimationRepeatCount(3)
+                            sender.frame.origin.x -= 5
+                            sender.frame.origin.x += 5
+            },
+                           completion: nil
+            )
+           
+            
             Timer.scheduledTimer(withTimeInterval: 0.5, repeats: false, block: { _ in
                 sender.cardTitle = card.description
             })
+            
         }
     }
     
     @IBAction func playAgain(_ sender: UIButton) {
+        print("playAgain")
+        
         game = MatchingCardGame(numberOfCards: currentVisbleCards.count)
         currentVisbleCards.forEach { card in
             card.cardTitle = nil
             card.matched = false
         }
+        
         
         setup()
     }
@@ -124,6 +142,13 @@ class ViewController: UIViewController, MatchingCardGameDelegate {
         currentVisbleCards.forEach {
             $0.matched = true
         }
+        
+        UIView.animate(withDuration: 1,
+                       animations: {
+                        self.playAgainButton.transform = CGAffineTransform(scaleX: 0.6, y: 0.6)
+                }, completion: { _ in //_in WHY????
+                        self.playAgainButton.transform = CGAffineTransform.identity
+        })
         
         playAgainButton.isHidden = false
     }
