@@ -20,6 +20,7 @@
 | 09.05.18 um 13 Uhr | - Funktionen und Closures, Multithreading und CollectionView <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/SS18/05_closures&multithreading&collectionView/demo/Unsplashy) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/SS18/05_closures&multithreading&collectionView/your%20assignment) für `Unsplashy` |
 | 23.05.18 um 13 Uhr | - TableView <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/SS18/06_tableView/demo/Yatodoa) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/SS18/06_tableView/your%20assignment) für `Yatodoa` |
 | 30.05.18 um 13 Uhr | - Design <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/SS18/07_design/demo/Yatodoa) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/SS18/07_design/your%20assignment) für `Yatodoa` |
+| 06.06.18 um 13 Uhr | - Persistenz <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/SS18/08_persistence/demo/Yatodoa) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/SS18/08_persistence/your%20assignment) für `Yatodoa` |
 
 ### Assignments
 | Assignment | Eingereicht |
