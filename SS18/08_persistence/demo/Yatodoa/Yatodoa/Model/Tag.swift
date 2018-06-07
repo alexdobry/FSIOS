@@ -8,19 +8,46 @@
 
 import Foundation
 import UIKit
+import CoreData
 
-struct Tag {
-    let color: UIColor
-    let title: String
+class Tag: NSManagedObject {
     
-    private init(title: String, color: UIColor) {
-        self.title = "#\(title)"
-        self.color = color
+    var color: UIColor? {
+        get {
+            if let hex = colorHex {
+                return UIColor.init(hex: hex)
+            } else {
+                return nil
+            }
+        }
+        set {
+            colorHex = newValue?.toHex
+        }
     }
     
-    init(title: String) {
-        self.init(title: title, color: UIColor.random)
+    static func populateItemsIfNeeded(in context: NSManagedObjectContext) throws {
+        do {
+            let request: NSFetchRequest<Tag> = Tag.fetchRequest()
+            let existing = try context.count(for: request)
+            
+            if existing > 0 {
+                print(#function, "already created")
+            } else {
+                ["#general", "#shopping list", "#study", "#work", "#yolo", "#swag"].forEach { title in
+                    Tag.create(with: title, in: context)
+                }
+                
+                try? context.save()
+            }
+        } catch {
+            throw error
+        }
     }
     
-    static var all = [Tag(title: "general"), Tag(title: "shopping list"), Tag(title: "study"), Tag(title: "work"), Tag(title: "yolo"), Tag(title: "swag") ]
+    static func create(with title: String, in context: NSManagedObjectContext) {
+        let tag = Tag(context: context)
+        tag.title = title
+        tag.color = UIColor.random // TODO
+    }
 }
+

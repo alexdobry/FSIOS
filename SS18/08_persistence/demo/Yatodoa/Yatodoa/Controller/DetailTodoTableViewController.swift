@@ -7,15 +7,7 @@
 //
 
 import UIKit
-
-enum ReturnReason {
-    case deleted(Todo)
-    case updated(Todo)
-}
-
-protocol DetailTodoTableViewControllerDelegate {
-    func detailVC(_ viewController: DetailTodoTableViewController, returnsWithReason unwindReason: ReturnReason, at indexPath: IndexPath?)
-}
+import CoreData
 
 class DetailTodoTableViewController: UITableViewController {
     
@@ -31,13 +23,10 @@ class DetailTodoTableViewController: UITableViewController {
         static let Sections = 2
     }
     
-    var delegate: DetailTodoTableViewControllerDelegate?
-    
-    var returnReason: ReturnReason?
-    
     // MARK: 1. preparation
     var todo: Todo?
-    var indexPath: IndexPath?
+    
+    var viewContext: NSManagedObjectContext?
     
     // MARK: 2. Outlets
     @IBOutlet weak private var tagLabel: UILabel!
@@ -57,16 +46,16 @@ class DetailTodoTableViewController: UITableViewController {
     }
     
     private var empty: Bool {
-        return todo == nil && indexPath == nil
+        return todo == nil
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
         guard let todo = todo else { return }
         
         title = todo.task
-        currentTags = todo.tags
+        currentTags = todo.joinedTagTitles
         
         navigationItem.rightBarButtonItems = [
             UIBarButtonItem(barButtonSystemItem: .trash, target: self, action: #selector(deleteTodo)),
@@ -116,25 +105,19 @@ class DetailTodoTableViewController: UITableViewController {
     // MARK: BarButtonItems
     
     @objc func deleteTodo() {
-        updateMasterViewController(with: .deleted(todo!))
+        guard let todo = todo else { return }
+        
+        viewContext?.delete(todo)
+        
+        if navigationController?.popViewController(animated: true) == nil { // iPad
+            navigationController?.navigationController?.popViewController(animated: true) // iPhone
+        }
     }
     
     @objc func favorizeTodo() {
         favImage = favImage == #imageLiteral(resourceName: "fav") ? #imageLiteral(resourceName: "unfav") : #imageLiteral(resourceName: "fav")
         
         todo?.favorite = isFavorized
-        updateMasterViewController(with: .updated(todo!))
-    }
-    
-    private func updateMasterViewController(with reason: ReturnReason) {
-        returnReason = reason
-        delegate?.detailVC(self, returnsWithReason: reason, at: indexPath)
-        
-        if case .deleted = reason {
-            if navigationController?.popViewController(animated: true) == nil { // iPad
-                navigationController?.navigationController?.popViewController(animated: true) // iPhone
-            }
-        }
     }
     
     // MARK: Navigation
@@ -146,22 +129,9 @@ class DetailTodoTableViewController: UITableViewController {
         case Constants.TagSegue:
             guard let destination = segue.destination as? TagsTableViewController else { return }
             
-            destination.delegate = self
-            destination.selectedTags = currentTags
+            destination.todo = todo
             
         default: break
         }
     }
 }
-
-extension DetailTodoTableViewController: TagsTableViewControllerDelegate {
-    
-    func tagsViewController(_ viewController: TagsTableViewController, updatedTags tags: [String]) {
-        currentTags = tags
-        todo?.tags = currentTags
-        
-        updateMasterViewController(with: .updated(todo!))
-    }
-}
-
-

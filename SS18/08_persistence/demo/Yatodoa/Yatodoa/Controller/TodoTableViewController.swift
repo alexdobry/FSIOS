@@ -7,14 +7,33 @@
 //
 
 import UIKit
+import CoreData
 
-class TodoTableViewController: UITableViewController {
+class TodoTableViewController: NSFetchedResultsTableViewController {
     
     private struct Storyboard {
         static let DetailSegueIdentifier = "DetailSegueIdentifier"
     }
     
-    var todos: [Todo] = []
+    var viewContext = AppDelegate.viewContext
+    
+    // MARK: Model
+    
+    lazy var fetchedResultsController: NSFetchedResultsController<Todo> = {
+        let request: NSFetchRequest<Todo> = Todo.fetchRequest()
+        request.sortDescriptors = [NSSortDescriptor(keyPath: \Todo.created, ascending: false)]
+        
+        let controller = NSFetchedResultsController<Todo>(
+            fetchRequest: request,
+            managedObjectContext: viewContext,
+            sectionNameKeyPath: nil,
+            cacheName: nil
+        )
+        
+        controller.delegate = self
+        
+        return controller
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,26 +54,28 @@ class TodoTableViewController: UITableViewController {
         }()
         
         tableView.tableHeaderView = addTodoView
+        
+        try? fetchedResultsController.performFetch()
     }
     
     // MARK: UITableViewDataSource
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return fetchedResultsController.sections?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return todos.count
+        return fetchedResultsController.sections?[section].numberOfObjects ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TodoTableViewCell.ReuseIdentifier, for: indexPath) as! TodoTableViewCell
-        let todo = todos[indexPath.row]
+        let todo = fetchedResultsController.object(at: indexPath)
         
         cell.delegate = self
         cell.todo = todo.task
         cell.completed = todo.completed
-        cell.tags = todo.tags
+        cell.tags = todo.joinedTagTitles
         cell.favorized = todo.favorite
         
         cell.accessoryType = .detailDisclosureButton
@@ -65,7 +86,7 @@ class TodoTableViewController: UITableViewController {
     // MARK: UITableVIewDelegate
     
     override func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
-        return todos[indexPath.row].completed ? .none : .delete
+        return fetchedResultsController.object(at: indexPath).completed ? .none : .delete
     }
     
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
@@ -91,25 +112,25 @@ class TodoTableViewController: UITableViewController {
             let dest = segue.contentViewController as! DetailTodoTableViewController
             let indexPath = sender as! IndexPath
             
-            dest.todo = todos[indexPath.row]
-            dest.indexPath = indexPath
-            dest.delegate = self
+            dest.todo = fetchedResultsController.object(at: indexPath)
+            dest.viewContext = viewContext
             
         default: break
         }
     }
     
     private func createTodo(with text: String) {
-        let todo = Todo(task: text)
-        todos.append(todo) // update model
-        
-        let indexPath = IndexPath(row: todos.count - 1, section: tableView.numberOfSections - 1)
-        tableView.insertRows(at: [indexPath], with: .automatic) // update UI
+        Todo.create(with: text, in: viewContext)
+        printDatabase()
+    }
+    
+    private func printDatabase() {
+        Todo.count(in: viewContext)
     }
     
     private func deleteTodo(at indexPath: IndexPath) {
-        todos.remove(at: indexPath.row) // update model
-        tableView.deleteRows(at: [indexPath], with: .automatic) // update UI
+        let deletedTodo = fetchedResultsController.object(at: indexPath)
+        viewContext.delete(deletedTodo)
     }
 }
 
@@ -117,29 +138,12 @@ extension TodoTableViewController: TodoTableViewCellDelegate {
     
     func todoCell(_ cell: TodoTableViewCell, wasCompleted completed: Bool) {
         let indexPath = tableView.indexPath(for: cell)!
-        todos[indexPath.row].completed = completed // update model
-        tableView.reloadRows(at: [indexPath], with: .automatic) // update UI
+        fetchedResultsController.object(at: indexPath).complete(to: completed)
     }
     
     func todoCell(_ cell: TodoTableViewCell, updatedTodo task: String) {
         let indexPath = tableView.indexPath(for: cell)!
-        todos[indexPath.row].task = task // update model
-        tableView.reloadRows(at: [indexPath], with: .automatic) // update UI
-    }
-}
-
-extension TodoTableViewController: DetailTodoTableViewControllerDelegate {
-    
-    func detailVC(_ viewController: DetailTodoTableViewController, returnsWithReason unwindReason: ReturnReason, at indexPath: IndexPath?) {
-        print(unwindReason)
-        
-        switch unwindReason {
-        case .deleted:
-            deleteTodo(at: indexPath!)
-        case .updated(let newTodo): // assignment
-            todos[indexPath!.row] = newTodo // update model
-            tableView.reloadRows(at: [indexPath!], with: .automatic) // update UI
-        }
+        fetchedResultsController.object(at: indexPath).task = task
     }
 }
 

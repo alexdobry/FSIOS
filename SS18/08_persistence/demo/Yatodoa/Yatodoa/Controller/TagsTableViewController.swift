@@ -7,42 +7,55 @@
 //
 
 import UIKit
+import CoreData
 
-protocol TagsTableViewControllerDelegate {
-    func tagsViewController(_ viewController: TagsTableViewController, updatedTags tags: [String])
-}
-
-class TagsTableViewController: UITableViewController {
+class TagsTableViewController: NSFetchedResultsTableViewController {
     
     // MARK: public api
-    var selectedTags: [String] = []
+    var todo: Todo?
     
-    var delegate: TagsTableViewControllerDelegate?
+    var viewContext: NSManagedObjectContext = AppDelegate.viewContext
     
-    var tags: [Tag] = Tag.all
+    lazy var fetchedResultsController: NSFetchedResultsController<Tag> = {
+        let request: NSFetchRequest<Tag> = Tag.fetchRequest()
+        request.sortDescriptors = []
+        
+        let controller = NSFetchedResultsController<Tag>(
+            fetchRequest: request,
+            managedObjectContext: viewContext,
+            sectionNameKeyPath: nil,
+            cacheName: nil
+        )
+        
+        controller.delegate = self
+        
+        return controller
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Taggen"
+        
+        try? fetchedResultsController.performFetch()
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return fetchedResultsController.sections?.count ?? 0
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return tags.count
+        return fetchedResultsController.sections?[section].numberOfObjects ?? 0
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TagCellReuseIdentifier", for: indexPath)
-        let tag = tags[indexPath.row]
+        let tag = fetchedResultsController.object(at: indexPath)
         
         cell.textLabel?.text = tag.title
         cell.textLabel?.textColor = tag.color
-        
-        if selectedTags.contains(tag.title) {
+
+        if todo!.joinedTags.contains(tag) {
             cell.accessoryType = .checkmark
         } else {
             cell.accessoryType = .none
@@ -54,15 +67,12 @@ class TagsTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let selected = tags[indexPath.row]
-        
-        if let index = selectedTags.index(of: selected.title) { // deselect
-            selectedTags.remove(at: index)
-        } else { // select
-            selectedTags.append(selected.title)
+        let selectedTag = fetchedResultsController.object(at: indexPath)
+
+        if todo!.joinedTags.contains(selectedTag) {
+            todo!.removeFromTags(selectedTag)
+        } else {
+            todo!.addToTags(selectedTag)
         }
-        
-        tableView.reloadRows(at: [indexPath], with: .automatic)
-        delegate?.tagsViewController(self, updatedTags: selectedTags)
     }
 }
