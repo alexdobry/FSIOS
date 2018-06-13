@@ -8,11 +8,25 @@
 
 import Foundation
 
-struct Market {
+struct Market: Codable {
     let baseCurrency: String
-    let logoUrl: URL
+    let logoUrl: URL?
     let currency: String
     let currencyLong: String
     let name: String
     let active: Bool
+    
+    enum CodingKeys: String, CodingKey {
+        case baseCurrency = "BaseCurrency"
+        case logoUrl = "LogoUrl"
+        case currency = "MarketCurrency"
+        case currencyLong = "MarketCurrencyLong"
+        case name = "MarketName"
+        case active = "IsActive"
+    }
+}
+
+struct MarketResult: Codable {
+    let success: Bool
+    let result: [Market]
 }

@@ -28,7 +28,7 @@ class MarketTableViewCell: UITableViewCell {
     private func fetchImage(_ url: URL) {
         dedicatedUrl = url
         
-        ImageLoader.shared.imageBy(url: url) { (img, reqUrl) in
+        ImageLoader.shared.image(by: url) { (img, reqUrl) in
             guard reqUrl == self.dedicatedUrl else { return }
             
             self.marketImageView.image = img

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FA0188C820D102AD007A3D31 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0188C720D102AD007A3D31 /* ImageLoader.swift */; };
 		FA0188CE20D1081F007A3D31 /* NetworkingConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0188CD20D1081F007A3D31 /* NetworkingConstants.swift */; };
 		FA4E85ED1FFF7D95000A95CF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E85EC1FFF7D95000A95CF /* AppDelegate.swift */; };
 		FA4E85F21FFF7D95000A95CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA4E85F01FFF7D95000A95CF /* Main.storyboard */; };
@@ -26,10 +25,11 @@
 		FA4E86211FFF8B74000A95CF /* MarketSummaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA4E861F1FFF8B74000A95CF /* MarketSummaryTableViewCell.xib */; };
 		FA4E86231FFF8C67000A95CF /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E86221FFF8C67000A95CF /* Formatter.swift */; };
 		FA4E86251FFF8EDC000A95CF /* MarketSummaryDelta.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4E86241FFF8EDC000A95CF /* MarketSummaryDelta.swift */; };
+		FAE7171220D1350200587F54 /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE7171120D1350200587F54 /* ImageLoader.swift */; };
+		FAE7171420D13C6800587F54 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE7171320D13C6800587F54 /* Webservice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FA0188C720D102AD007A3D31 /* ImageLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageLoader.swift; path = ../../../../WS17_18/08_multithreading_networking_json/Prep/Cryptomarket_assignment/Cryptomarket/Model/Networking/ImageLoader.swift; sourceTree = "<group>"; };
 		FA0188CD20D1081F007A3D31 /* NetworkingConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingConstants.swift; sourceTree = "<group>"; };
 		FA4E85E91FFF7D95000A95CF /* Cryptomarket.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cryptomarket.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA4E85EC1FFF7D95000A95CF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -50,6 +50,8 @@
 		FA4E861F1FFF8B74000A95CF /* MarketSummaryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MarketSummaryTableViewCell.xib; sourceTree = "<group>"; };
 		FA4E86221FFF8C67000A95CF /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		FA4E86241FFF8EDC000A95CF /* MarketSummaryDelta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarketSummaryDelta.swift; sourceTree = "<group>"; };
+		FAE7171120D1350200587F54 /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		FAE7171320D13C6800587F54 /* Webservice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Webservice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,9 @@
 		FA0188C620D102A0007A3D31 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
-				FA0188C720D102AD007A3D31 /* ImageLoader.swift */,
 				FA0188CD20D1081F007A3D31 /* NetworkingConstants.swift */,
+				FAE7171120D1350200587F54 /* ImageLoader.swift */,
+				FAE7171320D13C6800587F54 /* Webservice.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -278,18 +281,19 @@
 			files = (
 				FA4E86011FFF7E5F000A95CF /* MarketsTableViewController.swift in Sources */,
 				FA4E860E1FFF8260000A95CF /* Extensions.swift in Sources */,
+				FAE7171220D1350200587F54 /* ImageLoader.swift in Sources */,
 				FA4E86161FFF85B4000A95CF /* MarketSummary.swift in Sources */,
 				FA4E86251FFF8EDC000A95CF /* MarketSummaryDelta.swift in Sources */,
 				FA4E86181FFF85DE000A95CF /* MarketService.swift in Sources */,
 				FA4E85ED1FFF7D95000A95CF /* AppDelegate.swift in Sources */,
 				FA4E861A1FFF86C3000A95CF /* MarketSummaryService.swift in Sources */,
+				FAE7171420D13C6800587F54 /* Webservice.swift in Sources */,
 				FA4E86201FFF8B74000A95CF /* MarketSummaryTableViewCell.swift in Sources */,
 				FA0188CE20D1081F007A3D31 /* NetworkingConstants.swift in Sources */,
 				FA4E86031FFF7EA4000A95CF /* MarketSummaryTableViewController.swift in Sources */,
 				FA4E86231FFF8C67000A95CF /* Formatter.swift in Sources */,
 				FA4E86081FFF7F05000A95CF /* MarketTableViewCell.swift in Sources */,
 				FA4E860B1FFF7FED000A95CF /* Market.swift in Sources */,
-				FA0188C820D102AD007A3D31 /* ImageLoader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

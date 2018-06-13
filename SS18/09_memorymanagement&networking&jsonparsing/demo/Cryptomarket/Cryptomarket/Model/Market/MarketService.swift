@@ -9,12 +9,37 @@
 import Foundation
 
 final class MarketService {
+
+    private let webservice: Webservice
+    private let ressource: Ressource<MarketResult>
     
-    func markets() -> [Market] {
-        return [
-            Market(baseCurrency: "USDT", logoUrl: URL(string: "https://bittrex.com/Content/img/symbols/BTC.png")!, currency: "BTC", currencyLong: "Bitcoin", name: "USDT-BTC", active: true),
-            Market(baseCurrency: "USDT", logoUrl: URL(string: "https://bittrexblobstorage.blob.core.windows.net/public/a2b8eaee-2905-4478-a7a0-246f212c64c6.png")!, currency: "XRP", currencyLong: "Ripple", name: "USDT-XRP", active: true),
-            Market(baseCurrency: "BTC", logoUrl: URL(string: "https://bittrexblobstorage.blob.core.windows.net/public/a7cb51db-1e6d-47f5-89b5-afbfc766b01b.png")!, currency: "ENG", currencyLong: "Enigma", name: "BTC-ENG", active: true)
-        ]
+    static func `default`() -> MarketService {
+        let url = URL(string: "\(NetworkingConstants.BaseURL)getmarkets")!
+        
+        return MarketService(
+            webservice: Webservice(),
+            ressource: Ressource<MarketResult>(url: url) { data -> MarketResult in
+                try JSONDecoder().decode(MarketResult.self, from: data)
+            }
+        )
+    }
+    
+    private init(webservice: Webservice, ressource: Ressource<MarketResult>) {
+        self.webservice = webservice
+        self.ressource = ressource
+    }
+    
+    func markets(completion: @escaping (Result<[Market]>) -> Void) {
+        webservice.request(ressource, completion: { (result: Result<MarketResult>) in
+            switch result {
+            case .success(let value):
+                if value.success {
+                    completion(.success(value.result))
+                } else {
+                    completion(.failure(NetworkingConstants.error(domain: "MarketService")))
+                }
+            case .failure(let error): completion(.failure(error))
+            }
+        })
     }
 }

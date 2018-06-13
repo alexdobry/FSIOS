@@ -22,7 +22,7 @@ class MarketsTableViewController: UITableViewController {
     
     // MARK: - Private Properties
     
-    private let service = MarketService()
+    private let service = MarketService.default()
 
     // MARK: - ViewController Lifecycle
     
@@ -38,10 +38,18 @@ class MarketsTableViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.markets = service.markets()
-            .filter { $0.active }
-            .groupBy { $0.baseCurrency }
-            .sorted { $0.key > $1.key }
+        service.markets { result in
+            switch result {
+            case .success(let markets):
+                self.markets = markets
+                    .filter { $0.active }
+                    .groupBy { $0.baseCurrency } // ["USDT": [BTC, XRP], "BTC": [ENG]]
+                    .sorted { $0.key > $1.key } // [("USDT", [BTC, XRP]), ("BTC", [ENG])]
+            case .failure(let error):
+                print(error.localizedDescription) // FIXME: present error with alter view controller
+            }
+
+        }
     }
     
     // MARK: - Table view data source
