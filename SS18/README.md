@@ -21,7 +21,7 @@
 | 23.05.18 um 13 Uhr | - TableView <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/SS18/06_tableView/demo/Yatodoa) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/SS18/06_tableView/your%20assignment) für `Yatodoa` |
 | 30.05.18 um 13 Uhr | - Design <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/SS18/07_design/demo/Yatodoa) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/SS18/07_design/your%20assignment) für `Yatodoa` |
 | 06.06.18 um 13 Uhr | - Persistenz Teil 1 <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/SS18/08_persistence/demo/Yatodoa) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/SS18/08_persistence/your%20assignment) für `Yatodoa` |
-| 13.06.18 um 13 Uhr | - Memory Management, Networking und JSON-Parsing <br /> TBA |
+| 13.06.18 um 13 Uhr | - Memory Management, Networking und JSON-Parsing <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/SS18/09_memorymanagement&networking&jsonparsing/demo/Cryptomarket) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/SS18/09_memorymanagement&networking&jsonparsing/your%20assignment) |
 | 20.06.18 um 13 Uhr | - Persistenz Teil 2 <br /> TBA |
 | 27.06.18 um 13 Uhr | - Alerts- und Action-Sheets, Notifications und Background-Updates <br /> TBA |
 | 04.07.18 um 13 Uhr | - 3rd-Party Libraries <br /> TBA |
