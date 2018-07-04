@@ -8,12 +8,12 @@
 
 import Foundation
 
-struct MarketSummary: Codable {
-    let name: String
-    let timestamp: Date
-    let high: Double
-    let last: Double
-    let low: Double
+public struct MarketSummary: Codable {
+    public let name: String
+    public let timestamp: Date
+    public let high: Double
+    public let last: Double
+    public let low: Double
     
     enum CodingKeys: String, CodingKey {
         case name = "MarketName"
@@ -24,7 +24,7 @@ struct MarketSummary: Codable {
     }
 }
 
-struct MarketSummaryResult: Codable {
-    let result: [MarketSummary]
-    let success: Bool
+public struct MarketSummaryResult: Codable {
+    public let result: [MarketSummary]
+    public let success: Bool
 }

@@ -8,13 +8,13 @@
 
 import Foundation
 
-struct Market: Codable {
-    let baseCurrency: String
-    let logoUrl: URL?
-    let currency: String
-    let currencyLong: String
-    let name: String
-    let active: Bool
+public struct Market: Codable {
+    public let baseCurrency: String
+    public let logoUrl: URL?
+    public let currency: String
+    public let currencyLong: String
+    public let name: String
+    public let active: Bool
     
     enum CodingKeys: String, CodingKey {
         case baseCurrency = "BaseCurrency"
@@ -26,7 +26,7 @@ struct Market: Codable {
     }
 }
 
-struct MarketResult: Codable {
-    let success: Bool
-    let result: [Market]
+public struct MarketResult: Codable {
+    public let success: Bool
+    public let result: [Market]
 }

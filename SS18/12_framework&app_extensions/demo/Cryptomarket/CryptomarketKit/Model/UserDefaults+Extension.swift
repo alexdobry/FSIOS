@@ -8,16 +8,20 @@
 
 import Foundation
 
-extension UserDefaults {
+public extension UserDefaults {
     
-    var market: Market? {
+    static var grouped: UserDefaults {
+        return UserDefaults(suiteName: "group.de.fhkoeln.inf.adv.fsios")!
+    }
+    
+    public var market: Market? {
         get {
-            let data = UserDefaults.standard.object(forKey: #function) as? Data
+            let data = UserDefaults.grouped.object(forKey: #function) as? Data
             return data.flatMap { try? PropertyListDecoder().decode(Market.self, from: $0) }
         }
         set {
             let data = try? PropertyListEncoder().encode(newValue)
-            UserDefaults.standard.set(data, forKey: #function)
+            UserDefaults.grouped.set(data, forKey: #function)
         }
     }
 }

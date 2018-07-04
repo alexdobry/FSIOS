@@ -9,13 +9,13 @@
 import Foundation
 import UIKit
 
-final class ImageLoader {
+public final class ImageLoader {
     
-    static let shared = ImageLoader()
+    public static let shared = ImageLoader()
     
     private init() { }
     
-    func image(by url: URL, completion: @escaping (UIImage?, URL) -> Void) {
+    public func image(by url: URL, completion: @escaping (UIImage?, URL) -> Void) {
         DispatchQueue.global(qos: .userInitiated).async {
             let data = try? Data.init(contentsOf: url) // blockt
             let img = data.flatMap(UIImage.init)

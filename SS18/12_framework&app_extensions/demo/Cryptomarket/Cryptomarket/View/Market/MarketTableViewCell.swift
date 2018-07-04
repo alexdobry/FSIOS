@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CryptomarketKit // is this good?
 
 class MarketTableViewCell: UITableViewCell {
 

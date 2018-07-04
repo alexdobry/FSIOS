@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CryptomarketKit
 
 class NotificationsTableViewController: EmptyDataTableViewController, EmptyDataTableViewDataSource {
     
@@ -83,7 +84,7 @@ class NotificationsTableViewController: EmptyDataTableViewController, EmptyDataT
     
     private func `continue`() {
         permissionGranted = true
-        selected = UserDefaults.standard.market
+        selected = UserDefaults.grouped.market
         tableView.reloadData()
     }
     
@@ -134,7 +135,7 @@ class NotificationsTableViewController: EmptyDataTableViewController, EmptyDataT
     }
     
     @IBAction func done(_ sender: Any) {
-        UserDefaults.standard.market = selected // persist if needed
+        UserDefaults.grouped.market = selected // persist if needed
         
         dismiss(animated: true, completion: nil)
     }

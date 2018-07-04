@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CryptomarketKit
 
 class MarketsTableViewController: UITableViewController {
     

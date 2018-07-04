@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CryptomarketKit
 
 enum Dashboard: Int {
     case list, chart

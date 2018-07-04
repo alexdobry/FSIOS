@@ -7,6 +7,7 @@
 //
 
 import Charts
+import CryptomarketKit
 
 func format(date: Date, calendar: Calendar = Calendar.current) -> String { // TODO added
     if calendar.isDateInToday(date) { return "Heute, \(timeFormatter.string(from: date))" }

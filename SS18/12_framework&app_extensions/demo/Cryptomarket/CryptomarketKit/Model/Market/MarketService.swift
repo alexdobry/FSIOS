@@ -8,12 +8,12 @@
 
 import Foundation
 
-final class MarketService {
+public final class MarketService {
 
     private let webservice: Webservice
     private let ressource: Ressource<MarketResult>
     
-    static func `default`() -> MarketService {
+    public static func `default`() -> MarketService {
         let url = URL(string: "\(NetworkingConstants.BaseURL)getmarkets")!
         
         return MarketService(
@@ -29,7 +29,7 @@ final class MarketService {
         self.ressource = ressource
     }
     
-    func markets(completion: @escaping (Result<[Market]>) -> Void) {
+    public func markets(completion: @escaping (Result<[Market]>) -> Void) {
         webservice.request(ressource, completion: { (result: Result<MarketResult>) in
             switch result {
             case .success(let value):

@@ -1,5 +1,5 @@
 //
-//  Extensions.swift
+//  public extensions.swift
 //  Cryptomarket
 //
 //  Created by Alex on 05.01.18.
@@ -9,33 +9,33 @@
 import Foundation
 import UIKit
 
-extension UIColor {
+public extension UIColor {
     static let coolGreen = #colorLiteral(red:0.55, green:0.70, blue:0.60, alpha:1.0)
     static let coolRed = #colorLiteral(red:0.97, green:0.60, blue:0.53, alpha:1.0)
     static let tintColor = #colorLiteral(red:0.97, green:0.50, blue:0.20, alpha:1.0)
 }
 
-extension Sequence {
+public extension Sequence {
     
     func groupBy<K : Hashable>(key: (Self.Iterator.Element) -> K) -> [K: [Self.Iterator.Element]] {
         return Dictionary(grouping: self, by: key)
     }
 }
 
-extension Array {
+public extension Array {
     subscript (safe index: Int) -> Element? {
         return index < count ? self[index] : nil
     }
 }
 
-extension Date {
+public extension Date {
     
     func plus(hour: Int) -> Date {
         return addingTimeInterval(TimeInterval(hour * 3600))
     }
 }
 
-extension DateComponents {
+public extension DateComponents {
     
     var string: String? {
         guard let month = self.month, let year = self.year, let day = self.day else { return nil }
@@ -48,7 +48,7 @@ extension DateComponents {
     }
 }
 
-extension Double {
+public extension Double {
     
     static var random: Double {
         return Double(arc4random()) / 0xFFFFFFFF
@@ -59,7 +59,7 @@ extension Double {
     }
 }
 
-extension UIAlertController {
+public extension UIAlertController {
     
     static func withError(_ error: Error) -> UIAlertController {
         let alert = UIAlertController(
@@ -79,7 +79,7 @@ extension UIAlertController {
     }
 }
 
-extension UIViewController {
+public extension UIViewController {
     
     func add(_ child: UIViewController) {
         addChildViewController(child)

@@ -8,19 +8,19 @@
 
 import Foundation
 
-struct Ressource<T> {
+public struct Ressource<T> {
     let url: URL
     let parse: (Data) throws -> T
 }
 
-enum Result<T> {
+public enum Result<T> {
     case success(T)
     case failure(Error)
 }
 
-class Webservice {
+public class Webservice {
     
-    func request<T>(_ ressource: Ressource<T>, completion: @escaping (Result<T>) -> Void, timeout: TimeInterval = 5.0) {
+    public func request<T>(_ ressource: Ressource<T>, completion: @escaping (Result<T>) -> Void, timeout: TimeInterval = 5.0) {
         let request = URLRequest(url: ressource.url, cachePolicy: .reloadIgnoringCacheData, timeoutInterval: timeout)
         
         let task = URLSession.shared.dataTask(with: request) { (data, reponse, webError) in

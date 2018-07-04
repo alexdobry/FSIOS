@@ -8,26 +8,26 @@
 
 import Foundation
 
-let dateFormatter: DateFormatter = {
+public let dateFormatter: DateFormatter = {
     let f = DateFormatter()
     f.dateStyle = .short
     f.timeStyle = .short
     return f
 }()
 
-let isoFormatter: DateFormatter = {
+public let isoFormatter: DateFormatter = {
     let f = DateFormatter()
     f.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'" //iso 8601
     return f
 }()
 
-let timeFormatter: DateFormatter = {
+public let timeFormatter: DateFormatter = {
     let f = DateFormatter()
     f.timeStyle = .short
     return f
 }()
 
-func readableCurrency(of double: Double, basedOnCurrency base: String) -> String {
+public func readableCurrency(of double: Double, basedOnCurrency base: String) -> String {
     switch base {
     case "USDT": return String(format: "%.2f $", double)
     case "BTC": fallthrough
@@ -36,7 +36,7 @@ func readableCurrency(of double: Double, basedOnCurrency base: String) -> String
     }
 }
 
-func readablePercentage(of double: Double) -> String {
+public func readablePercentage(of double: Double) -> String {
     if let pos = !double.isLess(than: 0.0) ? "+" : nil {
         return String(format: "%@%.2f%%", pos, double)
     } else {

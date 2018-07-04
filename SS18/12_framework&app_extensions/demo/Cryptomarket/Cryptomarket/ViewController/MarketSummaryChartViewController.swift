@@ -8,6 +8,7 @@
 
 import UIKit
 import Charts
+import CryptomarketKit
 
 class MarketSummaryChartViewController: LineChartViewController, LineChartViewDataSource {
     

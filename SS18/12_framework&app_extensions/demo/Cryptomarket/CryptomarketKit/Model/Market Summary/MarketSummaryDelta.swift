@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum MarketSummaryDeltaStatus {
+public enum MarketSummaryDeltaStatus {
     case up, down, neutral
     
     var string: String {
@@ -20,8 +20,8 @@ enum MarketSummaryDeltaStatus {
     }
 }
 
-struct MarketSummaryDelta {
-    let value: Double
-    let percent: Double
-    let status: MarketSummaryDeltaStatus
+public struct MarketSummaryDelta {
+    public let value: Double
+    public let percent: Double
+    public let status: MarketSummaryDeltaStatus
 }

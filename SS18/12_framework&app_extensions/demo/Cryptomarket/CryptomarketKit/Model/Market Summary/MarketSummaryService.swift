@@ -8,13 +8,13 @@
 
 import Foundation
 
-final class MarketSummaryService {
+public final class MarketSummaryService {
     
     private let webservice: Webservice
     private let ressource: Ressource<MarketSummaryResult>
     private let market: Market
     
-    static func `default`(with market: Market) -> MarketSummaryService {
+    public static func `default`(with market: Market) -> MarketSummaryService {
         let url = URL(string: "\(NetworkingConstants.BaseURL)getmarketsummary?market=\(market.name)")!
         
         return MarketSummaryService(
@@ -34,7 +34,7 @@ final class MarketSummaryService {
         self.ressource = ressource
     }
     
-    func marketSummaries(completion: @escaping (Result<[MarketSummary]>) -> Void) {
+    public func marketSummaries(completion: @escaping (Result<[MarketSummary]>) -> Void) {
         webservice.request(ressource, completion: { (result: Result<MarketSummaryResult>) in
             switch result {
             case .success(let value):
@@ -50,7 +50,7 @@ final class MarketSummaryService {
         })
     }
     
-    func marketSummaryDelta(completion: @escaping (MarketSummaryDelta?) -> Void) {
+    public func marketSummaryDelta(completion: @escaping (MarketSummaryDelta?) -> Void) {
         marketSummaries { result in
             switch result {
             case .success(let summaries):
@@ -71,7 +71,7 @@ final class MarketSummaryService {
         }
     }
     
-    func delta(between first: MarketSummary, and second: MarketSummary) -> MarketSummaryDelta {
+    public func delta(between first: MarketSummary, and second: MarketSummary) -> MarketSummaryDelta {
         let diff = first.last - second.last
         let pDiff = diff / second.last * 100
         
@@ -95,7 +95,7 @@ final class MarketSummaryService {
     
     private func persist(_ existing: [MarketSummary]) -> [MarketSummary] {
         if let data = try? PropertyListEncoder().encode(existing) {
-            UserDefaults.standard.set(data, forKey: market.name)
+            UserDefaults.grouped.set(data, forKey: market.name)
         }
         
         return existing
@@ -109,7 +109,7 @@ final class MarketSummaryService {
     }
     
     private func get() -> [MarketSummary] {
-        guard let data = UserDefaults.standard.data(forKey: market.name),
+        guard let data = UserDefaults.grouped.data(forKey: market.name),
             let summaries = try? PropertyListDecoder().decode([MarketSummary].self, from: data)
         else { return [] }
         

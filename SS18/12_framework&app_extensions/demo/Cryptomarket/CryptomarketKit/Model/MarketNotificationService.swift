@@ -9,18 +9,20 @@
 import Foundation
 import UserNotifications
 
-final class MarketNotificationService {
+public final class MarketNotificationService {
     
     private let center = UNUserNotificationCenter.current()
     
-    var delegate: UNUserNotificationCenterDelegate? {
+    public init() {}
+    
+    public var delegate: UNUserNotificationCenterDelegate? {
         get { return center.delegate }
         set { center.delegate = newValue }
     }
     
-    typealias StatusClosure = () -> Void
+    public typealias StatusClosure = () -> Void
     
-    func status(authorized: @escaping StatusClosure,
+    public func status(authorized: @escaping StatusClosure,
                 notDetermined: @escaping StatusClosure,
                 denied: @escaping StatusClosure) {
         center.getNotificationSettings { settings in
@@ -35,7 +37,7 @@ final class MarketNotificationService {
     }
 
     
-    func requestAuthorization(completion: @escaping (Bool) -> Void) {
+    public func requestAuthorization(completion: @escaping (Bool) -> Void) {
         center.requestAuthorization(options: [.alert, .badge, .sound]) { (granted, error) in
             if let error = error {
                 debugPrint(#function, error.localizedDescription)
@@ -47,7 +49,7 @@ final class MarketNotificationService {
         }
     }
     
-    func scheduleNotification(with market: Market, delta: MarketSummaryDelta, currentBages: Int) {
+    public func scheduleNotification(with market: Market, delta: MarketSummaryDelta, currentBages: Int) {
         let content = UNMutableNotificationContent()
         content.title = "\(market.name) is going \(delta.status.string)"
         content.subtitle = "by \(readableCurrency(of: delta.value, basedOnCurrency: market.baseCurrency)) (\(readablePercentage(of: delta.percent)))"

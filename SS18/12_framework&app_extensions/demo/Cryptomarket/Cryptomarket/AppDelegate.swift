@@ -8,16 +8,7 @@
 
 import UIKit
 import UserNotifications
-
-extension Int {
-    func random() -> Int {
-        return Int(arc4random_uniform(UInt32(self)))
-    }
-    
-    var bool: Bool {
-        return self % 2 == 0
-    }
-}
+import CryptomarketKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -46,7 +37,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func application(_ application: UIApplication, performFetchWithCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        if let market = UserDefaults.standard.market {
+        if let market = UserDefaults.grouped.market {
             MarketSummaryService.default(with: market).marketSummaryDelta { delta in
                 if let delta = delta {
                     self.notificationService.scheduleNotification(
@@ -63,6 +54,42 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             completionHandler(.noData)
         }
     }
+    
+    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+        guard url.scheme == "MSToday", // "MSToday://"
+            let query = URLComponents(url: url, resolvingAgainstBaseURL: false)?.queryItems?.first,
+            query.name == "market", // "?market"
+            let base64Market = query.value, // "=NDONUSANDIUASNDIUANSUODn"
+            let data = Data(base64Encoded: base64Market),
+            let market = try? PropertyListDecoder().decode(Market.self, from: data)
+        else { return false }
+        
+        launchVC(with: market)
+        return true
+        
+//        if let market = query.value // "=NDONUSANDIUASNDIUANSUODn"
+//            .flatMap({ Data(base64Encoded: $0) })
+//            .flatMap({ try? PropertyListDecoder().decode(Market.self, from: $0) }) {
+//
+//            launchVC(with: market)
+//
+//            return true
+//        } else {
+//            return false
+//        }
+    }
+    
+    private func launchVC(with market: Market) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let navVC = storyboard.instantiateInitialViewController() as! UINavigationController
+        let sumVC = storyboard.instantiateViewController(withIdentifier: "MarketSummaryTableViewControllerID") as! MarketSummaryTableViewController
+        sumVC.market = market
+        
+        navVC.pushViewController(sumVC, animated: true)
+        
+        window?.rootViewController = navVC
+        window?.makeKeyAndVisible()
+    }
 }
 
 extension AppDelegate: UNUserNotificationCenterDelegate {
@@ -72,16 +99,7 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
         if let data = response.notification.request.content.userInfo["Market"] as? Data,
             let market = try? PropertyListDecoder().decode(Market.self, from: data) {
             debugPrint(#function, market)
-            
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let navVC = storyboard.instantiateInitialViewController() as! UINavigationController
-            let sumVC = storyboard.instantiateViewController(withIdentifier: "MarketSummaryTableViewControllerID") as! MarketSummaryTableViewController
-            sumVC.market = market
-            
-            navVC.pushViewController(sumVC, animated: true)
-            
-            window?.rootViewController = navVC  
-            window?.makeKeyAndVisible()
+            launchVC(with: market)
         }
         
         completionHandler()
