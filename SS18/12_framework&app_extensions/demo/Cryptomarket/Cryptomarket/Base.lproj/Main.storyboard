@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W23-Qr-AHK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Markets-->
+        <scene sceneID="L6f-Py-aCO">
+            <objects>
+                <tableViewController id="vea-0k-Y9x" customClass="MarketsTableViewController" customModule="Cryptomarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ZbE-V7-zME">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="vea-0k-Y9x" id="ljl-fW-qcf"/>
+                            <outlet property="delegate" destination="vea-0k-Y9x" id="ifu-l1-mY4"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Markets" id="kFI-ta-QYa">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="notification" id="gPG-MA-JG6">
+                            <connections>
+                                <segue destination="hDK-je-glw" kind="popoverPresentation" identifier="Show Notifications" popoverAnchorBarButtonItem="gPG-MA-JG6" id="4Ik-XE-oio">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="b8S-eh-Fzp" kind="show" identifier="ShowMarketSummarySegue" id="BSo-sq-0gJ"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NdX-gs-erp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382" y="149"/>
+        </scene>
+        <!--Notifications-->
+        <scene sceneID="vBh-kM-ar1">
+            <objects>
+                <tableViewController id="e1o-iL-VgX" customClass="NotificationsTableViewController" customModule="Cryptomarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="sP4-BH-JS3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MarketCell" textLabel="bFx-61-jW6" style="IBUITableViewCellStyleDefault" id="PXn-Yq-Uq9">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PXn-Yq-Uq9" id="QdJ-hp-WZH">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="bFx-61-jW6">
+                                            <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="e1o-iL-VgX" id="WUw-BV-Hor"/>
+                            <outlet property="delegate" destination="e1o-iL-VgX" id="IcZ-xX-nB5"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Notifications" id="gpV-Xm-r5G">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="J0S-Dv-y8l">
+                            <connections>
+                                <action selector="done:" destination="e1o-iL-VgX" id="dvk-4T-h69"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8lD-K6-pel" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1153" y="-550"/>
+        </scene>
+        <!--Market Summary Table View Controller-->
+        <scene sceneID="bJU-AF-9or">
+            <objects>
+                <tableViewController storyboardIdentifier="MarketSummaryTableViewControllerID" id="Qtl-0p-5fd" customClass="MarketSummaryTableViewController" customModule="Cryptomarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="gvE-9H-F7e">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <connections>
+                            <outlet property="dataSource" destination="Qtl-0p-5fd" id="ap1-C8-xTn"/>
+                            <outlet property="delegate" destination="Qtl-0p-5fd" id="R9a-QD-Vg7"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="So6-6o-OnQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2145" y="-311"/>
+        </scene>
+        <!--Market Summary Dashboard View Controller-->
+        <scene sceneID="P69-sZ-ius">
+            <objects>
+                <viewController id="b8S-eh-Fzp" customClass="MarketSummaryDashboardViewController" customModule="Cryptomarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="TrU-Hi-qki">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <viewLayoutGuide key="safeArea" id="n3s-FY-Dv1"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="d61-iP-ozc"/>
+                    <connections>
+                        <segue destination="Qtl-0p-5fd" kind="presentation" id="cdT-yu-EF9"/>
+                        <segue destination="Xqe-pZ-Ava" kind="presentation" id="dGy-lQ-Wdm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6rL-rK-rtS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1201" y="149"/>
+        </scene>
+        <!--Market Summary Chart View Controller-->
+        <scene sceneID="Shx-cv-pdR">
+            <objects>
+                <viewController storyboardIdentifier="MarketSummaryChartViewControllerID" id="Xqe-pZ-Ava" customClass="MarketSummaryChartViewController" customModule="Cryptomarket" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aBm-Qf-Hnz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8v8-ox-Egg" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="8v8-ox-Egg" firstAttribute="bottom" secondItem="FGP-wC-NlW" secondAttribute="bottom" id="0MV-rO-hPU"/>
+                            <constraint firstItem="8v8-ox-Egg" firstAttribute="trailing" secondItem="FGP-wC-NlW" secondAttribute="trailing" id="4qC-W4-bd9"/>
+                            <constraint firstItem="8v8-ox-Egg" firstAttribute="top" secondItem="FGP-wC-NlW" secondAttribute="top" id="Gww-7v-y5S"/>
+                            <constraint firstItem="8v8-ox-Egg" firstAttribute="leading" secondItem="FGP-wC-NlW" secondAttribute="leading" id="nMq-ee-IxO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FGP-wC-NlW"/>
+                    </view>
+                    <connections>
+                        <outlet property="lineChartView" destination="8v8-ox-Egg" id="UWv-6n-syO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lK9-wX-ZgY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2149.5999999999999" y="417.8410794602699"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yYG-kB-052">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W23-Qr-AHK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Zbw-mC-jgx">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vea-0k-Y9x" kind="relationship" relationship="rootViewController" id="HVF-Hu-7vC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="93j-BS-Zqu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-374" y="149"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7wC-Im-cTP">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hDK-je-glw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="T8Z-Cc-VD0">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="e1o-iL-VgX" kind="relationship" relationship="rootViewController" id="S0j-fY-wgm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XCi-6S-oP3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="382" y="-550"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="notification" width="25" height="25"/>
+    </resources>
+</document>

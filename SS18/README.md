@@ -3,10 +3,6 @@
 - [Vorlesung](#vorlesung)
   - [Inhaltsverzeichnis](#inhaltsverzeichnis)
   - [Assignments](#assignments)
-- [Abschlussprojekt](#abschlussprojekt)
-  - [Abschlusspräsentation](#abschlusspräsentation)
-  - [Bewertungsgrundlage](#bewertungsgrundlage)
-  - [Learning Outcomes](#learning-outcomes)
 
 ## Vorlesung 
 
@@ -24,10 +20,7 @@
 | 13.06.18 um 13 Uhr | - Memory Management, Networking und JSON-Parsing <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/SS18/09_memorymanagement&networking&jsonparsing/demo/Cryptomarket) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/SS18/09_memorymanagement&networking&jsonparsing/your%20assignment) |
 | 20.06.18 um 11 Uhr | - Alerts- und Action-Sheets, User-Notifications und Background-Updates <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/SS18/10_notifications&background_updates&misc/demo/Cryptomarket) und [Assignment](https://github.com/alexdobry/FSIOS/tree/master/SS18/10_notifications&background_updates&misc/your%20assignment) |
 | 27.06.18 um 13 Uhr | - 3rd-Party Libraries <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/SS18/11_3rdparty/demo/Cryptomarket) |
-| 04.07.18 um 13 Uhr | - Frameworks und App-Extensions <br /> TBA |
-| 11.07.18 um 13 Uhr | - ??? <br /> TBA |
-| 18.07.18 um 13 Uhr | - ??? <br /> TBA |
-
+| 04.07.18 um 13 Uhr | - Frameworks und App-Extensions <br /> - [Demo](https://github.com/alexdobry/FSIOS/tree/master/SS18/12_framework&app_extensions/demo/Cryptomarket) |
 
 ### Assignments
 | Assignment | Eingereicht |

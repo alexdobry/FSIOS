@@ -1,0 +1,6 @@
+platform :ios, '11.2'
+use_frameworks!
+
+target 'Cryptomarket' do
+  pod 'Charts'
+end
