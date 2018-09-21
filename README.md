@@ -2,13 +2,13 @@
 
 Laufende Veranstaltung
 
-- [WS 19/20](https://github.com/alexdobry/FSIOS_WS19-20)
+- [WS 18/19](https://github.com/alexdobry/FSIOS_WS18-19)
 
 Vergangene Veranstaltungen
 
 - [SS18](https://github.com/alexdobry/FSIOS_SS18)
-- [WS 17/18](https://github.com/alexdobry/FSIOS/tree/master/WS17_18)
-- [SS17](https://github.com/alexdobry/FSIOS/tree/master/SS17)
+- [WS 17/18](https://github.com/alexdobry/FSIOS_WS17-18)
+- [SS17](https://github.com/alexdobry/FSIOS_SS17)
 
 ## Vorlesung
 
