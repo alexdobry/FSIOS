@@ -1,14 +1,17 @@
 # FSIOS
 
 Laufende Veranstaltung
+
 - [WS 19/20](https://github.com/alexdobry/FSIOS_WS19-20)
 
 Vergangene Veranstaltungen
-- [SS18](https://github.com/alexdobry/FSIOS/tree/master/SS18)
+
+- [SS18](https://github.com/alexdobry/FSIOS_SS18)
 - [WS 17/18](https://github.com/alexdobry/FSIOS/tree/master/WS17_18)
 - [SS17](https://github.com/alexdobry/FSIOS/tree/master/SS17)
 
 ## Vorlesung
+
 In den Vorlesungen werden verschiedene Inhalte mobiler Entwicklung, insbesondere der iOS Entwicklung mit Swift, behandelt. Dabei werden viele Aspekte und Konzepte der Informatik theoretisch und praktisch angewendet.
 
 Benotet wird ein durchzuführendes Projekt (2er Teams) und eine Abschlusspräsentation. Das Projekt ist frei zu wählen und beinhaltet die "Full Stack Entwicklung" einer iOS App mit Swift.
@@ -16,6 +19,7 @@ Benotet wird ein durchzuführendes Projekt (2er Teams) und eine Abschlusspräsen
 Das WPF kann wahlweise mit 6CP für die MPO4 oder mit 5CP für die MPO3 als WPF A oder B durchgeführt werden.
 
 ### Inhalt
+
 Die Liste ist nur eine grobe Vorschau, vom Semester abhängig und daher nicht vollständig.
 
 - Design und Implementierung einer iOS App mit Swift
@@ -33,6 +37,7 @@ Die Liste ist nur eine grobe Vorschau, vom Semester abhängig und daher nicht vo
 - Arbeiten, Dokumentieren und Organisieren mithilfe von Versionsverwaltungs-Tools
 
 ### Learning Outcomes
+
 - Probleme Analysieren und Dekonstruieren, Lösungen Konzipieren, Fertigen und Bewerten
 - Bestehende Konzepte der Informatik konsolidieren
 - Neue Programmiersprache, Konzepte und Sprachfeatures
@@ -46,9 +51,11 @@ Die Liste ist nur eine grobe Vorschau, vom Semester abhängig und daher nicht vo
 - Agile Softwareentwicklung in einem Team
 
 ## Projekt
+
 In eurem Fork arbeitet ihr an eurem Projekt. Benutzt ruhig die README, das Wiki, die Issues, das Board und die Pull-Requests, um TODO's zu sammeln, euch abzustimmen und kollaborativ zu arbeiten. Git und GitHub werden euch dabei helfen.
 
 ### Xcode und GitHub
+
 * Die Projekte sollten **nicht** mit einem Developer Profil signiert werden, damit diese frei gepulled und gepushed werden können. Hierfür
   * bei neuen Projekten das *Team* auf *None* setzen oder 
   * bei bestehenden Projekten unter *Targets* das Projekt auswählen und unter *Signing* das *Team* auf *None* setzen.
