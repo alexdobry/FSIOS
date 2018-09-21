@@ -1,9 +1,10 @@
 # FSIOS
 
 Laufende Veranstaltung
-- [SS18](https://github.com/alexdobry/FSIOS/tree/master/SS18)
+- [WS 19/20](https://github.com/alexdobry/FSIOS_WS19-20)
 
 Vergangene Veranstaltungen
+- [SS18](https://github.com/alexdobry/FSIOS/tree/master/SS18)
 - [WS 17/18](https://github.com/alexdobry/FSIOS/tree/master/WS17_18)
 - [SS17](https://github.com/alexdobry/FSIOS/tree/master/SS17)
 
