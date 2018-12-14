@@ -1,0 +1,6 @@
+framework module Pods_Cryptomarket {
+  umbrella header "Pods-Cryptomarket-umbrella.h"
+
+  export *
+  module * { export * }
+}
