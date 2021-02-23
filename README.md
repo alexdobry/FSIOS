@@ -11,6 +11,7 @@ TBA
 - [SS 17](https://github.com/alexdobry/FSIOS_SS17)
 
 ## Empfohlene Voraussetzungen
+- Englisch, da Screencasts und Literatur auf Englisch sind
 - Fortgeschrittene Programmierkenntnisse, egal in welcher Sprache
 - Leider wird ein Mac vorausgesetzt, weil man nur auf einem Mac für iOS entwickeln kann
 
