@@ -17,7 +17,7 @@ TBA
 ## Kurzbeschreibung
 TBA
 
-### Inhalt
+## Inhalt
 Die Liste ist nur eine grobe Vorschau, vom Semester abhängig und daher nicht vollständig.
 
 - Design und Implementierung einer iOS App mit Swift und SwiftUI
