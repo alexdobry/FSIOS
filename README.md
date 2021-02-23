@@ -16,7 +16,11 @@ TBA
 - Leider wird ein Mac vorausgesetzt, weil man nur auf einem Mac für iOS entwickeln kann
 
 ## Kurzbeschreibung
-TBA
+In dieser Veranstaltung lernen wir, wie man Apps für iOS mit Swift und SwiftUI entwickelt. Dabei lernen wir sowohl eine neue Programmiersprache (Swift), als auch ein neues Ökosystem (iOS) kennen. Zudem verwenden wir für die UI Entwicklung das neue deklarative UI-Framework namens SwiftUI. 
+
+Eine klassische Vorlesung wird es nicht geben. Die Veranstaltung orientiert sich an dem Kurs [Developing Applications for iOS using SwiftUI (CS193p)](https://cs193p.sites.stanford.edu) der Stanford University. Wir schauen uns die Videos von CS193p an und diskutieren die Inhalte in einem wöchentlichen Meeting. Zudem werden wir auch deren Aufgaben machen, um uns direkt mit dem tatsächlichen Entwickeln von Apps vertraut zu machen.
+
+Als Abschlussprojekt entwickeln Sie eine eigene App. Dabei bauen Sie zum einen auf den gelernten Inhalten auf. Zum anderen müssen Sie sich ein Thema aussuchen (Technologie, Framework, API, etc.), dessen Inhalte Sie sich für das Projekt aneignen.
 
 ## Inhalt
 Die Liste ist nur eine grobe Vorschau, vom Semester abhängig und daher nicht vollständig.
@@ -45,19 +49,15 @@ Die Liste ist nur eine grobe Vorschau, vom Semester abhängig und daher nicht vo
 ## Arbeitsaufwand
 4 SWS, davon
 - ~2 SWS Vorlesung
-- ~2 SWS Projekt und Workshop
+- ~2 SWS Projekt
 
 Gesamtaufwand **180 Stunden**, davon
-- 20% Vorlesung
-- 20% Workshop
-- 30% Projektarbeit
-- 30% Selbststudium
+- 30% Vorlesung
+- 50% Projektarbeit
+- 20% Selbststudium
 
 ## Studien-/Prüfungsleistungen
-Gewichtung der Prüfungsleistung für die Gesamtnote ist jeweils in Klammern angegeben.
-
-- Workshop (30%)
-- App und Fachvortrag (70%)
+Die Note setzt sich aus App und Fachvortrag zusammen.
 
 ## Literatur
 TBA
