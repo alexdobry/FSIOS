@@ -60,4 +60,3 @@ Gewichtung der Prüfungsleistung für die Gesamtnote ist jeweils in Klammern ang
 
 ## Literatur
 TBA
-Stanford University. Developing iOS 11 Apps with Swift. https://podcasts.apple.com/us/podcast/developing-ios-11-apps-with-swift/id1315130780
