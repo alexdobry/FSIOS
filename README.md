@@ -53,8 +53,8 @@ Die Liste ist nur eine grobe Vorschau, vom Semester abhängig und daher nicht vo
 
 Gesamtaufwand **180 Stunden**, davon
 - 30% Vorlesung
-- 50% Projektarbeit
-- 20% Selbststudium
+- 30% Selbststudium
+- 40% Projektarbeit
 
 ## Studien-/Prüfungsleistungen
 Die Note setzt sich aus App und Fachvortrag zusammen.
