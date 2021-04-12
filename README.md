@@ -22,20 +22,6 @@ Eine klassische Vorlesung wird es nicht geben. Die Veranstaltung orientiert sich
 
 Als Abschlussprojekt entwickeln Sie eine eigene App. Dabei bauen Sie zum einen auf den gelernten Inhalten auf. Zum anderen müssen Sie sich ein Thema aussuchen (Technologie, Framework, API, etc.), dessen Inhalte Sie sich für das Projekt aneignen.
 
-## Inhalt
-Die Liste ist nur eine grobe Vorschau, vom Semester abhängig und daher nicht vollständig.
-
-- Design und Implementierung einer iOS App mit Swift und SwiftUI
-- Xcode, Playgrounds und weitere Tools
-- Programmiersprache Swift, seine Konzepte und Patterns
-- Deklarative UI Entwicklung mit SwiftUI
-- Objektorientierte und funktionale Programmierung
-- Verwenden von System-APIs und Third-Party-Bibliotheken
-- Mobiler Network-Stack und mobile Storage Konzepte
-- Multithreading und Event-Getriebene Denkweisen
-- UI- und Interaction-Design, insbesondere im mobilen Kontext
-- Anwenden verschiedener Konzepte aus der Informatik
-
 ## Learning Outcomes
 - Probleme Analysieren und Dekonstruieren, Lösungen Konzipieren, Fertigen und Bewerten
 - Bestehende Konzepte der Informatik konsolidieren
@@ -60,4 +46,93 @@ Gesamtaufwand **180 Stunden**, davon
 Die Note setzt sich aus App und Fachvortrag zusammen.
 
 ## Literatur
-TBA
+- [Developing Applications for iOS using SwiftUI (CS193p)](https://cs193p.sites.stanford.edu)
+- [Swift Programming Language Guide](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html)
+- [Swift Standard Library](https://developer.apple.com/documentation/swift/swift_standard_library)
+- [SwiftUI Documentation](https://developer.apple.com/documentation/swiftui/)
+- [Human Interface Guidelines](https://developer.apple.com/design/human-interface-guidelines/ios/overview/themes/)
+- [Introducing SwiftUI Tutorial von Apple](https://developer.apple.com/tutorials/swiftui)
+- [Discover SwiftUI by John Sundell](https://www.swiftbysundell.com/discover/swiftui/)
+- [Paul Hudsons YouTube Tutorials zu Swift, SwiftUI und co.](https://www.youtube.com/channel/UCmJi5RdDLgzvkl3Ly0DRMlQ)
+
+## Inhalte
+Die Liste ist nur eine grobe Vorschau, vom Semester abhängig und daher nicht vollständig.
+
+### Mobile Computing
+- Mobile constraints
+    + Trafic
+    + Performance
+    + Single main thread
+    + 25 FPS / frame drops
+    + Secure connection (https only)
+- Users privacy
+    + Personal data
+    + Trust
+- Persistance
+    - UserDefaults (Key-Value Storage)
+    - Core Data (kinda object oriented SQLite)
+    - File System
+- Multithreading
+    + main thread
+    + background threads
+- Networking
+- Sensors
+- Gestures
+    + Touch
+    + Pan
+- Event driven programming
+    + Application lifecycle
+    + Background time / updates
+- UI and Interaction Design
+- Notifications
+    + User Notfications
+    + Silent Notifications
+- Permissions and Entitlements
+- Developer Programm
+- App signing
+
+### iOS Development
+- Platform architecture
+    + App <- Cocoa Touch <- Media <- Core Services <- Core OS
+- Cocoa Touch vs. Swift vs. Swift UI
+- Swift Programming Language
+- Objective-C
+- Swift is open source (swift evolution process)
+- Memory management (automatic reference counting - ARC)
+- Xcode
+- Swift Playgrounds
+
+### Architecture
+- MVVM (Model-View-ViewModel)
+- Declarative UI
+- Reactive UI
+
+### Swift Programming Language
+- Swift Language Features
+- Swift Type System
+- Escaping and non-escaping closures
+- Functional programming in Swift
+- Protocol oriented programming in Swift
+
+### UI Development
+- Layout System
+    - View Management
+    - View lifecycle
+    - Coordinate system
+    - Points vs. Pixels
+    - Geometry Reader
+    - SwiftUIs adaption
+- Navigation
+- Creating custom views
+- Drawing custom views
+    - Shape
+- Animations
+- Swift UI
+    - @ViewBuilder
+    - View modifier
+    - Property Observers
+    - Property Wrappers
+        + @State
+        + @Published
+        + @ObservedObject
+- UIKit Integration
