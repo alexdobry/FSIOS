@@ -1,7 +1,7 @@
 # FSIOS
 
 ## Laufende Veranstaltung
-TBA
+[SS 21](https://github.com/alexdobry/FSIOS_SS21)
 
 ## Vergangene Veranstaltungen
 - [SS 20](https://github.com/alexdobry/FSIOS_SS20)
